@@ -1,11 +1,11 @@
 outline_task:
   description: >
-    Using the provided knowledge context, analyze all story elements and focus particularly on chapter {chapter_number}.
+    Using the provided knowledge context, analyze all story elements and focus on chapter {chapter_number}.
     
     Available Context:
     {knowledge_context}
     
-    Create a detailed chapter outline that includes:
+    Create a detailed outline for chapter {chapter_number} that includes:
     - Opening scene and hook that connects to previous chapters
     - Key plot points and story progression for this specific chapter
     - Character development moments and interactions
@@ -15,9 +15,9 @@ outline_task:
     - Chapter climax that creates tension or resolution
     - Setup for the next chapter that maintains reader engagement
     
-    Target the outline for a 2000-4000 word chapter that meaningfully advances the story.
+    Target the outline for chapter {chapter_number} to be 2000-4000 words that meaningfully advances the story.
   expected_output: >
-    A comprehensive chapter outline with:
+    A comprehensive outline for chapter {chapter_number} with:
     - Scene-by-scene breakdown (3-5 scenes typically)
     - Character motivations and development arcs for this chapter
     - Key dialogue topics and emotional beats
@@ -25,7 +25,7 @@ outline_task:
     - Pacing notes and estimated word count per section
     - Clear connection points to previous and next chapters
     - Specific story elements from the knowledge base to incorporate
-  agent: outliner
+  agent: architect
 
 writing_task:
   description: >
@@ -39,8 +39,10 @@ writing_task:
     - Ensuring smooth narrative flow
   expected_output: >
     A complete chapter draft of approximately 2000-4000 words written in engaging prose.
-    The chapter should be publication-ready in terms of storytelling but may need editing
-    for polish and length refinement.
+    The chapter should be publication-ready in terms of storytelling. Focus on creating a
+    high-quality draft that captures the essence of the outline while allowing for
+    natural character interactions, vivid descriptions, and a compelling narrative arc.
+    The final draft should be polished and ready for editing.
   agent: writer
 
 editing_task:
