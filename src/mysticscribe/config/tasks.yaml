@@ -43,6 +43,8 @@ outline_task:
     - Stronger connections to events and character development in previous chapters
     
     Target the outline to guide writing a chapter of 2000-4000 words that meaningfully advances the story.
+    
+    IMPORTANT: You must return a complete, detailed chapter outline as your final answer. Do not just provide analysis or comments.
   expected_output: >
     A comprehensive outline for chapter {chapter_number} with:
     - Scene-by-scene breakdown (3-5 scenes typically)
@@ -57,6 +59,7 @@ outline_task:
     The outline should be structured, detailed, and ready for the writer agent to use as a comprehensive guide.
     If this was an expansion of an existing outline, it should show clear improvements and additional depth.
   agent: architect
+  async: false
 
 writing_task:
   description: >

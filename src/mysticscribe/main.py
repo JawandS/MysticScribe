@@ -139,7 +139,7 @@ def run_architect_workflow(chapter_number: str = None):
     
     try:
         # Create a minimal crew with just the architect and outline task
-        from crewai import Crew, Process
+        from crewai import Crew, Process, Task
         
         architect = crew_instance.architect()
         outline_task = crew_instance.outline_task()
@@ -154,7 +154,16 @@ def run_architect_workflow(chapter_number: str = None):
         
         # Execute the outline task
         print(f"🤖 Architect agent is working on the outline...")
-        outline_result = outline_crew.kickoff(inputs=inputs)
+        try:
+            print(f"Debug: Executing outline_crew.kickoff with inputs: {inputs.keys()}")
+            outline_result = outline_crew.kickoff(inputs=inputs)
+            print(f"Debug: Outline result type: {type(outline_result)}")
+            if not outline_result:
+                print(f"Debug: Empty outline result")
+                raise ValueError("Empty outline result returned from crew execution")
+        except Exception as e:
+            print(f"Debug: Error during outline crew execution: {str(e)}")
+            raise
         
         # Step 4: Save outline and pause for human review
         print(f"\n💾 Step 4: Saving outline for human review...")

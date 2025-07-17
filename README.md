@@ -1,215 +1,210 @@
 # MysticScribe - AI-Powered Chapter Writing System
 
-MysticScribe is a CrewAI-based system that uses three specialized AI agents to create publication-ready chapters for your story. The system reads from a comprehensive knowledge base and follows a structured workflow to produce high-quality narrative content.
+MysticScribe is a sophisticated AI-powered system that automates the process of writing story chapters. Built on the CrewAI framework, it uses a team of specialized AI agents to create publication-ready chapters from a knowledge base of world-building and plot elements.
 
-## System Overview
-
-### Three-Agent Workflow
-
-1. **Architect Agent** - Analyzes story context, previous chapters, and creates detailed chapter outlines
-2. **Writer Agent** - Transforms outlines into engaging prose 
-3. **Editor Agent** - Refines and polishes chapters to publication quality (2000-4000 words)
-
-### Knowledge Base
-
-The system uses a comprehensive knowledge base stored in the `knowledge/` directory:
-
-- `chapters.txt` - Chapter structure and progression
-- `core_story_elements.txt` - Main story elements
-- `cultivation_system.txt` - Power/magic system details
-- `plot.txt` - Overall plot structure and arcs
-- `regions.txt` - World geography and locations
-- `society.txt` - Social structures and cultures
-- `government.txt` - Political systems
-- `economic.txt` - Economic systems
-- `military.txt` - Military structures
-- `knowledge_system_overview.txt` - Overview of all systems
-
-### Continuity Features
-
-- The Architect Agent automatically reads previously written chapters to maintain continuity
-- Character development, plot threads, and world-building elements are carried forward
-- Each new chapter builds meaningfully on what came before
-
-## Installation
-
-1. Ensure you have Python 3.10+ installed
-2. Install dependencies:
-   ```bash
-   pip install -e .
-   ```
-
-## Usage
-
-### Generate a Chapter
+## 🚀 Quick Start
 
 ```bash
-# Generate chapter 1 (default)
-python -m mysticscribe.main run
+# Install dependencies
+pip install -e .
 
-# Generate a specific chapter
-python -m mysticscribe.main run 3
+# Generate a chapter (interactive workflow)
+python mysticscribe.py [chapter_number]
 ```
 
-### Training the System
+The system will automatically detect the next chapter number if one isn't provided, based on existing outlines in the `outlines/` directory.
 
-```bash
-# Train with 5 iterations, save to training_data.pkl
-python -m mysticscribe.main train 5 training_data.pkl
+## 📋 System Overview
 
-# Train for a specific chapter
-python -m mysticscribe.main train 5 training_data.pkl 2
-```
+MysticScribe employs a three-agent workflow to create high-quality narrative content:
 
-### Testing the System
+1. **Architect Agent** - Creates detailed chapter outlines based on knowledge context and previous chapters
+2. **Writer Agent** - Transforms approved outlines into engaging prose (2000-4000 words)
+3. **Editor Agent** - Polishes the draft to publication quality with consistent style and flow
 
-```bash
-# Test with 3 iterations using gpt-4
-python -m mysticscribe.main test 3 gpt-4
+The system guides you through an interactive workflow with approval gates:
+- Review and approve outlines before writing begins
+- Make edits to outlines before final chapter generation
+- Final chapters are saved as Markdown files in the `chapters/` directory
 
-# Test for a specific chapter
-python -m mysticscribe.main test 3 gpt-4 5
-```
-
-### Replay Previous Execution
-
-```bash
-python -m mysticscribe.main replay <task_id>
-```
-
-## Output
-
-Generated chapters are saved as `chapter_X.md` files in the project root directory.
-
-## Workflow Details
-
-### 1. Outliner Agent
-- Reads all knowledge base files
-- Focuses on the requested chapter number
-- Creates detailed scene-by-scene breakdown
-- Estimates word counts per section
-- Ensures story continuity and progression
-
-### 2. Writer Agent  
-- Takes the outline and transforms it into narrative prose
-- Focuses on character development and world-building
-- Creates engaging dialogue and descriptions
-- Maintains consistent voice and style
-
-### 3. Editor Agent
-- Reviews the draft chapter
-- Ensures 2000-4000 word target length
-- Improves prose quality and flow
-- Fixes inconsistencies and enhances pacing
-- Produces publication-ready content
-
-## Configuration
-
-### Agents
-Agent configurations are in `src/mysticscribe/config/agents.yaml`:
-- Roles, goals, and backstories for each agent
-- Specialized for narrative fiction writing
-
-### Tasks  
-Task configurations are in `src/mysticscribe/config/tasks.yaml`:
-- Detailed descriptions of what each agent should accomplish
-- Expected outputs and quality standards
-
-## Project Structure
+## 🗂️ Project Structure
 
 ```
-mysticscribe/
-├── src/mysticscribe/
-│   ├── main.py              # Entry point and CLI
-│   ├── crew.py              # CrewAI setup and coordination
-│   ├── config/
-│   │   ├── agents.yaml      # Agent definitions
-│   │   └── tasks.yaml       # Task definitions
-│   └── tools/
-│       └── custom_tool.py   # Knowledge lookup tools
-├── knowledge/               # Story knowledge base
-├── tests/                   # Test files
-├── pyproject.toml          # Project dependencies
-└── README.md               # This file
+MysticScribe/
+├── mysticscribe.py              # Entry point script with simplified interface
+├── pyproject.toml               # Project dependencies and configuration
+├── README.md                    # Documentation (this file)
+├── chapters/                    # Generated chapter output files
+│   └── chapter_1.md             # Example generated chapter
+├── knowledge/                   # Knowledge base for story elements
+│   ├── chapters.txt             # Chapter structure and progression
+│   ├── core_story_elements.txt  # Main story elements
+│   ├── cultivation_system.txt   # Power/magic system details
+│   ├── economic.txt             # Economic systems
+│   ├── government.txt           # Political systems
+│   ├── knowledge_system_overview.txt  # Overview of all systems
+│   ├── military.txt             # Military structures
+│   ├── plot.txt                 # Overall plot structure and arcs
+│   ├── regions.txt              # World geography and locations
+│   └── society.txt              # Social structures and cultures
+├── outlines/                    # Stored chapter outlines
+│   └── chapter_1.txt            # Example chapter outline
+├── src/                         # Source code
+│   └── mysticscribe/            # Main package
+│       ├── __init__.py          # Package initialization
+│       ├── crew.py              # CrewAI setup and agent coordination
+│       ├── main.py              # Main application logic and CLI
+│       ├── config/              # Configuration files
+│       │   ├── agents.yaml      # Agent definitions
+│       │   └── tasks.yaml       # Task definitions
+│       └── tools/               # Custom tools for agents
+│           ├── __init__.py      # Package initialization
+│           ├── custom_tool.py   # Knowledge lookup tools
+│           └── previous_chapter_reader.py  # Tool for reading previous chapters
+└── tests/                       # Test files
+    ├── setup_check.py           # Environment setup tests
+    ├── test_architect_workflow.py  # Tests for architect workflow
+    └── test_crew.py             # Tests for crew functionality
 ```
 
-## Extending the System
+## 📚 Detailed Component Walkthrough
 
-### Adding New Knowledge
-1. Add new `.txt` files to the `knowledge/` directory
-2. Update the `load_knowledge_context()` method in `crew.py` to include new files
+### 1. Runner Script (`mysticscribe.py`)
 
-### Customizing Agents
-1. Modify agent configurations in `config/agents.yaml`
-2. Adjust roles, goals, and backstories as needed
+The runner script provides a simplified interface to the main application. It:
+- Locates the main application script
+- Automatically determines the next chapter number based on existing outlines
+- Forwards commands to the main script with the workflow mode
+- Provides user-friendly error handling
 
-### Adding Tools
-1. Create new tools in `tools/custom_tool.py`
-2. Add tools to agents in `crew.py`
+### 2. Crew Setup (`src/mysticscribe/crew.py`)
 
-## Tips for Best Results
+The crew file defines the agent structure and workflow:
+- Agent definitions with specific roles and tools
+- Task configurations for each step in the workflow
+- Knowledge context loading from the knowledge base
+- Agent-task relationships and execution flow
 
-1. **Chapter Numbers**: Use sequential chapter numbers that match your story structure
-2. **Knowledge Base**: Keep knowledge files updated with current story details
-3. **Iteration**: Use the training feature to improve output quality over time
-4. **Review**: Always review generated content for consistency with your overall story
+### 3. Main Application (`src/mysticscribe/main.py`)
 
-## Troubleshooting
+The main script implements the workflow logic:
+- Chapter number handling and sequence management
+- Interactive workflow with user approval gates
+- Outline creation, review, and approval process
+- Chapter generation with writer and editor agents
+- Output file management and saving
 
-- Ensure all knowledge files are present and readable
-- Check that chapter numbers exist in your `chapters.txt` file
-- Verify CrewAI installation if you encounter import errors
-- Review generated outlines before proceeding to writing phase Crew
+### 4. Agent Configuration (`src/mysticscribe/config/agents.yaml`)
 
-Welcome to the Mysticscribe Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Agent configurations define each agent's:
+- Role and objective
+- Specialized skills and knowledge
+- Response format and style
+- Decision-making parameters
 
-## Installation
+### 5. Task Configuration (`src/mysticscribe/config/tasks.yaml`)
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Task configurations define:
+- Specific objectives for each agent
+- Input and output specifications
+- Dependencies between tasks
+- Expected deliverables
 
-First, if you haven't already, install uv:
+### 6. Custom Tools (`src/mysticscribe/tools/`)
 
-```bash
-pip install uv
+Custom tools provide specialized capabilities:
+- `KnowledgeLookupTool`: Retrieves information from the knowledge base
+- `ChapterAnalysisTool`: Analyzes chapter structure and content
+- `OutlineManagementTool`: Manages outline creation and storage
+- `PreviousChapterReaderTool`: Reads previous chapters for continuity
+
+## 🔄 Interactive Workflow Process
+
+### Phase 1: Architect (Outline Creation)
+
+1. **Context Loading**
+   - System loads all knowledge base files
+   - Retrieves information about previous chapters
+   - Checks for existing drafts or outlines
+
+2. **Outline Creation/Expansion**
+   - If an outline exists, you can choose to:
+     - Expand the existing outline
+     - Create a new outline
+     - Use the existing outline as-is
+   - Architect agent creates or expands the outline
+
+3. **Human Review and Approval**
+   - Outline is saved to `outlines/chapter_X.txt`
+   - You can review and edit the outline
+   - You must explicitly approve the outline to continue
+
+### Phase 2: Writer & Editor (Chapter Generation)
+
+4. **Chapter Writing**
+   - Writer agent transforms the approved outline into prose
+   - Creates engaging narrative based on outline structure
+   - Maintains consistency with world-building elements
+
+5. **Chapter Editing**
+   - Editor agent refines the draft for quality
+   - Ensures proper pacing, flow, and word count
+   - Produces publication-ready content
+
+6. **Output Generation**
+   - Final chapter is saved to `chapters/chapter_X.md`
+   - System provides links to both outline and chapter files
+
+## 📝 Extending the Knowledge Base
+
+The system reads from text files in the `knowledge/` directory. To expand the knowledge base:
+
+1. Create new `.txt` files in the `knowledge/` directory
+2. Add the filenames to the `knowledge_files` list in `src/mysticscribe/crew.py`
+3. Organize information in a clear, structured format
+
+Example knowledge file format:
+```
+=== SECTION TITLE ===
+Key information about this aspect of the story.
+
+=== ANOTHER SECTION ===
+More details relevant to the story world.
 ```
 
-Next, navigate to your project directory and install the dependencies:
+## 🔧 Troubleshooting
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
+Common issues and solutions:
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+1. **Missing Dependencies**
+   - Ensure you've installed all required packages with `pip install -e .`
+   - Check that CrewAI is properly installed
 
-- Modify `src/mysticscribe/config/agents.yaml` to define your agents
-- Modify `src/mysticscribe/config/tasks.yaml` to define your tasks
-- Modify `src/mysticscribe/crew.py` to add your own logic, tools and specific args
-- Modify `src/mysticscribe/main.py` to add custom inputs for your agents and tasks
+2. **Chapter Generation Issues**
+   - Verify that all knowledge files exist and are properly formatted
+   - Check for errors in the outline or approval process
+   - Ensure chapter numbers are consistent with your knowledge base
 
-## Running the Project
+3. **Output Quality Issues**
+   - Review and refine your knowledge base files
+   - Provide more detailed outlines during the approval process
+   - Adjust agent configurations in `config/agents.yaml` for different writing styles
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+## 🌟 Best Practices
 
-```bash
-$ crewai run
-```
+For optimal results with MysticScribe:
 
-This command initializes the MysticScribe Crew, assembling the agents and assigning them tasks as defined in your configuration.
+1. **Knowledge Base Maintenance**
+   - Keep knowledge files updated with current story details
+   - Organize information clearly with headings and sections
+   - Ensure consistency between knowledge files
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+2. **Outline Development**
+   - Take time to review and edit outlines before approval
+   - Add specific details about scenes, character motivations, and key events
+   - Include notes about tone, pacing, and important revelations
 
-## Understanding Your Crew
-
-The MysticScribe Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the Mysticscribe Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+3. **Chapter Sequence**
+   - Generate chapters in sequence for best continuity
+   - Reference previous chapters explicitly in your knowledge base
+   - Update plot and character information as the story progresses

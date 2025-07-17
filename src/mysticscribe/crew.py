@@ -32,7 +32,12 @@ class Mysticscribe():
                 drop_params=True,           # tell LiteLLM to strip anything not explicitly allowed
                 additional_drop_params=["stop", "temperature", "top_p"]
             ),
-            tools=[KnowledgeLookupTool(), ChapterAnalysisTool(), PreviousChapterReaderTool()],
+            tools=[
+                KnowledgeLookupTool(), 
+                ChapterAnalysisTool(), 
+                PreviousChapterReaderTool(),
+                OutlineManagementTool()
+            ],
             verbose=True
         )
 
@@ -59,6 +64,7 @@ class Mysticscribe():
     def outline_task(self) -> Task:
         return Task(
             config=self.tasks_config['outline_task'], # type: ignore[index]
+            agent=self.architect()  # Explicitly assign agent to task
         )
 
     @task
