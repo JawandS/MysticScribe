@@ -6,7 +6,7 @@ MysticScribe is a CrewAI-based system that uses three specialized AI agents to c
 
 ### Three-Agent Workflow
 
-1. **Outliner Agent** - Analyzes story context and creates detailed chapter outlines
+1. **Architect Agent** - Analyzes story context, previous chapters, and creates detailed chapter outlines
 2. **Writer Agent** - Transforms outlines into engaging prose 
 3. **Editor Agent** - Refines and polishes chapters to publication quality (2000-4000 words)
 
@@ -24,6 +24,12 @@ The system uses a comprehensive knowledge base stored in the `knowledge/` direct
 - `economic.txt` - Economic systems
 - `military.txt` - Military structures
 - `knowledge_system_overview.txt` - Overview of all systems
+
+### Continuity Features
+
+- The Architect Agent automatically reads previously written chapters to maintain continuity
+- Character development, plot threads, and world-building elements are carried forward
+- Each new chapter builds meaningfully on what came before
 
 ## Installation
 

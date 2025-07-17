@@ -52,7 +52,7 @@ def run_architect_workflow(chapter_number: str = None):
     This implements the iterative, user-guided outline creation process.
     
     Workflow Steps:
-    1. Context Check: Load all available story context, including chapters.txt
+    1. Context Check: Load all available story context, including chapters.txt and previous chapter files
     2. Outline Handling: Check for existing outline, expand or create new
     3. Generate/Expand: Use architect agent to create/improve outline
     4. Save & Pause: Save outline and pause for human review

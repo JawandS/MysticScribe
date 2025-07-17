@@ -5,6 +5,7 @@ outline_task:
     1. CONTEXT CHECK: First, analyze all available story context for chapter {chapter_number}:
        - Use the Knowledge Lookup tool to review relevant story elements
        - Use the Chapter Analysis tool to check for any existing draft material
+       - Use the Previous Chapter Reader tool to read and analyze all previously written chapters
        - Consider the overall story progression and how this chapter fits
     
     2. OUTLINE HANDLING: Use the Outline Management tool to:
@@ -26,7 +27,7 @@ outline_task:
     Create a detailed outline for chapter {chapter_number} that includes:
     - Opening scene and hook that connects to previous chapters
     - Key plot points and story progression for this specific chapter
-    - Character development moments and interactions
+    - Character development moments and interactions that build on previous chapters
     - World-building elements to introduce or expand upon
     - Dialogue opportunities that advance character relationships
     - Action sequences, dramatic moments, or quiet character beats
@@ -39,6 +40,7 @@ outline_task:
     - Specific dialogue topics and emotional beats
     - Enhanced pacing notes and structure
     - Better integration with story knowledge base
+    - Stronger connections to events and character development in previous chapters
     
     Target the outline to guide writing a chapter of 2000-4000 words that meaningfully advances the story.
   expected_output: >
@@ -50,6 +52,7 @@ outline_task:
     - Pacing notes and estimated word count per section
     - Clear connection points to previous and next chapters
     - Specific story elements from the knowledge base to incorporate
+    - References to events, character development, and plot threads from previous chapters
     
     The outline should be structured, detailed, and ready for the writer agent to use as a comprehensive guide.
     If this was an expansion of an existing outline, it should show clear improvements and additional depth.

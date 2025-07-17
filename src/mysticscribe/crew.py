@@ -4,7 +4,7 @@ from crewai.agents.agent_builder.base_agent import BaseAgent
 from crewai.llm import LLM
 from typing import List
 import os
-from .tools.custom_tool import KnowledgeLookupTool, ChapterAnalysisTool, OutlineManagementTool
+from .tools import KnowledgeLookupTool, ChapterAnalysisTool, OutlineManagementTool, PreviousChapterReaderTool
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
@@ -32,7 +32,7 @@ class Mysticscribe():
                 drop_params=True,           # tell LiteLLM to strip anything not explicitly allowed
                 additional_drop_params=["stop", "temperature", "top_p"]
             ),
-            tools=[KnowledgeLookupTool(), ChapterAnalysisTool()],
+            tools=[KnowledgeLookupTool(), ChapterAnalysisTool(), PreviousChapterReaderTool()],
             verbose=True
         )
 
