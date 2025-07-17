@@ -1,0 +1,233 @@
+REGIONS AND GEOGRAPHY TEMPLATE – **Zenith Empire (Western Xianxia World)**
+
+---
+
+## === WORLD STRUCTURE ===
+
+**World Layout**
+
+* *World Type*: Single “realm-macrocosm” (Primordial Draconic Realm) composed of many spatially-linked planetary masses that feel continuous to ordinary folk but appear as interlocking worlds to Divinities.
+* *Size Scale*: Each of the 7 kingdoms spans **tens of millions mi²**; combined landmass holds ≈ **50 billion** inhabitants.
+* *Travel Time*: Crossing one kingdom: **days** for an Immortal (mix of ground, sea, limited air transport). Air routes are few and Jade-hungry; dangerous wind shears force many travellers to stay ground-bound. Celestials/Divinities still favour air-ship entourages as a status marker.
+* *Barriers*: Vast mountain chains, turbulent jet-stream strata, beast-infested wilds, and mana-rifts between planetary plates.
+
+**Geographic Divisions**
+
+* *Primary*: **7 Kingdoms** (Wood, Water, Fire, Earth, Wind, Shadow, Light) – each ruled by its Pantheon.
+* *Secondary*: **Duchies** (\~ 1 billion population each; 4–7 per kingdom).
+* *Tertiary*: **Counties** (≈ 500 million), then **Provinces** (100–200 million) – daily governance by Celestial Governors. Below these lie cities, towns, and villages.
+
+---
+
+## === MAJOR REGIONS ===
+
+### Region Name: **Wood Kingdom**
+
+* Location: Lush central-south band of the Realm.
+* Size: Tens of millions mi².
+* Climate: Humid temperate; long growing seasons.
+* Terrain: Endless forests, fertile plains, river valleys.
+* Dominant Power: **Wood Pantheon**.
+* Capital/Major City: (Ducal) **Verdure Spire** (largest grain exchange).
+* Population: ≈ 7–8 billion; mostly mortal farmers, plentiful Mystics.
+* Culture: Agrarian, clan-centred, druidic rites for harvest.
+* Resources: Staple crops, timber, medicinal herbs.
+* Special Features: Giant World-Trees acting as natural Qi-condensers.
+* Threats: Crop-eating spirit beasts; locust-flame blights spread from Fire Kingdom borders.
+
+### Region Name: **Water Kingdom**
+
+* Location: Realm’s equatorial archipelagos and great river-delta belt.
+* Size: Comparable to Wood.
+* Climate: Monsoon-tropical coasts, temperate inland rivers.
+* Terrain: Oceans, deltas, coral atolls, mist-lakes.
+* Dominant Power: **Water Pantheon**.
+* Capital/Major City: **Tide-Crown Port**.
+* Population: ≈ 7 billion; dense along waterways.
+* Culture: Maritime guilds, alchemist academies.
+* Resources: Aquatic spirit-beasts, pearls, alchemical reagents.
+* Special Features: Floating jade distilleries; under-sea shrine labyrinths.
+* Threats: Typhoon-class spirit storms; leviathan migrations.
+
+### Region Name: **Fire Kingdom**
+
+* Location: Western grassland and volcanic belt.
+* Size: Large continental steppe.
+* Climate: Arid summers, cold winters; frequent heat-bursts near magma vents.
+* Terrain: Grass seas, volcanoes, obsidian mesas.
+* Dominant Power: **Fire Pantheon**.
+* Capital: **Emberforge Citadel**.
+* Population: ≈ 7 billion; many Sentinel families and smith clans.
+* Culture: Martial tournaments, metal-lore guilds.
+* Resources: Spirit-iron, fire-jade, elite soldiers.
+* Special Features: Sky-forges powered by magma vents.
+* Threats: Magma wyrms, prairie-fire demons.
+
+### Region Name: **Earth Kingdom**
+
+* Location: Northern mountain-arc & mineral-rich valleys.
+* Size: Similar scale.
+* Climate: Cool highlands, temperate valleys.
+* Terrain: Granite peaks, rolling hills, cavern networks.
+* Dominant Power: **Earth Pantheon**.
+* Capital: **Stone-Throne Bastion**.
+* Population: ≈ 7 billion.
+* Culture: Stonemason guilds, contract-bound mining families.
+* Resources: Ores, gemstones, construction-grade qi-stone.
+* Special Features: Moving mountain golems used for megaprojects.
+* Threats: Tunnel wyrms, earthquake spirit-faults.
+
+### Region Name: **Wind Kingdom** *(relevant to Cassian Graves)*
+
+* Location: High eastern and central sky-pinnacle ranges.
+* Size: Wide swath of interconnected peaks.
+* Climate: Thin-air alpine, sudden temp shifts.
+* Terrain: Jagged mountains, sky bridges, wind canyons.
+* Dominant Power: **Wind Pantheon**.
+* Capital: **Gale-Crest Aerie** (primary air-ship dockyard).
+* Population: ≈ 7 billion; many Ranger lineages.
+* Culture: Sky-ship engineers, signal tower keepers, ranger orders.
+* Resources: Wind-jade, avian spirit-beasts, aeronautical tech.
+* Special Features: Empire-wide communication spires; perpetual jet-stream “Blue Gale”.
+* Threats: Roc migrations, unstable air currents, rogue sky-pirates.
+
+### Region Name: **Shadow Kingdom**
+
+* Location: Sunless western-north forest mass.
+* Size: Dense but compact relative to others.
+* Climate: Perpetual dusk canopy, cool damp air.
+* Terrain: Darkwood forests, fungus wetlands, mist ravines.
+* Dominant Power: **Shadow Pantheon**.
+* Capital: **Umbravale Hive**.
+* Population: ≈ 7 billion concentrated in bioluminescent cities.
+* Culture: Apothecary sects, poison-masters, formation scholars.
+* Resources: Night-lotus, venom sacs, rare shadow-quartz.
+* Special Features: Cloaking formations render parts invisible to divination.
+* Threats: Corruption miasma pockets, nocturnal demon-fauna.
+
+### Region Name: **Light Kingdom**
+
+* Location: Expansive south-eastern flatlands and prairies.
+* Size: Vast open plains.
+* Climate: Mild, abundant sunshine, gentle rains.
+* Terrain: Plains, low hills, radiant crystal fields.
+* Dominant Power: **Light Pantheon**.
+* Capital: **Luminara Sanctum**.
+* Population: ≈ 7 billion; high healer density.
+* Culture: Artisans, luminous festivals, formation colleges.
+* Resources: Healing herbs, light-crystal, spirit-silk.
+* Special Features: Great Radiant Dome—massive light-based healing formation visible from orbit.
+* Threats: Illusion wraiths attracted to light fields.
+
+---
+
+## === SPECIAL LOCATIONS ===
+
+**Sacred Site – *Sanctum, the Divine City***
+
+* Significance: Imperial Capital; residence of most Divinities and the Emperor.
+* Access: Open only to beings ≥ Mystic Adept; mortals need high-level permits.
+* Guardians: Imperial Sentinels, Celestial Honor Guard.
+* Powers: Continuous Realm-blessing aura; suppresses uncontrolled combat.
+* History: Built on convergence node where five earlier Emperors ascended.
+
+**Dangerous Zone – *Blue-Gale Convergence* (Wind Kingdom)**
+
+* Dangers: Sudden vortex pulls sky-ships; attracts migratory spirit-beasts (site of Cassian’s village tragedy).
+* Rewards: Concentrated Wind-Qi shards.
+* Access: Only Rangers with stabilization talismans.
+* Inhabitants: Gale sprites, thunder wyverns.
+* Origin: Overlapping jet-streams between planetary plates.
+
+---
+
+## === CITIES AND SETTLEMENTS ===
+
+**Major City – *Gale-Crest Aerie***
+
+* Population: ≈ 80 million (mainly Mystics & Immortals).
+* Government: Ruled by Ducal Immortal known as the Air-Marshal.
+* Economy: Air-ship foundries, signal-tower tariffs, trade in Wind-jade.
+* Districts: Dock-Spire, Ranger Hall Quarter, Jade-Bazaar, High-Thermae.
+* Defenses: Layered wind-barrier formations, Sky-Lance batteries.
+
+\*\*Smaller Settlement – *Unnamed Mountain Hamlet (Cassian’s Birthplace)* \*\*
+
+* Purpose: Subsistence logging & herb collection.
+* Population: < 2 000 mortals, 1–2 low-tier Mystics (before destruction).
+* Leadership: Village council elder-mystic.
+* Notable Features: Proximity to Blue-Gale Convergence; destroyed by demonic beast raid.
+
+---
+
+## === TRANSPORTATION NETWORKS ===
+
+**Major Route – *Imperial Sky-Way***
+
+* Connection: Links capitals of Wind ↔ Wood ↔ Sanctum.
+* Safety: Heavily patrolled by Sentinel Sky-Guard; high tolls.
+* Travel Time: One kingdom hop ≈ 8 hours for Celestial-grade ship.
+
+**Transportation Methods**
+
+1. **Jade-Powered Air-Ships**
+
+   * Availability: Nobles, military, guild caravans.
+   * Speed: Fastest (hundreds of miles/hour).
+   * Cost: Extremely high Jade burn; requires licensed pilots.
+2. **Ground Spirit-Rails**
+
+   * Availability: Public in core duchies.
+   * Speed: Moderate; uninterrupted by terrain.
+   * Limitations: Vulnerable to beast sabotage outside Sentinel zones.
+
+---
+
+## === REGIONAL POLITICS ===
+
+Inter-Regional Relations (example)
+
+* *Wind vs. Fire*: Competitive over sky-ship alloy supplies. Currently neutral but tense after joint mine dispute.
+* *Shadow vs. Light*: Ideological divide (poisons vs. healing) yet interdependent trade in rare reagents.
+
+Power Dynamics
+
+* *Dominant*: Sanctum & its Divine City influence.
+* *Emerging*: Wind Kingdom’s aero-tech guilds.
+* *Declining*: Earth Kingdom’s traditional stone forges losing market to Fire’s magmatic steel.
+
+---
+
+## === RESOURCE DISTRIBUTION (samples) ===
+
+* **Wind-Jade Crystals**
+
+  * Locations: High crags of Wind Kingdom.
+  * Control: Ranger Corps licensing.
+  * Uses: Air-ship cores, communication arrays.
+
+* **Spirit-Iron Ore**
+
+  * Locations: Fire Kingdom volcanic belts, Earth Kingdom deep mines.
+  * Value: Strategic; sets price of imperial armaments.
+
+---
+
+## === ENVIRONMENTAL CHALLENGES ===
+
+Natural Disasters
+
+* **Jet-Stream Shear Storms** (Wind Kingdom)
+
+  * Frequency: Seasonal.
+  * Impact: Disrupts air-traffic; tears weaker formations.
+  * Mitigation: Warning beacons; Astra Corps weather wards.
+
+Ongoing Threats
+
+* **Beast Horde Incursions**
+
+  * Nature: Demonic beasts breaching ward nets.
+  * Scope: Frontier provinces across all kingdoms.
+  * Resistance: Ranger/Sentinel patrols; Legion strikes.
+  

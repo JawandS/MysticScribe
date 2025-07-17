@@ -1,0 +1,72 @@
+KNOWLEDGE DOCUMENT — **Demographics, Advancement, and Social Life in the Zenith Empire**
+
+---
+
+## 1. Advancement Rates & Population Pyramid
+
+| Metric                        | Ratio / Count                  | Notes                                                                                                                           |
+| ----------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Total Empire Population**   | \~50 billion (7 kingdoms)      | —                                                                                                                               |
+| **Mystic Realm**              | 1 ⁄ 3 of population            | ≈ 16.7 billion first-class citizens.                                                                                            |
+| **Immortal (Heavenly) Realm** | < 1 / 3 000 Mystics            | ≈ 100 000 Immortals per billion people each generation.                                                                         |
+| — **Overseers**               | small subset of Immortals      | Regional administrators; not prestigious.                                                                                       |
+| — **Legion Recruits**         | many stalled Immortals         | Join Legion to seek resources for advancement.                                                                                  |
+| **Celestial (Eternal) Realm** | < 1 / 10 000 Immortals         | ≈ 10 Eternals per Immortal generation.                                                                                          |
+| **Divinity Realm**            | Rare; relatively static number | Each kingdom’s Divinities form its **Pantheon**; the Empire’s collective Sovereigns sometimes called the **Imperial Pantheon**. |
+
+* **Capital Distribution**
+
+  * **Ducal Capitals (“Heavenly Cities”)** — dominated by Immortals.
+  * **Royal Capitals (“Celestial Cities”)** — seats of Eternals and high-ranking Immortals.
+  * **Imperial Capital Sanctum (“Divine City”)** — residence of most Divinities; they rule provinces via Governors.
+* **Celestial Careers**
+
+  * Commonly become Provincial Governors (realms of hundreds of millions).
+  * Mortality causes: voluntary passing, inter-realm conflict, failed additional Insight.
+* **Divine Turnover**
+
+  * When a Sovereign ascends higher, fellow Pantheon Divinities often ascend together → vacuum promotes new Celestials to Divinity.
+  * Emperor intervenes to shield the kingdom during the transition.
+  * Monarch-rank Divinities periodically return to Royal Courts for championships, duels, or legal judgments.
+* **Immortal Attrition**
+
+  * Aging Immortals grow more violent; losses balanced by new Mystic ascensions.
+
+---
+
+## 2. Education & Childhood Progression
+
+| Age Range   | Stage               | Details                                                                                                                                                                                                                                                                         |
+| ----------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0 – 8**   | Family Rearing      | Poor regions: children accompany chores. Rich regions: early academics, martial arts, meditation.                                                                                                                                                                               |
+| **8 – 14**  | Schooling           | Formal in cities; informal village tutoring.                                                                                                                                                                                                                                    |
+| **14 – 16** | Independence Period | Imperial tradition for self-cultivation and academy prep. Rural education often ends here if resources scarce.                                                                                                                                                                  |
+| **16 – 21** | **Academy**         | Admission via **Imperial Exam**—tests **Body** (fitness), **Mind** (knowledge, acuity), **Soul** (potential), **Spirit** (current cultivation). Score dictates academy choice.                                                                                                  |
+| **21 +**    | Post-Academy Paths  | • Anyone reaching Mystic realm at any age gains full civic freedom—may join a **Sect** or other body. <br>• Mortals ≥ 21 yrs may enter Institutes (wealthier zones) or Monasteries (cultivation-focused). <br>• Military service is a popular but lethal route for advancement. |
+
+*Biological note:* Higher-realm cultivators find reproduction increasingly difficult as their bodies grow less human.
+
+---
+
+## 3. Village Culture
+
+* **Demographics:** Predominantly mortal; a few resident Mystics if fortunate.
+* **Mystic Roles:** Healers, blacksmiths, herbalists; often become mayors/elders or small-city entrepreneurs.
+* **Daily Life:** Farming, logging, mining, herb gathering—monotonous, resource-driven.
+* **Imperial Obligations:** Villages supply resource quotas in exchange for military protection.
+
+  * In practice, corruption means affluent villages receive swifter defense.
+* **Higher-Realm Presence:** Rare; villages generally govern themselves under minimal oversight.
+
+---
+
+## 4. City Culture
+
+* **Heavenly (Immortal) Cities** bustle with power:
+
+  * Flying cultivators overhead, casual Qi feats (e.g., vendor cooks food with fire breath; parent heals child with light Qi).
+* **Hierarchy & Symbols:** Strict power ladder. Cultivators display emblems denoting rank/affiliation to deter random conflict.
+* **Conflict Resolution:**
+
+  * All cities host **arenas** for sanctioned duels.
+  * **Sentinel Corps** intervenes to halt unsanctioned fighting swiftly.

@@ -1,0 +1,29 @@
+KNOWLEDGE DOCUMENT — **Zenith Empire Military Structure**
+
+## 1. Branches
+
+| Branch             | Core Duties                                                                                                            | Key Notes                                                                                                                                                                                                                  |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Army / Legion**  | • Disaster response; bulk combat force.<br>• Protects trade routes (land, sea, air).                                   | **Legion** = elite subdivision.<br>• **Home Legion** operates inside the Empire.<br>• **Infernal Legion** campaigns in other realms for conquest & resources.<br>• Legionnaires rotate between Home and Infernal postings. |
+| **Sentinel Corps** | • Urban security and order.<br>• Regulates city entry/exit.<br>• Assists Ministry of Justice in criminal processing.   | Sentinels rotate cities to curb corruption; renowned for integrity.                                                                                                                                                        |
+| **Ranger Corps**   | • Secures all civilized areas outside Sentinel coverage.<br>• Patrols wild zones to deter beast attacks.               | Elite Rangers act as Legion scouts and reinforce Army against bandits along trade routes.                                                                                                                                  |
+| **Astral Corps**   | • Maintains priority military communication network. <br>• Oversees emergency teleportation grid. | Astral defense system detects inter-realm incursions and can deploy munitions remotely via teleportation.                                                                                                                  |
+
+---
+
+## 2. Rank System
+
+* **Basis:** Cultivation level + experience.
+* **Advancement:** Minimum cultivation thresholds exist but promotion is not automatic.
+* **Military Academies:** Highly selective; graduates emerge stronger and progress faster.
+
+| Rank                                                 | Typical Cultivation Level               | Role / Responsibility                                                                                                            |
+| ---------------------------------------------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Trooper / Sentinel / Ranger / Soldier (Astral)**   | Mortal                                  | Entry-level; Legion does **not** accept mortals.                                                                                 |
+| **Corporal**                                         | Mystic Initiate / Disciple / Journeyman | Standard “base unit” of the Imperial forces.                                                                                     |
+| **Sergeant**                                         | ≥ Mystic Adept + field experience       | Non-commissioned officer upholding discipline among lower ranks; top academy students may graduate directly at this level.       |
+| **Lieutenant**                                       | ≥ Mystic Master                         | Commissioned officer; mentors subordinates in cultivation and leads small missions.                                              |
+| **Captain**                                          | ≥ Mystic Sage                           | Oversees large bases and missions involving hundreds of troops; maintains order.                                                 |
+| **Major / General / Commander**                      | Immortal (minimum)                      | Senior command protecting regions or provinces; command thousands to tens of thousands.                                          |
+| **Elite Troops / High Commanders / Royal Champions** | Celestial                               | Rarely serve directly due to destructive power; called upon for major Legion operations or formal duels between Kingdoms/Realms. |
+

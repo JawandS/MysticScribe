@@ -1,0 +1,115 @@
+KNOWLEDGE DOCUMENT — **Zenith Empire Cultivation System**
+
+---
+
+## 1. Core Philosophy
+
+* **Four Pillars**
+
+  * **Body:** The physical foundation from which action emerges.
+  * **Mind:** Guides the cultivator’s goals and focus.
+  * **Soul:** Enables the cultivator to exert change upon the world.
+  * **Spirit:** Binds body, mind, and soul into a coherent whole.
+
+---
+
+## 2. Cultivation Realms & Sub‑Realms
+
+> Each successive realm elevates the cultivator’s capabilities, lifespan, and connection to Qi. Tribulations mark the transition between realms.
+
+### 2.1  Mortal Realm
+
+*Default state of all people; goal is to prepare the body for true cultivation.*
+
+| Sub‑realm                                  | Key Points                                                                                                                                                                                                                            |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Qi Awakening**                           | • First step; body must be intact to open all spiritual veins. <br>• Deep meditation to sense and draw ambient Qi. <br>• Typical age: 14–16 (earlier = higher talent; divine families may awaken at 5, poor villages into their 20s). |
+| **Body Cleansing**                         | • Drawn Qi expels mortal impurities. <br>• Impurities accumulate with age; cleansing slows disease and extends life. <br>• Many stall here without resources.                                                                         |
+| **Body Refinement (Ascendant/Supplicant)** | • Body self‑purifies; super‑human strength emerges. <br>• Internal techniques possible (leaps, stone‑shattering strikes). <br>• Minor mental boost; still human lifespan.                                                             |
+| **Tribulation → Mystic**                   | • Insufficient preparation can cripple or regress progress. <br>• Major injuries (e.g., lost limb) can halt cultivation.                                                                                                              |
+
+**Power Scale:** Peak refiners display limited super‑human feats but remain within human limits.
+
+---
+
+### 2.2  Mystic Realm
+
+*Start of “true” cultivation; magical abilities manifest. Roughly one‑third of the Empire’s population reaches this realm, mostly in cities.*
+
+| Sub‑realm                  | Key Points                                                                                                                                                                                                                                |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Initiate**               | • Requires opening the *third eye* (perceive Qi; unlock bloodline abilities). <br>• High physical/mental strain; failure often fatal. <br>• Rarely achieved past age 30 (almost never past 50).                                           |
+| **Disciple**               | • Core formation: choose Qi type aligned with desired path. <br>• Gather and compress Qi into a single middle‑dantian core.                                                                                                               |
+| **Journeyman**             | • Learn to wield core for internal/external techniques. <br>• Reduced need for food/rest; lifespan +10‑20 yrs per sub‑realm. <br>• External arts still body‑anchored (e.g., flame shroud, not fireball).                                  |
+| **Adept**                  | • Body fully adapted; gain **Mystic Seals** (spirit‑tattoos) via resources or higher‑realm aid. <br>• Typical load: 3 seals (offense, defense, utility) but varies. <br>• Seal use strains spirit; *Experts* master some (not all) seals. |
+| **Master**                 | • Seals fully integrated; minor techniques possible without seals. <br>• Those who guide others to Mastery are *Grandmasters*.                                                                                                            |
+| **Sage**                   | • Complete understanding of path; freeform Qi manipulation. <br>• Miraculous feats (truth‑sensing, element command, terrain flight). <br>• Can grant seals independently.                                                                 |
+| **Tribulation → Heavenly** | • Must condense **Will** from path/Qi/desire. <br>• Heart‑demons may manifest physically; rituals use protective formations far from civilization.                                                                                        |
+
+**Power Scale:** Peak sages can reshape the environment; lifespan 150–200 yrs (Qi‑type dependent).
+
+---
+
+### 2.3  Heavenly Realm
+
+*Cultivators take the title **Immortal**; bodies withstand centuries.*
+
+| Sub‑realm (quality of Qi)   | Warrior → Knight → Tyrant → Fiend → Asura                                                                                                                                                                                 |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **General Traits**          | • Flesh resists ordinary harm; minimal need for sustenance; no waste. <br>• Every technique infused with Will; qualitative leap each sub‑realm. <br>• Limited Heavenly Qi triggers conflicts; higher sub‑realms dominate. |
+| **Tribulation → Celestial** | • Requires **Insight into a Universal Truth (Dao)**. <br>• Failure under Insight crushes the cultivator; residue forms Holy Grounds.                                                                                      |
+
+**Power Scale:** Warrior can shatter boulders bare‑handed; Asura can carve valleys with a single technique.
+
+---
+
+### 2.4  Celestial Realm
+
+*Cultivators become **Eternals**—effectively ageless, though still destructible.*
+
+| Sub‑realm                | Minor → Lesser → Intermediate → Greater → Major → True Insight                                                                                                                                                |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Overview**             | • Baptism in Celestial Qi totally remakes Will, body, mind, soul. <br>• Unique *gifts* (flight, elemental command, super‑strength, etc.). <br>• Rank suppression: higher Insight inherently overpowers lower. |
+| **Progress & Peril**     | • Additional Insights sharply increase backlash risk. <br>• Duels fought conceptually—testing Insight, not raw force.                                                                                         |
+| **Tribulation → Divine** | • True Insight holders may attempt to condense **Authority** over a Realm aspect (Dao). <br>• Existing Divinities resist new rivals; many Celestials govern provinces in hopes of sanctioned ascension.       |
+
+**Power Scale:** Even passive bodies are beyond Immortal durability; lower realms cannot harm Celestial flesh or possessions.
+
+---
+
+### 2.5  Divine Realm
+
+*Pinnacle of Zenith Empire; cultivators wield **Authority** over reality.*
+
+| Rank (increasing) | Lord → Baron → Earl → Count → Duke → Monarch → Sovereign → **Emperor**                                                                                                                 |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Overview**      | • Authority enables reality‑warping feats: true flight, time immunity, minor teleportation, future sight. <br>• Power bounded by presence of peer Divinities; direct conflict avoided. |
+| **Advancement**   | • Expand territorial/Domain Authority; accumulate subordinate Divinities. <br>• Sovereign with *Dominion* may ascend to higher Realm.                                                  |
+| **Legacies**      | • Ascending Sovereign leaves a *Legacy*—pathway for successors. <br>• Emperor’s five‑Dominion legacy: Imperial, Divinity, Draconic, Prosperity, Power.                                 |
+| **Tribulation**   | • Sovereigns may reincarnate to seek additional Dominions—risky but prestigious.                                                                                                       |
+
+**Power Scale:** Comparable to gods; blessings reach followers empire‑wide. Compete via Celestial proxies and domain influence.
+
+---
+
+## 3. Administrative Structure & Society
+
+* **Class Stratification**
+
+  * Mystic realm minimum for landowners/householders in many provinces (oath‑based contracts enforced by Imperial decree).
+  * Immortals often serve as regional Overseers; Celestials govern provinces; Divinities rule portions of the Empire.
+
+* **Karma & Interference**
+
+  * Immortals and above avoid harming lower realms; negative karma hinders advancement.
+
+---
+
+## 4. Key Terminology
+
+* **Third Eye:** Spiritual organ granting Qi perception; opened at Mystic‑Initiate.
+* **Dantian:** Singular middle energy center where the core forms.
+* **Mystic Seal:** Spirit‑tattoo enabling external Mystic arts.
+* **Will:** Condensed fusion of path, Qi, desire—required for Heavenly realm.
+* **Insight:** Comprehension of a Universal Truth; foundation of Celestial power.
+* **Authority / Dominion:** Sovereign Divine control over a Realm aspect.

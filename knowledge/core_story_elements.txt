@@ -1,0 +1,94 @@
+CORE STORY ELEMENTS TEMPLATE – **Zenith Empire Saga**
+
+---
+
+### === USER PREFERENCES ===
+
+* Novelist focused on Xianxia / fantasy.
+* Prefers **character-driven** stories with **rich world-building**.
+* Values **literary quality** and **emotional depth**.
+* All output in **English**.
+
+---
+
+### === GENERAL STORY INFORMATION ===
+
+| Element         | Content                                                                                                 |
+| --------------- | ------------------------------------------------------------------------------------------------------- |
+| **Book Title**  | **Whispers of the Blue Gale**                                                                           |
+| Book Subtitle   | *The Stormy Path of Defiance*                                                                           |
+| Series Name     | **Zephyr Ascendant**                                                                                    |
+| Book Number     | Book 1 of 3                                                                                             |
+| **Book Theme**  | *Power won through adversity must be wielded with honor—or become the very corruption it opposed.*      |
+| Book Style      | Character-driven epic fantasy with literary flourishes; clear but rhythmic prose.                       |
+| Genre           | Western-flavored **Xianxia / Progression Fantasy**                                                      |
+| Sub-genres      | Revenge tale · Military fantasy · Frontier adventure · Cultivation epic                                 |
+| Target Audience | Adult & upper-YA readers (16 +) who enjoy Wuxia/Xianxia, progression arcs, and morally grounded heroes. |
+
+---
+
+### === CHARACTER PROFILES ===
+
+#### === MAIN CHARACTER DETAILED PROFILE — Cassian Graves ===
+
+**BASIC INFORMATION**
+
+* **Full Name:** Cassian Wu Graves (“Cassian” = hollow‐oak; “Wu” = martial; “Graves” = reminder of loss)
+* **Age Progression:** 14 (Inciting Incident) → 16 (Academy entry) → 21 (Journeyman). Book 1 closes with Cassian age 24 (Mystic Adept / Ranger Sergeant).
+* **Gender / Pronouns:** Male (he/him)
+* **Physical:** 6 ft 1 in; lean, long-limbed; slate-gray eyes; wind-tossed black hair with a silver streak gained after first Wind-Qi awakening; faint scar on left brow.
+* **Cultivation Level (end of Book 1):** **Mystic Adept** — three Wind-sword Seals; peak corporal-grade Wind-step footwork.
+
+**PERSONALITY DEPTH**
+
+* **Core Values:** Loyalty · Justice · Self-reliance.
+* **Moral Code:** “Strength serves the innocent, or it serves corruption.” Absolutely refuses bribery or exploitation of the weak.
+* **Fears:** Becoming as ruthless as the men he hunts; failing those under his command.
+* **Desires:** Master Wind-sword arts, avenge village, protect frontier hamlets.
+* **Quirks:** Counts wind-gusts when nervous; sharpens blades while reciting Church hymns.
+* **Habits:** Dawn meditation facing east; keeps mentor’s Ranger badge polished.
+
+**RELATIONSHIPS**
+
+| Role          | Name & Notes                                                                         |
+| ------------- | ------------------------------------------------------------------------------------ |
+| Family        | Parents, little sister (all killed in beast raid).                                   |
+| Mentor        | Captain **Rygar Storm-Eye** (Ranger) — dies protecting Cassian.                      |
+| Friends       | **Mei Larkspur** (scholar, future formation master); **Aron Flint** (healer-novice). |
+| Rivals        | **Lucian Hawke** (noble cadet, respectful combat rival).                             |
+| Enemies       | **Overseer Garret Rane** (corrupt Immortal behind village ward theft).               |
+| Love Interest | Slow-burn potential with Mei (seeds planted Book 1).                                 |
+
+**BACKGROUND HISTORY**
+
+* **Birthplace:** Wind-Kingdom mountain hamlet near Blue-Gale Convergence.
+* **Childhood:** Quiet logger’s life; dreamed of sky-ships.
+* **Education:** Informal village tutelage → Church orphan-school (8 – 16) → Imperial Military Academy (16 – 21).
+* **Significant Events:**
+
+  * Age 14 — village destroyed by demonic beasts.
+  * Age 18 — opens third eye, passes Initiate trial.
+  * Age 21 — earns Ranger corporal stripe.
+* **Achievements:** Top 5 % of Academy cohort; invented variant Wind-Blade feint.
+* **Failures:** Could not save mentor at Sky-Pine Bridge; first patrol lost two recruits due to his hesitation.
+
+---
+
+### === STYLE AND TONE GUIDELINES ===
+
+| Category                  | Guideline                                                                                                                                                       |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sentence Structure**    | Varied—mix of crisp action lines and longer lyrical sentences for description.                                                                                  |
+| **Paragraph Length**      | Medium; action scenes ≤ 4 lines, reflection scenes 6-8 lines.                                                                                                   |
+| **Description Density**   | Rich sensory detail for landscapes and Qi phenomena; moderate elsewhere.                                                                                        |
+| **Narrative Flow**        | Smooth, escalating rhythm; each scene ends on emotional or plot hook.                                                                                           |
+| **Vocabulary**            | Intermediate-advanced; fantasy-specific terms (Qi, dantian, Jade) clearly contextualized.                                                                       |
+| **Dialogue**              | Slightly elevated frontier cadence; distinct vocabulary per class (noble formality vs. ranger plain-speak). Subtext layered—unspoken honor codes, hidden grief. |
+| **Primary Tone**          | Serious, hopeful undercurrent.                                                                                                                                  |
+| **Emotional Range**       | From quiet grief to fierce resolve; moments of camaraderie for relief.                                                                                          |
+| **Atmosphere**            | Majestic wilderness, looming corruption; epic yet personal.                                                                                                     |
+| **Tension Level**         | Steadily rising; spikes during beast attacks and duels, brief breaths for introspection.                                                                        |
+| **Mood Variations**       | Action – intense & concise · Emotional – intimate · World-building – awe-tinged · Character growth – reflective.                                                |
+| **Genre Conventions**     | Cultivation stages, formal duels, sect politics, resource quests. Avoid repetitive power grinding—focus on *meaningful* breakthroughs tied to emotion.          |
+| **Innovation Areas**      | Western frontier aesthetic, Church education system, wind-tech ranger corps.                                                                                    |
+| **Audience Expectations** | Clear power progression, dazzling Qi techniques, moral stakes, satisfying victories against corruption.                                                         |

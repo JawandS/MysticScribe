@@ -1,0 +1,80 @@
+**Zenith Empire Government Structure**
+
+## 1. Imperial Throne
+
+* **Emperor**
+
+  * Head of **State, Government, Military, and Church**.
+  * Holds the combined **Legacy** of *Imperial, Divine, Might, Nobility, Prosperity*.
+  * Strongest **Sovereign** in the Empire; inherits an accumulated legacy of all past Emperors who have ascended (collective wisdom + power).
+  * Issues **Imperial Mandates** that override any law.
+  * **Only check:** another Sovereign may compel the Emperor to ascend via a ritual duel inside a sealed sub-space deep within the Imperial Palace.
+
+---
+
+## 2. Executive Coordination
+
+* Each major branch is led by a **Sovereign** who inherits a legacy tied to that post.
+* These leaders convene as the **Prime Council** during emergencies to advise the Emperor and implement Imperial Mandates.
+
+---
+
+## 3. Core Branches of Government
+
+### 3.1  Imperial Bureaucracy
+
+| Aspect                       | Details                                                                                                                                                                                                                                                                                        |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Leader**                   | **Prime Minister** (Legacy of *Imperial*)—manages bureaucracy for the Emperor and furnishes reports.                                                                                                                                                                                           |
+| **Key Domains**              | Treasury/banks, trade access, communication network, documentation (property/ownership), insurance.                                                                                                                                                                                            |
+| **Ministries & Departments** | <br>• **Treasury** — treasury, banks, lending, insurance, taxes. <br>• **Trade** — trade network, security, communications, tolls. <br>• **Internal Affairs** — property docs, security, zoning, subsidies. <br>• **Justice** — civil/criminal cases, executions, labor, military impressment. |
+| **Liaisons**                 | • Divine disputes → **Draconic Church**. <br>• Security → **Imperial Military**. <br>• Noble disputes → **Senate**. <br>• Workforce disputes → **Grand Council**.                                                                                                                              |
+
+---
+
+### 3.2  Draconic Church
+
+| Aspect               | Details                                                                                                                                                                                                                                                                                                                                                                                                           |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Leader**           | **Archbishop** (Legacy of *Divinity*)—second in power only to the Emperor; officiates coronations and oversees duels between Divinities. Chosen by a bishops’ convention.                                                                                                                                                                                                                                         |
+| **Clerical Ranks**   | Bishop (upper-realm Celestial) / Cardinal (Celestial) / High-Priest (upper-realm Immortal) / Priest (Immortal) / Deacon (upper-realm Mystic) / Monk (Mystic).                                                                                                                                                                                                                                                     |
+| **Primary Branches** | <br>• **Priesthood** — manages churches; channels Divinity blessings; Emperor mandates religious tolerance. <br>• **Monasteries** — charity, community service, Warrior-Monk training; helps Mortals reach Mystic realm. <br>• **Keepers of Knowledge** — archivists tracing history to first Emperor’s Draconic bloodline. <br>• **Inquisitors** — auditors rooting out corruption; formidable anti-demon force. |
+| **Role**             | Neutral mediator among Divinities; militaristic tradition tempered by a focus on peace (Inquisitors excepted).                                                                                                                                                                                                                                                                                                    |
+
+---
+
+### 3.3  Imperial Military
+
+| Aspect               | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Leader**           | **Supreme High Commander** (“Supreme”, Legacy of *Might*)—commands all armed forces.                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Branches**         | <br>• **Army / Legion** — disaster response, route protection. *Legion* = elite; **Home Legion** (domestic) & **Infernal Legion** (external realms). <br>• **Sentinel Corps** — urban security, city entry/exit, justice support. Rotated postings to curb corruption. <br>• **Ranger Corps** — rural/wild security, beast control, scout duties. <br>• **Astral Corps** — maintains military-priority communication & emergency teleport network; realm-incursion detection, remote munitions. |
+| **Imperial Mandate** | All warriors must belong to the Imperial Military (active or reserve). Adventurer guilds & mercenary corps may serve as sanctioned reserves. Nobles may keep small Honor Guards (also activatable). Sects permitted only if not combat-focused.                                                                                                                                                                                                                                                 |
+
+---
+
+### 3.4  Senate
+
+| Aspect          | Details                                                                                                                                                           |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Leader**      | **President** (Legacy of *Nobility*)—must be a Sovereign; elected by Senate members. President divests personal assets to remain neutral while in opulent office. |
+| **Composition** | All **Noble Houses** and **Great Merchant Houses**.                                                                                                               |
+| **Function**    | Forum for noble/merchant dispute resolution, joint infrastructure, deal-making. President often mediates Senate conflicts and negotiates with the Grand Council.  |
+
+---
+
+### 3.5  Grand Council
+
+| Aspect          | Details                                                                                                                                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Leader**      | **Chairman** (Legacy of *Prosperity*)—rotates among Sovereigns of member organizations; minimum decade-long term; position goes to the Sovereign with the fewest prior terms.                              |
+| **Composition** | Leaders of all **Associations, Guilds, and Unions** (workers, craftsmen, professionals).                                                                                                                   |
+| **Function**    | Represents non-noble populace; collects dues, funds prosperity projects, negotiates with other branches on workforce matters. Holding the Chairman’s legacy greatly boosts the leader’s home organization. |
+
+---
+
+## 4. Lower-Level Governance
+
+* The five-branch structure—**Bureaucracy, Church, Military, Senate, Grand Council**—is mirrored at **kingdom** and **province** levels (e.g., Royal Senate, Provincial Council).
+* All subordinate branches report upward to their Imperial counterparts in **Sanctuary** (the capital).
+* The Imperial Military operates as a single chain-of-command; provincial forces are branches, not independent armies.

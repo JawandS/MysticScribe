@@ -1,0 +1,70 @@
+KNOWLEDGE SYSTEM OVERVIEW
+
+=== KNOWLEDGE DOCUMENT STRUCTURE ===
+
+The MysticWriter knowledge system now includes comprehensive template documents for story creation:
+
+CORE STORY ELEMENTS:
+1. core_story_elements.txt - Combined general story information, character profiles, and style/tone guidelines
+
+WORLD-BUILDING ELEMENTS:
+4. cultivation_system.txt - Power progression and abilities
+5. government.txt - Political structures and authority systems
+7. economic.txt - Trade, commerce, and resource systems
+8. society.txt - Cultural norms and social structures
+9. regions.txt - Geographic and location details
+
+NARRATIVE STRUCTURE:
+10. plot.txt - Overall story arc, main plot framework, conflict layers, and recurring themes
+11. chapters.txt - Chapter structure templates, pacing guidelines, and individual chapter guidance
+
+=== INTEGRATION IN TASKS ===
+
+Each task now references the appropriate knowledge documents:
+
+STORY PLANNING TASK:
+- Uses: core_story_elements.txt, plot.txt, chapters.txt
+- Ensures: MC personality consistency, book theme adherence, style guidelines, plot progression
+
+WORLD BUILDING TASK:
+- Uses: All world-building documents + core_story_elements.txt
+- Ensures: Empire/kingdom context, world setting consistency
+
+SCENE WRITING TASK:
+- Uses: core_story_elements.txt
+- Ensures: Writing style consistency, character voice maintenance
+
+CHARACTER DEVELOPMENT TASK:
+- Uses: core_story_elements.txt, plot.txt, chapters.txt
+- Ensures: Character arc progression, personality consistency
+
+ENSEMBLE TASK:
+- Uses: core_story_elements.txt + all world-building documents
+- Ensures: Supporting character voice differentiation, relationship dynamics
+
+FINAL MANUSCRIPT TASK:
+- Uses: core_story_elements.txt
+- Ensures: Final polish with style consistency, character voice maintenance
+
+=== USAGE INSTRUCTIONS ===
+
+1. Fill out the template sections in each knowledge document
+2. Replace [bracketed placeholders] with actual story details
+3. Update documents as story develops and characters evolve
+4. Ensure consistency across all documents
+5. Reference specific sections when running tasks
+
+=== KNOWLEDGE DOCUMENT HIERARCHY ===
+
+PRIMARY REFERENCE (used by all tasks):
+- core_story_elements.txt (core story elements, character consistency, writing consistency)
+
+SECONDARY REFERENCE (task-specific):
+- plot.txt (overall story arc, main plot framework, and themes)
+- chapters.txt (chapter structure, pacing, and individual chapter guidance)
+- World-building documents (context validation)
+
+TERTIARY REFERENCE (background):
+- user_preference.txt (author preferences)
+
+This hierarchical structure ensures that core story elements remain consistent while allowing for detailed world-building and narrative development.

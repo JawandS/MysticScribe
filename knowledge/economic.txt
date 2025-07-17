@@ -1,0 +1,101 @@
+**Zenith Empire Economy**
+
+---
+
+## 1. Currency System
+
+### 1.1  Mortal Coinage
+
+| Denomination | Conversion | Typical Buying Power                                                                            |
+| ------------ | ---------- | ----------------------------------------------------------------------------------------------- |
+| **Copper**   | base unit  | Roughly comparable to a modern “dollar” — e.g., in a poor village: bath + breakfast ≈ 2 copper. |
+| **Silver**   | 10 copper  | Poor‑village inn room ≈ 1 silver/night.                                                         |
+| **Gold**     | 10 silver  | Basic city inn (Mystic district) ≈ 2–3 gold/night.                                              |
+| **Platinum** | 10 gold    | High‑value transactions.                                                                        |
+
+> *Note: The “USD” comparison is reference‑only—omit any real‑world currency in‑universe.*
+
+### 1.2  Blessed Jade (Mystic → Divine)
+
+Condensed, purified Qi used as universal currency, cultivation fuel, and formation power source.
+
+| Color      | Value (white = 1 unit) | Energy Example                                    |
+| ---------- | ---------------------- | ------------------------------------------------- |
+| **White**  | 1                      | Baseline unit of energy.                          |
+| **Red**    | 10                     | —                                                 |
+| **Orange** | 100                    | Peak‑realm cultivator can refine ≈ 1 orange/hour. |
+| **Yellow** | 1 000                  | —                                                 |
+| **Green**  | 10 000                 | —                                                 |
+| **Blue**   | 100 000                | —                                                 |
+| **Purple** | 1 000 000              | —                                                 |
+| **Black**  | 10 000 000             | Highest trade denomination.                       |
+
+* **10× conversion** between successive colors (e.g., 1 Black = 10 Purple).
+* **Cross‑realm trade:** 1 000 units of lower‑realm Jade ≈ 1 unit of the next realm’s Jade (e.g., Yellow Mystic ≙ White Heavenly).
+* Uses: large‑scale techniques, advancement aids, powering formations, forging weapons, crafting Mystic seals, and trade.
+
+---
+
+## 2. Major Industries & Professions
+
+### 2.1  Mortal Realm
+
+Predominantly subsistence activities: farming, woodcutting, hunting, mining, self‑taught repairs. Larger settlements add basic specialists (tailors, blacksmiths, herbalists, healers).
+
+### 2.2  Mystic Realm Primary Professions
+
+| Profession           | Role & Notes                                                                                                                            | Affiliation                                              |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Formation Master** | Designs large and small formations (street lighting, plumbing, flying arrays, spirit boats).                                            | Sects, Noble Houses, various guilds/associations.        |
+| **Spiritual Forger** | Crafts superior weapons/tools; can embed formations or techniques.                                                                      | Forgers Guild (muscle‑oriented reputation).              |
+| **Alchemist**        | Refines spiritual herbs into pastes, potions, pills (healing, power, advancement). Requires flame/liquid control path, high discipline. | Wealthy, academic Alchemist Guild (politically neutral). |
+| **Healer**           | Adept with healing Mystic Seal and medical knowledge; feared for grudges.                                                               | Healers Association (can topple Noble Houses).           |
+| **Other Craftsmen**  | Tailors, carriage‑builders, construction, cleaners, etc., using Mystic Arts.                                                            | Workers Union (Imperial powerhouse of diverse labor).    |
+
+### 2.3  Higher Realms
+
+Cultivators often pursue **artistic disciplines** (painting, sculpture, gardening). Artistic works can:
+
+* Aid Will development.
+* Spark Insights.
+* Function as high‑value trade goods.
+  Most Divinities balance martial prowess with artistry to reach their realm.
+
+---
+
+## 3. Economic Principles & Infrastructure
+
+* **Tax Focus:** Empire chiefly taxes Divinities; lower realms yield comparatively little revenue.
+* **Service Fees:** Toll roads, city fire brigades, higher education, state loans, etc.
+* **Transportation & Communication:**
+
+  * Extensive road, water‑ship, and air‑ship networks enable realm‑wide trade.
+  * Empire‑wide communication formation (high usage fee).
+  * Immortals travel freely; lower realms often remain local.
+* **Imperial Trade Markets:** Every city hosts an Imperial‑mandated open trade district with low licensing barriers, fostering competition.
+* **Price Scrutiny:** Alchemist Guild and Healers Association maintain high prices through political donations and influence; Mystics often turn to the Imperial Military for affordable healing/resources.
+
+---
+
+## 4. Resource Management & Conflict
+
+* **Scarcity Escalates with Realm:** High‑grade Qi nodes, spiritual herbs, metals, and beasts become rarer, inciting fierce competition and bloodshed.
+* **External Raids:** Empire routinely raids other realms to secure additional resources.
+* **Natural & Catastrophic Sites:**
+
+  * Storms imbued with elemental Qi.
+  * Holy grounds from Sovereign ascension or failed Celestial Insight attempts.
+
+---
+
+## 5. Banking & Finance
+
+* **Imperial Bank Network:** Realm‑spanning, communication‑linked, and personally backed by the Emperor—considered inviolable.
+* **Credit Access:**
+
+  * Mystics and above readily secure loans by swearing binding oaths on their power.
+  * Mortals rarely receive financing.
+* **Governance:**
+
+  * **Imperial Bureaucracy** administers banking and lending.
+  * **Church Inquisition** audits accounts and enforces penalties.
