@@ -1,6 +1,7 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
+from crewai.llm import LLM
 from typing import List
 import os
 from .tools.custom_tool import KnowledgeLookupTool, ChapterAnalysisTool
@@ -23,9 +24,14 @@ class Mysticscribe():
     # If you would like to add tools to your agents, you can learn more about it here:
     # https://docs.crewai.com/concepts/agents#agent-tools
     @agent
-    def outliner(self) -> Agent:
+    def architect(self) -> Agent:
         return Agent(
-            config=self.agents_config['outliner'], # type: ignore[index]
+            config=self.agents_config['architect'], # type: ignore[index]
+            llm=LLM(
+                model="o3", 
+                drop_params=True,           # tell LiteLLM to strip anything not explicitly allowed
+                additional_drop_params=["stop", "temperature", "top_p"]
+            ),
             tools=[KnowledgeLookupTool(), ChapterAnalysisTool()],
             verbose=True
         )
@@ -34,6 +40,7 @@ class Mysticscribe():
     def writer(self) -> Agent:
         return Agent(
             config=self.agents_config['writer'], # type: ignore[index]
+            llm=LLM(model="gpt-4o", temperature=0.8),  # High creativity for vivid scene writing
             tools=[KnowledgeLookupTool()],
             verbose=True
         )
@@ -64,7 +71,7 @@ class Mysticscribe():
     def editing_task(self) -> Task:
         return Task(
             config=self.tasks_config['editing_task'], # type: ignore[index]
-            output_file='chapter_{chapter_number}.md'
+            output_file='chapters/chapter_{chapter_number}.md'
         )
 
     @crew
