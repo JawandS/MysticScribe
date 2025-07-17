@@ -81,3 +81,55 @@ class ChapterAnalysisTool(BaseTool):
                 
         except Exception as e:
             return f"Error analyzing chapter: {str(e)}"
+
+
+class OutlineManagementInput(BaseModel):
+    """Input schema for OutlineManagementTool."""
+    chapter_number: str = Field(..., description="The chapter number (e.g., '1', '2', etc.)")
+    action: str = Field(..., description="Action to perform: 'check', 'load', or 'save'")
+    outline_content: str = Field(default="", description="Outline content to save (only used with 'save' action)")
+
+class OutlineManagementTool(BaseTool):
+    name: str = "Outline Management"
+    description: str = (
+        "Manage chapter outlines: check if an outline exists, load existing outline, or save a new outline to the outlines directory."
+    )
+    args_schema: Type[BaseModel] = OutlineManagementInput
+
+    def _run(self, chapter_number: str, action: str, outline_content: str = "") -> str:
+        try:
+            # Get the outlines directory path
+            current_dir = os.path.dirname(__file__)
+            outlines_dir = os.path.join(current_dir, '..', '..', '..', 'outlines')
+            
+            # Ensure outlines directory exists
+            if not os.path.exists(outlines_dir):
+                os.makedirs(outlines_dir)
+            
+            outline_file = os.path.join(outlines_dir, f'chapter_{chapter_number}.txt')
+            
+            if action == 'check':
+                exists = os.path.exists(outline_file)
+                return f"Outline for chapter {chapter_number}: {'EXISTS' if exists else 'NOT FOUND'}"
+            
+            elif action == 'load':
+                if not os.path.exists(outline_file):
+                    return f"No existing outline found for chapter {chapter_number}"
+                
+                with open(outline_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                return f"=== EXISTING OUTLINE FOR CHAPTER {chapter_number} ===\n\n{content}"
+            
+            elif action == 'save':
+                if not outline_content.strip():
+                    return "Cannot save empty outline content"
+                
+                with open(outline_file, 'w', encoding='utf-8') as f:
+                    f.write(outline_content)
+                return f"Outline saved successfully to: {outline_file}"
+            
+            else:
+                return f"Invalid action '{action}'. Use 'check', 'load', or 'save'"
+                
+        except Exception as e:
+            return f"Error in outline management: {str(e)}"

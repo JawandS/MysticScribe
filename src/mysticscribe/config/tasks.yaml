@@ -1,9 +1,27 @@
 outline_task:
   description: >
-    Using the provided knowledge context, analyze all story elements and focus on chapter {chapter_number}.
+    You are the architect agent responsible for creating detailed chapter outlines. Follow this workflow:
+    
+    1. CONTEXT CHECK: First, analyze all available story context for chapter {chapter_number}:
+       - Use the Knowledge Lookup tool to review relevant story elements
+       - Use the Chapter Analysis tool to check for any existing draft material
+       - Consider the overall story progression and how this chapter fits
+    
+    2. OUTLINE HANDLING: Use the Outline Management tool to:
+       - Check if an existing outline exists for this chapter
+       - If existing outline found and action is 'expand': Load and enhance it with more detail and structure
+       - If no existing outline or action is 'create_new': Generate a completely new outline
     
     Available Context:
     {knowledge_context}
+    
+    Existing Draft Material (if any):
+    {existing_draft}
+    
+    Existing Outline (if expanding):
+    {existing_outline}
+    
+    Action to take: {outline_action}
     
     Create a detailed outline for chapter {chapter_number} that includes:
     - Opening scene and hook that connects to previous chapters
@@ -15,7 +33,14 @@ outline_task:
     - Chapter climax that creates tension or resolution
     - Setup for the next chapter that maintains reader engagement
     
-    Target the outline for chapter {chapter_number} to be 2000-4000 words that meaningfully advances the story.
+    If expanding an existing outline, enhance it with:
+    - More detailed scene descriptions
+    - Deeper character motivations
+    - Specific dialogue topics and emotional beats
+    - Enhanced pacing notes and structure
+    - Better integration with story knowledge base
+    
+    Target the outline to guide writing a chapter of 2000-4000 words that meaningfully advances the story.
   expected_output: >
     A comprehensive outline for chapter {chapter_number} with:
     - Scene-by-scene breakdown (3-5 scenes typically)
@@ -25,39 +50,72 @@ outline_task:
     - Pacing notes and estimated word count per section
     - Clear connection points to previous and next chapters
     - Specific story elements from the knowledge base to incorporate
+    
+    The outline should be structured, detailed, and ready for the writer agent to use as a comprehensive guide.
+    If this was an expansion of an existing outline, it should show clear improvements and additional depth.
   agent: architect
 
 writing_task:
   description: >
-    Using the detailed chapter outline provided, write a complete chapter in engaging prose.
+    Using the detailed chapter outline provided by the architect (either from the outline workflow or existing), 
+    write a complete chapter in engaging prose.
+    
+    Available Context:
+    {knowledge_context}
+    
+    Chapter Outline to Follow:
+    {approved_outline}
+    
     Focus on:
     - Bringing characters to life with authentic dialogue and actions
     - Creating immersive descriptions of settings and action
-    - Maintaining consistent voice and style
+    - Maintaining consistent voice and style throughout
     - Following the outline structure while allowing for creative flourishes
     - Building tension and emotional engagement
-    - Ensuring smooth narrative flow
+    - Ensuring smooth narrative flow and proper pacing
+    - Incorporating world-building elements naturally
+    - Advancing character arcs and plot development
+    - Creating compelling scenes that engage the reader
+    
+    The chapter should feel like a natural progression of the story and maintain consistency
+    with the established world, characters, and tone from previous chapters.
   expected_output: >
     A complete chapter draft of approximately 2000-4000 words written in engaging prose.
-    The chapter should be publication-ready in terms of storytelling. Focus on creating a
-    high-quality draft that captures the essence of the outline while allowing for
-    natural character interactions, vivid descriptions, and a compelling narrative arc.
-    The final draft should be polished and ready for editing.
+    The chapter should be publication-ready in terms of storytelling quality and should 
+    capture the essence of the outline while allowing for natural character interactions, 
+    vivid descriptions, and a compelling narrative arc. The writing should be immersive,
+    emotionally engaging, and move the story forward meaningfully.
   agent: writer
 
 editing_task:
   description: >
-    Review and refine the chapter draft to achieve publication quality.
+    Review and refine the chapter draft to achieve publication quality. You are receiving
+    a draft that was written based on an approved outline from the architect workflow.
+    
+    Chapter Draft Context:
+    - This chapter is Chapter {chapter_number}
+    - It was written following an approved detailed outline
+    - Target word count: 2000-4000 words
+    
     Focus on:
-    - Ensuring word count is between 2000-4000 words
-    - Improving prose quality and flow
-    - Enhancing character voice and dialogue
-    - Strengthening descriptions and world-building
-    - Correcting any inconsistencies
-    - Optimizing pacing and tension
+    - Ensuring word count is between 2000-4000 words (adjust as needed)
+    - Improving prose quality, flow, and readability
+    - Enhancing character voice and dialogue authenticity
+    - Strengthening descriptions and world-building integration
+    - Correcting any inconsistencies with story knowledge
+    - Optimizing pacing and tension throughout the chapter
+    - Ensuring smooth transitions between scenes
+    - Polishing language and eliminating awkward phrasing
+    - Maintaining consistent tone and style
     - Condensing verbose sections or expanding thin areas as needed
+    - Ensuring the chapter ending creates appropriate hooks or resolution
+    
+    Review the chapter critically and make improvements that enhance the reader's experience
+    while maintaining the core structure and intent from the outline.
   expected_output: >
-    A polished, publication-ready chapter between 2000-4000 words.
-    The final chapter should have excellent prose quality, proper pacing,
-    engaging character development, and seamless integration with the larger story.
+    A polished, publication-ready chapter between 2000-4000 words that represents the 
+    highest quality prose. The final chapter should have excellent narrative flow, 
+    engaging character development, immersive world-building, proper pacing, and 
+    seamless integration with the larger story. Every sentence should contribute to 
+    the overall impact and readability of the chapter.
   agent: editor

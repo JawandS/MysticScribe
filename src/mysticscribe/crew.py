@@ -4,7 +4,7 @@ from crewai.agents.agent_builder.base_agent import BaseAgent
 from crewai.llm import LLM
 from typing import List
 import os
-from .tools.custom_tool import KnowledgeLookupTool, ChapterAnalysisTool
+from .tools.custom_tool import KnowledgeLookupTool, ChapterAnalysisTool, OutlineManagementTool
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators

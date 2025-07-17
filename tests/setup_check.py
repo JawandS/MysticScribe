@@ -10,7 +10,7 @@ from pathlib import Path
 
 def check_knowledge_files():
     """Check if all required knowledge files exist"""
-    knowledge_dir = Path(__file__).parent / "knowledge"
+    knowledge_dir = Path(__file__).parent.parent / "knowledge"
     required_files = [
         'chapters.txt',
         'core_story_elements.txt', 
@@ -41,7 +41,7 @@ def check_knowledge_files():
 
 def check_project_structure():
     """Check if project structure is correct"""
-    base_dir = Path(__file__).parent
+    base_dir = Path(__file__).parent.parent
     required_paths = [
         "src/mysticscribe/__init__.py",
         "src/mysticscribe/main.py", 
@@ -53,16 +53,36 @@ def check_project_structure():
         "pyproject.toml"
     ]
     
+    required_dirs = [
+        "outlines",
+        "chapters",
+        "knowledge"
+    ]
+    
     missing_paths = []
     for path in required_paths:
         full_path = base_dir / path
         if not full_path.exists():
             missing_paths.append(path)
     
-    if missing_paths:
-        print("❌ Missing project files:")
-        for path in missing_paths:
-            print(f"   - {path}")
+    missing_dirs = []
+    for dir_name in required_dirs:
+        dir_path = base_dir / dir_name
+        if not dir_path.exists():
+            missing_dirs.append(dir_name)
+    
+    if missing_paths or missing_dirs:
+        if missing_paths:
+            print("❌ Missing project files:")
+            for path in missing_paths:
+                print(f"   - {path}")
+        if missing_dirs:
+            print("❌ Missing directories:")
+            for dir_name in missing_dirs:
+                print(f"   - {dir_name}/")
+                # Create missing directories
+                (base_dir / dir_name).mkdir(exist_ok=True)
+                print(f"   ✅ Created {dir_name}/ directory")
         return False
     else:
         print("✅ Project structure is correct")
@@ -91,8 +111,10 @@ def main():
     
     if all(checks):
         print("\n🎉 Setup verification complete! MysticScribe is ready to use.")
-        print("\nTry running:")
-        print("  python -m mysticscribe.main run")
+        print("\nAvailable commands:")
+        print("  python -m mysticscribe.main workflow    # Complete workflow with approval gates (recommended)")
+        print("  python -m mysticscribe.main architect   # Outline creation only")
+        print("  python -m mysticscribe.main run         # Legacy full crew run")
     else:
         print("\n⚠️  Some issues found. Please address them before using MysticScribe.")
         sys.exit(1)
