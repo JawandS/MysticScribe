@@ -53,7 +53,7 @@ CORE STORY ELEMENTS TEMPLATE – **Zenith Empire Saga**
 | Role          | Name & Notes                                                                         |
 | ------------- | ------------------------------------------------------------------------------------ |
 | Family        | Parents, little sister (all killed in beast raid).                                   |
-| Mentor        | Captain **Rygar Storm-Eye** (Ranger) — dies protecting Cassian.                      |
+| Mentor        | Lt. **Rygar Storm-Eye** (Ranger) — dies protecting Cassian.                      |
 | Friends       | **Mei Larkspur** (scholar, future formation master); **Aron Flint** (healer-novice). |
 | Rivals        | **Lucian Hawke** (noble cadet, respectful combat rival).                             |
 | Enemies       | **Overseer Garret Rane** (corrupt Immortal behind village ward theft).               |
