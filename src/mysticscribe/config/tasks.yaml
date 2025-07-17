@@ -92,33 +92,23 @@ writing_task:
 
 editing_task:
   description: >
-    Review and refine the chapter draft to achieve publication quality. You are receiving
-    a draft that was written based on an approved outline from the architect workflow.
-    
-    Chapter Draft Context:
-    - This chapter is Chapter {chapter_number}
-    - It was written following an approved detailed outline
-    - Target word count: 2000-4000 words
-    
+    You're the line editor on a novel-in-progress. Your job is to take a drafted chapter—written from a detailed, approved outline—and refine it to feel like professionally published fiction.
+    Remove the use of "-" (dashes) or other common AI hallmarks that make it feel like an AI-generated text.
+
+    This is Chapter {chapter_number}, with a target length of 2000-4000 words. Your edits should elevate the writing while preserving the author's original voice and intention.
+
     Focus on:
-    - Ensuring word count is between 2000-4000 words (adjust as needed)
-    - Improving prose quality, flow, and readability
-    - Enhancing character voice and dialogue authenticity
-    - Strengthening descriptions and world-building integration
-    - Correcting any inconsistencies with story knowledge
-    - Optimizing pacing and tension throughout the chapter
-    - Ensuring smooth transitions between scenes
-    - Polishing language and eliminating awkward phrasing
-    - Maintaining consistent tone and style
-    - Condensing verbose sections or expanding thin areas as needed
-    - Ensuring the chapter ending creates appropriate hooks or resolution
-    
-    Review the chapter critically and make improvements that enhance the reader's experience
-    while maintaining the core structure and intent from the outline.
+    - Enhancing prose for clarity, rhythm, and emotional resonance
+    - Making dialogue feel authentic and character-specific
+    - Weaving world-building naturally into scenes without slowing pacing
+    - Strengthening scene transitions and overall narrative flow
+    - Identifying and fixing tonal inconsistencies or awkward phrasing
+    - Cutting overly verbose sections and expanding thin ones where needed
+    - Ensuring the chapter hits a satisfying emotional or plot beat at the end
+    - Keeping everything grounded in the broader story context
+
+    Avoid over-sanitizing the voice. Don't flatten the style or explain things the reader can infer. Treat the manuscript like a serious literary work with genre expectations rooted in fantasy and Xianxia. You are not rewriting, you are refining.
+    Make sure the final product feels like it was written by an experienced human author.
   expected_output: >
-    A polished, publication-ready chapter between 2000-4000 words that represents the 
-    highest quality prose. The final chapter should have excellent narrative flow, 
-    engaging character development, immersive world-building, proper pacing, and 
-    seamless integration with the larger story. Every sentence should contribute to 
-    the overall impact and readability of the chapter.
+    A clean, publication-ready chapter between 2000-4000 words that reads like it came from an experienced human author. The final version should have strong narrative flow, emotionally grounded character moments, immersive world details, and precise, vivid prose. Return the full edited chapter only—no commentary or preamble.
   agent: editor
