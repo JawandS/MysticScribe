@@ -42,7 +42,7 @@ A low, percussive *thump. thump. thump.* vibrated through the floorboards. He sc
 
 A shriek tore the air, not of a beast but of the realm itself crying in pain. A wound of crimson light opened in the square. From its depths spilled shapes of running shadow: Demonic-Hounds, their massive paws silent on the packed earth, their eyes glowing with fierce insanity.
 
-The house errupted with unholy flames, hissing as they incinerated thatch and wood. He saw his mother, her leg trapped beneath a fallen beam, her eyes wild as she searched for him across the chaos. He saw Tessa screaming, clutching her arm.
+The house erupted with unholy flames, hissing as they incinerated thatch and wood. He saw his mother, her leg trapped beneath a fallen beam, her eyes wild as she searched for him across the chaos. He saw Tessa screaming, clutching her arm.
 
 "Cass!"
 
@@ -50,7 +50,7 @@ He dove toward them, his hands scrabbling at the heavy oak. He strained, muscles
 
 The world continued to dissolve, fire roaring, sobs tearing his throat raw. Through the smoke, Cassian saw his father rise, stance wide, and hurl a logging axe with the fury of a man who saw his world collapse. The weapon spun end over end toward an onrushing hound, its fangs slick with blood of another. It didn't slow. Cassian screamed as his father fell, swallowed by shadow and flame.
 
-As his legs gave out a hand seized his collar, hauling him from the mud. "Go now! There's nothing you cand do!" Rygar's voice was a thunderclap. His sword sang, a silver arc of sword-wind errupting, bisecting two hounds.
+As his legs gave out a hand seized his collar, hauling him from the mud. "Go now! There's nothing you can do!" Rygar's voice was a thunderclap. His sword sang, a silver arc of sword-wind erupting, bisecting two hounds.
 
 Cassian ran, numb and stumbling, the world behind him a funeral pyre.
 
@@ -76,7 +76,7 @@ But the words didn’t land. They passed through Cassian like the breeze through
 
 Rygar hissed, but didn’t stop him.
 
-Cassian worked by instinct, hands moving in short, clipped motions, binding the cloth, tightening the wrap. There was no room for memories in this moment. No room for screams or fire or reaching hands.
+Cassian worked by instinct, hands moving in short, clipped motions, binding the cloth, tightening the wrap. There was no room for memories this moment. No room for screams or fire or reaching hands.
 
 Rygar watched him in silence, face drawn, the lines around his mouth deepening.
 
