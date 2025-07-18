@@ -4,7 +4,7 @@ from crewai.agents.agent_builder.base_agent import BaseAgent
 from crewai.llm import LLM
 from typing import List
 import os
-from .tools import KnowledgeLookupTool, ChapterAnalysisTool, OutlineManagementTool, PreviousChapterReaderTool
+from .tools import KnowledgeLookupTool, ChapterAnalysisTool, OutlineManagementTool, PreviousChapterReaderTool, PreviousChapterEndingTool
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
@@ -36,6 +36,7 @@ class Mysticscribe():
                 KnowledgeLookupTool(), 
                 ChapterAnalysisTool(), 
                 PreviousChapterReaderTool(),
+                PreviousChapterEndingTool(),
                 OutlineManagementTool()
             ],
             verbose=True
@@ -48,7 +49,8 @@ class Mysticscribe():
             llm=LLM(model="gpt-4o", temperature=0.8),  # High creativity for vivid scene writing
             tools=[
                 KnowledgeLookupTool(), 
-                PreviousChapterReaderTool()
+                PreviousChapterReaderTool(),
+                PreviousChapterEndingTool()
             ],
             verbose=True
         )
@@ -57,6 +59,10 @@ class Mysticscribe():
     def editor(self) -> Agent:
         return Agent(
             config=self.agents_config['editor'], # type: ignore[index]
+            tools=[
+                PreviousChapterReaderTool(),
+                PreviousChapterEndingTool()
+            ],  # Add tools for continuity checking during editing
             verbose=True
         )
 

@@ -5,7 +5,7 @@ outline_task:
     1. CONTEXT CHECK: First, analyze all available story context for chapter {chapter_number}:
        - Use the Knowledge Lookup tool to review relevant story elements
        - Use the Chapter Analysis tool to check for any existing draft material
-       - Use the Previous Chapter Reader tool to read and analyze all previously written chapters
+       - CRITICAL: Use the Previous Chapter Reader tool to read and analyze all previously written chapters, with special focus on how the previous chapter ended
        - Consider the overall story progression and how this chapter fits
     
     2. OUTLINE HANDLING: Use the Outline Management tool to:
@@ -16,6 +16,9 @@ outline_task:
     Available Context:
     {knowledge_context}
     
+    Previous Chapter Context (CRITICAL for continuity):
+    {previous_chapter_context}
+    
     Existing Draft Material (if any):
     {existing_draft}
     
@@ -25,24 +28,33 @@ outline_task:
     Action to take: {outline_action}
     
     Create a detailed outline for chapter {chapter_number} that includes:
-    - Opening scene and hook that connects to previous chapters
-    - Key plot points and story progression for this specific chapter
-    - Character development moments and interactions that build on previous chapters
-    - World-building elements to introduce or expand upon
-    - Dialogue opportunities that advance character relationships
-    - Action sequences, dramatic moments, or quiet character beats
-    - Chapter climax that creates tension or resolution
-    - Setup for the next chapter that maintains reader engagement
+    - Opening scene that DIRECTLY continues from where the previous chapter ended (emotional state, location, immediate situation)
+    - Seamless transition that addresses any cliffhangers or unresolved tensions from the previous chapter
+    - Key plot points and story progression for this specific chapter that build naturally on previous events
+    - Character development moments that acknowledge and build upon their state at the end of the previous chapter
+    - World-building elements that maintain consistency with established details
+    - Dialogue opportunities that reference recent events and maintain character relationship continuity
+    - Action sequences or dramatic moments that feel like natural progression
+    - Chapter climax that creates new tension while resolving elements from the previous chapter
+    - Setup for the next chapter that maintains story momentum
     
     If expanding an existing outline, enhance it with:
-    - More detailed scene descriptions
-    - Deeper character motivations
-    - Specific dialogue topics and emotional beats
-    - Enhanced pacing notes and structure
-    - Better integration with story knowledge base
-    - Stronger connections to events and character development in previous chapters
+    - Stronger continuity connections to the previous chapter's ending
+    - More detailed scene descriptions that acknowledge character states and situations
+    - Deeper character motivations that build on recent developments
+    - Specific dialogue topics that reference recent events and emotional beats
+    - Enhanced pacing notes that create smooth transition from previous chapter
+    - Better integration with story knowledge base and previous chapter events
+    - Clearer connections to character development and plot threads from previous chapters
     
-    Target the outline to guide writing a chapter of 2000-4000 words that meaningfully advances the story.
+    CONTINUITY REQUIREMENTS:
+    - Chapter must begin exactly where the previous chapter ended (same emotional tone, immediate situation)
+    - Address any cliffhangers or unresolved tensions immediately or acknowledge why they're being delayed
+    - Reference the character's emotional/physical state from the previous chapter's conclusion
+    - Maintain location continuity or provide clear, logical scene transitions
+    - Build upon relationship dynamics and tensions established in previous chapters
+    
+    Target the outline to guide writing a chapter of 2000-4000 words that meaningfully advances the story while maintaining perfect continuity.
     
     IMPORTANT: You must return a complete, detailed chapter outline as your final answer. Do not just provide analysis or comments.
   expected_output: >
@@ -64,27 +76,38 @@ outline_task:
 writing_task:
   description: >
     Using the detailed chapter outline provided by the architect (either from the outline workflow or existing), 
-    write a complete chapter in engaging prose.
+    write a complete chapter in engaging prose that maintains perfect continuity with previous chapters.
     
     Available Context:
     {knowledge_context}
     
+    Previous Chapter Context (CRITICAL for continuity):
+    {previous_chapter_context}
+    
     Chapter Outline to Follow:
     {approved_outline}
     
-    Focus on:
-    - Bringing characters to life with authentic dialogue and actions
-    - Creating immersive descriptions of settings and action
-    - Maintaining consistent voice and style throughout
-    - Following the outline structure while allowing for creative flourishes
-    - Building tension and emotional engagement
-    - Ensuring smooth narrative flow and proper pacing
-    - Incorporating world-building elements naturally
-    - Advancing character arcs and plot development
-    - Creating compelling scenes that engage the reader
+    CONTINUITY REQUIREMENTS:
+    Before writing, you MUST use the Previous Chapter Reader tool to understand exactly how the previous chapter ended.
+    Your opening must seamlessly continue from that exact point - same emotional state, immediate situation, and location.
     
-    The chapter should feel like a natural progression of the story and maintain consistency
-    with the established world, characters, and tone from previous chapters.
+    Focus on:
+    - Opening that flows directly from the previous chapter's ending (same tone, immediate continuation of situation)
+    - Bringing characters to life with authentic dialogue that references recent events and maintains relationship dynamics
+    - Creating immersive descriptions that maintain consistency with established settings and world-building
+    - Maintaining consistent voice and style throughout while building on previous character development
+    - Following the outline structure while ensuring smooth transitions from the previous chapter
+    - Building tension and emotional engagement that acknowledges character states from previous events
+    - Ensuring narrative flow that feels like one continuous story, not separate episodes
+    - Incorporating world-building elements naturally while maintaining established consistency
+    - Advancing character arcs that build logically on recent developments and interactions
+    - Creating compelling scenes that reference and build upon previous chapter events
+    - Resolving or acknowledging any cliffhangers or tensions from the previous chapter
+    
+    The chapter should feel like a natural, immediate continuation of the story and maintain perfect consistency
+    with the established world, characters, relationships, and recent events from previous chapters.
+    
+    CRITICAL: Do not start fresh or reset the situation. Continue exactly where the story left off.
   expected_output: >
     A complete chapter draft of approximately 2000-4000 words written in engaging prose.
     The chapter should be publication-ready in terms of storytelling quality and should 
@@ -95,25 +118,36 @@ writing_task:
 
 editing_task:
   description: >
-    You're the line editor on a novel-in-progress. Your job is to take a drafted chapter—written from a detailed, approved outline—and refine it to feel like professionally published fiction.
+    You're the line editor on a novel-in-progress. Your job is to take a drafted chapter—written from a detailed, approved outline—and refine it to feel like professionally published fiction while ensuring perfect continuity with previous chapters.
     Remove the use of "-" (dashes) or other common AI hallmarks that make it feel like an AI-generated text.
 
     This is Chapter {chapter_number}, with a target length of 2000-4000 words. Your edits should elevate the writing while preserving the author's original voice and intention.
 
-    Focus on:
-    - Enhancing prose for clarity, rhythm, and emotional resonance
-    - Making dialogue feel authentic and character-specific
-    - Weaving world-building naturally into scenes without slowing pacing
-    - Strengthening scene transitions and overall narrative flow
-    - Identifying and fixing tonal inconsistencies or awkward phrasing
-    - Cutting overly verbose sections and expanding thin ones where needed
-    - Ensuring the chapter hits a satisfying emotional or plot beat at the end
-    - Keeping everything grounded in the broader story context
+    Previous Chapter Context (for continuity checking):
+    {previous_chapter_context}
 
-    Avoid over-sanitizing the voice. Don't flatten the style or explain things the reader can infer. Treat the manuscript like a serious literary work with genre expectations rooted in fantasy and Xianxia. You are not rewriting, you are refining.
-    Make sure the final product feels like it was written by an experienced human author.
+    CONTINUITY VERIFICATION:
+    Use the Previous Chapter Reader tool to verify that the chapter maintains perfect continuity with previous chapters, especially:
+    - Opening connects seamlessly to how the previous chapter ended
+    - Character emotional states and relationships are consistent
+    - Location and setting details remain consistent
+    - Recent events are properly referenced or acknowledged
+    - No contradictions with established plot points or character development
+
+    Focus on:
+    - Enhancing prose for clarity, rhythm, and emotional resonance while maintaining continuity
+    - Making dialogue feel authentic, character-specific, and consistent with recent interactions
+    - Weaving world-building naturally into scenes without contradicting established elements
+    - Strengthening scene transitions, especially the opening transition from the previous chapter
+    - Identifying and fixing tonal inconsistencies or continuity breaks
+    - Cutting overly verbose sections and expanding thin areas where needed, especially around continuity points
+    - Ensuring the chapter hits a satisfying emotional or plot beat at the end while setting up natural continuation
+    - Keeping everything grounded in the broader story context and recent chapter events
+
+    Avoid over-sanitizing the voice. Don't flatten the style or explain things the reader can infer. Treat the manuscript like a serious literary work with genre expectations rooted in fantasy and Xianxia. You are not rewriting, you are refining while ensuring seamless story flow.
+    Make sure the final product feels like it was written by an experienced human author and flows naturally from previous chapters.
   expected_output: >
-    A clean, publication-ready chapter between 2000-4000 words that reads like it came from an experienced human author. The final version should have strong narrative flow, emotionally grounded character moments, immersive world details, and precise, vivid prose. Return the full edited chapter only—no commentary or preamble.
+    A clean, publication-ready chapter between 2000-4000 words that reads like it came from an experienced human author and maintains perfect continuity with previous chapters. The final version should have strong narrative flow that connects seamlessly to previous events, emotionally grounded character moments that build on recent developments, immersive world details that remain consistent with established elements, and precise, vivid prose. The chapter should feel like a natural continuation of the ongoing story, not a standalone piece. Return the full edited chapter only—no commentary or preamble.
   agent: editor
 
 polishing_task:

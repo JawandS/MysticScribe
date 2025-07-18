@@ -133,3 +133,47 @@ class OutlineManagementTool(BaseTool):
                 
         except Exception as e:
             return f"Error in outline management: {str(e)}"
+
+
+class PreviousChapterEndingInput(BaseModel):
+    """Input schema for PreviousChapterEndingTool."""
+    chapter_number: str = Field(..., description="The current chapter number you're working on (e.g., '2', '3', etc.)")
+
+class PreviousChapterEndingTool(BaseTool):
+    name: str = "Previous Chapter Ending"
+    description: str = (
+        "Get just the ending of the immediate previous chapter for quick continuity reference. Perfect for ensuring your opening connects seamlessly to how the previous chapter ended."
+    )
+    args_schema: Type[BaseModel] = PreviousChapterEndingInput
+
+    def _run(self, chapter_number: str) -> str:
+        try:
+            chapter_num = int(chapter_number)
+            if chapter_num <= 1:
+                return "This is Chapter 1 - no previous chapter ending to reference."
+            
+            previous_chapter_num = chapter_num - 1
+            
+            # Get the chapters directory path
+            current_dir = os.path.dirname(__file__)
+            chapters_dir = os.path.join(current_dir, '..', '..', '..', 'chapters')
+            chapter_file = os.path.join(chapters_dir, f'chapter_{previous_chapter_num}.md')
+            
+            if not os.path.exists(chapter_file):
+                return f"Previous chapter (Chapter {previous_chapter_num}) file not found."
+            
+            with open(chapter_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Extract the last 3-4 paragraphs for context
+            paragraphs = [p.strip() for p in content.split('\n\n') if p.strip()]
+            
+            if len(paragraphs) >= 3:
+                ending = '\n\n'.join(paragraphs[-3:])
+            else:
+                ending = '\n\n'.join(paragraphs)
+            
+            return f"=== HOW CHAPTER {previous_chapter_num} ENDED ===\n\n{ending}\n\n=== CONTINUITY NOTE ===\nChapter {chapter_number} should begin exactly where this left off, maintaining the same emotional tone, character states, and immediate situation."
+                
+        except Exception as e:
+            return f"Error reading previous chapter ending: {str(e)}"

@@ -11,6 +11,32 @@ from mysticscribe.crew import Mysticscribe
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
+def get_previous_chapter_context(chapter_number: str):
+    """
+    Load the context from previous chapters, with special focus on the immediate previous chapter.
+    Returns formatted context that emphasizes continuity requirements.
+    """
+    try:
+        chapter_num = int(chapter_number)
+        if chapter_num <= 1:
+            return "This is Chapter 1 - no previous chapters to reference."
+        
+        print(f"📖 Loading previous chapter context for continuity...")
+        
+        # Use the Previous Chapter Reader Tool to get comprehensive context
+        from mysticscribe.tools.previous_chapter_reader import PreviousChapterReaderTool
+        previous_reader = PreviousChapterReaderTool()
+        previous_context = previous_reader._run(chapter_number)
+        
+        print(f"✅ Previous chapter context loaded - focusing on continuity from Chapter {chapter_num - 1}")
+        
+        return previous_context
+        
+    except Exception as e:
+        print(f"⚠️ Could not load previous chapter context: {str(e)}")
+        return f"Could not load previous chapter context: {str(e)}"
+
+
 def get_next_chapter_number():
     """
     Get the next chapter number by checking existing chapters in the chapters directory.
@@ -68,8 +94,16 @@ def run_architect_workflow(chapter_number: str = None):
     crew_instance = Mysticscribe()
     knowledge_context = crew_instance.load_knowledge_context()
     
+    # Load previous chapter context for continuity
+    previous_chapter_context = get_previous_chapter_context(chapter_number)
+    
     # Step 1: Context Check - Load all available story context
     print(f"\n📚 Step 1: Context Check - Loading story context for Chapter {chapter_number}...")
+    
+    if int(chapter_number) > 1:
+        print(f"📖 Loaded previous chapter context for continuity")
+    else:
+        print(f"📝 Chapter 1 - no previous chapters to reference")
     
     # Check if a draft already exists in chapters.txt via the ChapterAnalysisTool
     from mysticscribe.tools.custom_tool import ChapterAnalysisTool, OutlineManagementTool
@@ -131,6 +165,7 @@ def run_architect_workflow(chapter_number: str = None):
     inputs = {
         'chapter_number': chapter_number,
         'knowledge_context': knowledge_context,
+        'previous_chapter_context': previous_chapter_context,
         'existing_draft': existing_draft,
         'existing_outline': existing_outline,
         'outline_action': outline_action,
@@ -236,6 +271,10 @@ def run():
         knowledge_context = crew_instance.load_knowledge_context()
         inputs['knowledge_context'] = knowledge_context
         
+        # Load previous chapter context for continuity
+        previous_chapter_context = get_previous_chapter_context(chapter_number)
+        inputs['previous_chapter_context'] = previous_chapter_context
+        
         # Check for existing draft material
         from mysticscribe.tools.custom_tool import ChapterAnalysisTool, OutlineManagementTool
         chapter_tool = ChapterAnalysisTool()
@@ -318,10 +357,14 @@ def run_full_workflow(chapter_number: str = None):
         crew_instance = Mysticscribe()
         knowledge_context = crew_instance.load_knowledge_context()
         
+        # Load previous chapter context for continuity
+        previous_chapter_context = get_previous_chapter_context(chapter_number)
+        
         # Prepare inputs for the writing and editing phases
         inputs = {
             'chapter_number': chapter_number,
             'knowledge_context': knowledge_context,
+            'previous_chapter_context': previous_chapter_context,
             'current_year': str(datetime.now().year),
             'approved_outline': approved_outline,
             'existing_draft': "",  # Clear since we're using the approved outline
@@ -374,6 +417,10 @@ def train():
         knowledge_context = crew_instance.load_knowledge_context()
         inputs['knowledge_context'] = knowledge_context
         
+        # Load previous chapter context for continuity
+        previous_chapter_context = get_previous_chapter_context(chapter_number)
+        inputs['previous_chapter_context'] = previous_chapter_context
+        
         crew_instance.crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
 
     except Exception as e:
@@ -409,6 +456,10 @@ def test():
         # Load knowledge context and add to inputs
         knowledge_context = crew_instance.load_knowledge_context()
         inputs['knowledge_context'] = knowledge_context
+        
+        # Load previous chapter context for continuity
+        previous_chapter_context = get_previous_chapter_context(chapter_number)
+        inputs['previous_chapter_context'] = previous_chapter_context
         
         crew_instance.crew().test(n_iterations=int(sys.argv[1]), eval_llm=sys.argv[2], inputs=inputs)
 
@@ -455,6 +506,10 @@ if __name__ == "__main__":
                 crew_instance = Mysticscribe()
                 knowledge_context = crew_instance.load_knowledge_context()
                 inputs['knowledge_context'] = knowledge_context
+                
+                # Load previous chapter context for continuity
+                previous_chapter_context = get_previous_chapter_context(chapter_number)
+                inputs['previous_chapter_context'] = previous_chapter_context
                 
                 # Check for existing draft material
                 from mysticscribe.tools.custom_tool import ChapterAnalysisTool, OutlineManagementTool
