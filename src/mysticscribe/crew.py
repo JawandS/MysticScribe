@@ -4,7 +4,7 @@ from crewai.agents.agent_builder.base_agent import BaseAgent
 from crewai.llm import LLM
 from typing import List
 import os
-from .tools import KnowledgeLookupTool, ChapterAnalysisTool, OutlineManagementTool, PreviousChapterReaderTool, PreviousChapterEndingTool
+from .tools import KnowledgeLookupTool, ChapterAnalysisTool, OutlineManagementTool, PreviousChapterReaderTool, PreviousChapterEndingTool, StyleGuideTool
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
@@ -70,7 +70,12 @@ class Mysticscribe():
     def polisher(self) -> Agent:
         return Agent(
             config=self.agents_config['polisher'], # type: ignore[index]
-            llm=LLM(model="gpt-4o", temperature=0.7),  # Balanced creativity for natural humanization
+            llm=LLM(model="gpt-4o", temperature=0.8),  # Higher creativity for natural style variation
+            tools=[
+                PreviousChapterReaderTool(),  # For style consistency with previous chapters
+                KnowledgeLookupTool(),  # For world-building and tone consistency
+                StyleGuideTool()  # For specific style guidelines
+            ],
             verbose=True
         )
 
