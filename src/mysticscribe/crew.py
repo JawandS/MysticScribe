@@ -12,7 +12,7 @@ from .tools import KnowledgeLookupTool, ChapterAnalysisTool, OutlineManagementTo
 
 @CrewBase
 class Mysticscribe():
-    """Mysticscribe crew - A four-agent system for chapter writing"""
+    """Mysticscribe crew - A three-agent system for chapter writing"""
 
     agents: List[BaseAgent]
     tasks: List[Task]
@@ -59,26 +59,18 @@ class Mysticscribe():
     def editor(self) -> Agent:
         return Agent(
             config=self.agents_config['editor'], # type: ignore[index]
-            tools=[
-                PreviousChapterReaderTool(),
-                PreviousChapterEndingTool()
-            ],  # Add tools for continuity checking during editing
-            verbose=True
-        )
-
-    @agent
-    def polisher(self) -> Agent:
-        return Agent(
-            config=self.agents_config['polisher'], # type: ignore[index]
             llm=LLM(model="gpt-4o", temperature=0.8),  # Higher creativity for natural style variation
             tools=[
-                PreviousChapterReaderTool(),  # For comprehensive previous chapter content
-                StyleAnalysisTool(),  # For detailed style pattern analysis
+                PreviousChapterReaderTool(),  # For comprehensive previous chapter content and continuity checking
+                PreviousChapterEndingTool(),  # For checking how previous chapter ended
+                StyleAnalysisTool(),  # For detailed style pattern analysis from previous chapters
                 StyleGuideTool(),  # For general style guidelines
                 KnowledgeLookupTool()  # For world-building and tone consistency
             ],
             verbose=True
         )
+
+
 
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:
@@ -102,11 +94,7 @@ class Mysticscribe():
             config=self.tasks_config['editing_task'] # type: ignore[index]
         )
 
-    @task
-    def polishing_task(self) -> Task:
-        return Task(
-            config=self.tasks_config['polishing_task'] # type: ignore[index]
-        )
+
 
     @crew
     def crew(self) -> Crew:
