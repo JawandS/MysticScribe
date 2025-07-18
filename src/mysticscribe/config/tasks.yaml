@@ -2,6 +2,24 @@ outline_task:
   description: >
     You are the architect agent responsible for creating detailed chapter outlines. Follow this workflow:
     
+    MANDATORY GUARDRAILS - YOU MUST VERIFY ALL OF THESE:
+    ✅ CONTENT VALIDATION CHECKLIST:
+    - Outline must be for the correct chapter number: {chapter_number}
+    - Outline must contain 3-5 distinct scenes with clear transitions
+    - Each scene must have specific character actions, not vague summaries
+    - Outline must reference specific events from previous chapters (if not Chapter 1)
+    - Word count estimates must total between 2000-4000 words
+    - No scene should exceed 1200 words or be under 300 words
+    - Outline must end with a hook or tension for the next chapter
+    
+    ❌ FAILURE CONDITIONS - DO NOT PROCEED IF:
+    - You cannot access previous chapter content (when chapter > 1)
+    - Outline lacks specific character emotions and motivations
+    - Scenes feel disconnected or episodic rather than flowing
+    - No clear story progression or character development
+    - Outline contradicts established story elements or character traits
+    - Output is generic or could apply to any fantasy story
+    
     1. CONTEXT CHECK: First, analyze all available story context for chapter {chapter_number}:
        - Use the Knowledge Lookup tool to review relevant story elements
        - Use the Chapter Analysis tool to check for any existing draft material
@@ -56,6 +74,18 @@ outline_task:
     
     Target the outline to guide writing a chapter of 2000-4000 words that meaningfully advances the story while maintaining perfect continuity.
     
+    QUALITY ASSURANCE CHECKLIST - VERIFY BEFORE FINALIZING:
+    □ Outline contains exactly 3-5 scenes with clear scene breaks
+    □ Each scene has specific character objectives and obstacles
+    □ Opening scene directly continues from previous chapter's ending
+    □ Character emotional states are consistent with previous chapter
+    □ Dialogue opportunities are specific, not generic ("they discuss X")
+    □ Action sequences have clear stakes and consequences
+    □ World-building elements are specific to this story's universe
+    □ Chapter ending creates anticipation for next chapter
+    □ Total estimated word count falls within 2000-4000 range
+    □ No contradictions with established story canon
+    
     IMPORTANT: You must return a complete, detailed chapter outline as your final answer. Do not just provide analysis or comments.
   expected_output: >
     A comprehensive outline for chapter {chapter_number} with:
@@ -77,6 +107,25 @@ writing_task:
   description: >
     Using the detailed chapter outline provided by the architect (either from the outline workflow or existing), 
     write a complete chapter in engaging prose that maintains perfect continuity with previous chapters.
+    
+    MANDATORY GUARDRAILS - YOU MUST VERIFY ALL OF THESE:
+    ✅ CONTENT VALIDATION CHECKLIST:
+    - Chapter must be between 2000-4000 words (count words before finalizing)
+    - Opening sentence must directly continue from previous chapter's final moment
+    - All character names, locations, and terms must match established canon
+    - Dialogue must sound authentic to each character's established voice
+    - No contradictions with previous chapter events or character development
+    - Chapter must advance the plot meaningfully, not just fill space
+    - Ending must create natural transition point for next chapter
+    
+    ❌ FAILURE CONDITIONS - DO NOT PROCEED IF:
+    - You cannot access the approved outline or previous chapter content
+    - Chapter feels disconnected from previous events
+    - Characters act inconsistently with their established personalities
+    - World-building contradicts established story elements
+    - Chapter is too short (<1800 words) or too long (>4200 words)
+    - Opening feels like a fresh start rather than continuation
+    - Dialogue feels generic or interchangeable between characters
     
     Available Context:
     {knowledge_context}
@@ -108,12 +157,29 @@ writing_task:
     with the established world, characters, relationships, and recent events from previous chapters.
     
     CRITICAL: Do not start fresh or reset the situation. Continue exactly where the story left off.
+    
+    OUTPUT REQUIREMENTS:
+    - Return ONLY the chapter prose - no commentary, titles, or descriptions
+    - Your response should start with the first sentence of the chapter
+    - Do NOT include meta-commentary about the chapter or writing process
+    
+    FINAL VALIDATION CHECKLIST - VERIFY BEFORE SUBMITTING:
+    □ Chapter word count is between 2000-4000 words
+    □ Opening seamlessly continues from previous chapter
+    □ All character dialogue feels authentic and distinct
+    □ No anachronisms or modern language in fantasy setting
+    □ Action scenes are clear and easy to follow
+    □ Emotional beats feel genuine and earned
+    □ Chapter ending provides natural stopping point
+    □ No plot holes or logical inconsistencies
+    □ Maintains consistent point of view throughout
+    □ Uses vivid sensory details and show-don't-tell techniques
   expected_output: >
-    A complete chapter draft of approximately 2000-4000 words written in engaging prose.
-    The chapter should be publication-ready in terms of storytelling quality and should 
-    capture the essence of the outline while allowing for natural character interactions, 
-    vivid descriptions, and a compelling narrative arc. The writing should be immersive,
-    emotionally engaging, and move the story forward meaningfully.
+    ONLY the complete chapter text of approximately 2000-4000 words. Your response must contain nothing 
+    but the actual chapter prose written in engaging, immersive style. Do not include titles, descriptions, 
+    commentary, or any meta-text. The output should start immediately with the opening sentence of the 
+    chapter and end with the final sentence. The chapter should be publication-ready with natural character 
+    interactions, vivid descriptions, compelling narrative arc, and should move the story forward meaningfully.
   agent: writer
 
 editing_task:
@@ -121,6 +187,25 @@ editing_task:
     You're the master editor and prose stylist responsible for transforming a drafted chapter into publication-ready, 
     natural human-feeling prose while ensuring perfect continuity with previous chapters. You must combine both 
     content editing and stylistic polishing in a single comprehensive pass.
+
+    MANDATORY GUARDRAILS - YOU MUST VERIFY ALL OF THESE:
+    ✅ CONTENT VALIDATION CHECKLIST:
+    - Edited chapter must remain between 2000-4000 words
+    - Opening must still seamlessly connect to previous chapter
+    - All edits must preserve original plot points and character development
+    - Dialogue must remain authentic to each character's voice
+    - No AI-generated phrases or patterns should remain
+    - Style must be consistent with previous chapters
+    - Chapter must feel like same author wrote entire series
+    
+    ❌ FAILURE CONDITIONS - DO NOT PROCEED IF:
+    - Cannot access previous chapters for style analysis
+    - Original chapter has major plot inconsistencies that can't be fixed with editing
+    - Character voices are inconsistent and unfixable
+    - Chapter contradicts established story canon
+    - Word count falls outside acceptable range after editing
+    - Style feels jarring compared to previous chapters
+    - Chapter contains inappropriate content for the target audience
 
     This is Chapter {chapter_number}, with a target length of 2000-4000 words. Your edits should elevate the writing 
     while preserving the author's original voice and ensuring seamless stylistic consistency with previous chapters.
@@ -197,14 +282,37 @@ editing_task:
     The goal is to create prose that feels like it was crafted by the same skilled fantasy author who wrote 
     the previous chapters, with no traces of AI generation and perfect continuity. Preserve all story content 
     while transforming the prose to feel completely natural and human.
+
+    CRITICAL OUTPUT REQUIREMENTS:
+    - Return ONLY the complete chapter text - no commentary, analysis, or descriptions
+    - Do NOT include phrases like "The completed Chapter X" or any meta-commentary
+    - Do NOT provide summaries or explanations about the chapter
+    - Your entire response must be the actual chapter prose starting with the opening scene
+    - The output should be ready to save directly to a .md file as the chapter content
+    
+    FINAL QUALITY ASSURANCE CHECKLIST - VERIFY BEFORE SUBMITTING:
+    □ Chapter is exactly between 2000-4000 words
+    □ Opening flows seamlessly from previous chapter
+    □ All character voices are consistent and authentic
+    □ No AI patterns or formulaic language remains
+    □ Style matches previous chapters perfectly
+    □ No dashes (-) or AI hallmark phrases present
+    □ Dialogue feels natural with realistic interruptions/flow
+    □ Action sequences are visceral and immediate
+    □ Emotional beats feel genuine and earned
+    □ World-building is naturally integrated
+    □ Chapter ending creates anticipation
+    □ No grammatical errors or typos
+    □ Maintains consistent point of view
+    □ Sensory details are vivid and specific
+    □ Pacing varies naturally between action and contemplation
   expected_output: >
-    A complete, publication-ready chapter between 2000-4000 words that reads like it came from an experienced 
-    human fantasy author and maintains perfect continuity with previous chapters. The final version should have 
-    strong narrative flow that connects seamlessly to previous events, emotionally grounded character moments 
-    that build on recent developments, immersive world details that remain consistent with established elements, 
-    and precise, vivid prose that feels naturally human with no AI-generated patterns. The chapter should feel 
-    like a seamless continuation of the ongoing story with consistent authorial voice throughout. The text should 
-    be completely humanized with natural flow, authenticity, and atmospheric quality of professional fantasy 
-    literature. Return the full edited and polished chapter only—no commentary or preamble.
+    ONLY the complete, publication-ready chapter text between 2000-4000 words. Your response must contain 
+    NOTHING but the actual chapter prose - no titles, no descriptions, no commentary, no analysis, no 
+    meta-text. The output should start immediately with the first sentence of the chapter and end with 
+    the last sentence. The chapter should read like it came from an experienced human fantasy author with 
+    perfect continuity from previous chapters, strong narrative flow, emotionally grounded character moments, 
+    immersive world details, and natural human prose with no AI patterns. The text must be ready to save 
+    directly as chapter content without any editing or removal of non-chapter text.
   agent: editor
 

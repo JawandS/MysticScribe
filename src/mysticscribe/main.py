@@ -309,10 +309,48 @@ def run():
         chapters_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "chapters")
         output_file = os.path.join(chapters_dir, f"chapter_{chapter_number}.md")
         
-        # Save the result to the file
+        # Save the result to the file with validation
         os.makedirs(chapters_dir, exist_ok=True)
         with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(str(result))
+            # Extract the actual content from the CrewAI result
+            if hasattr(result, 'raw'):
+                content = result.raw
+                print(f"📝 Saving result.raw content ({len(content)} characters)")
+            elif hasattr(result, 'output'):
+                content = result.output
+                print(f"📝 Saving result.output content ({len(content)} characters)")
+            else:
+                content = str(result)
+                print(f"📝 Saving str(result) content ({len(content)} characters)")
+                print(f"⚠️  Result type: {type(result)}")
+            
+            # Validate content before saving
+            word_count = len(content.split())
+            if word_count < 1800:
+                print(f"⚠️  WARNING: Chapter is only {word_count} words (minimum 2000 recommended)")
+            elif word_count > 4200:
+                print(f"⚠️  WARNING: Chapter is {word_count} words (maximum 4000 recommended)")
+            else:
+                print(f"✅ Chapter word count: {word_count} words (within target range)")
+            
+            # Check for AI patterns that shouldn't be there
+            ai_patterns = [
+                "The completed Chapter",
+                "This chapter",
+                "In this chapter", 
+                "The following chapter",
+                "Chapter Summary:",
+                "**Chapter"
+            ]
+            
+            found_patterns = [pattern for pattern in ai_patterns if pattern.lower() in content.lower()]
+            if found_patterns:
+                print(f"⚠️  WARNING: Found potential AI patterns: {found_patterns}")
+                print("❌ Content may need manual review")
+            else:
+                print("✅ No AI meta-commentary patterns detected")
+            
+            f.write(content)
         
         print(f"\n=== Chapter {chapter_number} Generation Complete ===")
         print(f"📖 Output saved to: {output_file}")
@@ -379,10 +417,48 @@ def run_full_workflow(chapter_number: str = None):
         chapters_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "chapters")
         output_file = os.path.join(chapters_dir, f"chapter_{chapter_number}.md")
         
-        # Save the result to the file
+        # Save the result to the file with validation
         os.makedirs(chapters_dir, exist_ok=True)
         with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(str(result))
+            # Extract the actual content from the CrewAI result
+            if hasattr(result, 'raw'):
+                content = result.raw
+                print(f"📝 Saving result.raw content ({len(content)} characters)")
+            elif hasattr(result, 'output'):
+                content = result.output
+                print(f"📝 Saving result.output content ({len(content)} characters)")
+            else:
+                content = str(result)
+                print(f"📝 Saving str(result) content ({len(content)} characters)")
+                print(f"⚠️  Result type: {type(result)}")
+            
+            # Validate content before saving
+            word_count = len(content.split())
+            if word_count < 1800:
+                print(f"⚠️  WARNING: Chapter is only {word_count} words (minimum 2000 recommended)")
+            elif word_count > 4200:
+                print(f"⚠️  WARNING: Chapter is {word_count} words (maximum 4000 recommended)")
+            else:
+                print(f"✅ Chapter word count: {word_count} words (within target range)")
+            
+            # Check for AI patterns that shouldn't be there
+            ai_patterns = [
+                "The completed Chapter",
+                "This chapter",
+                "In this chapter",
+                "The following chapter", 
+                "Chapter Summary:",
+                "**Chapter"
+            ]
+            
+            found_patterns = [pattern for pattern in ai_patterns if pattern.lower() in content.lower()]
+            if found_patterns:
+                print(f"⚠️  WARNING: Found potential AI patterns: {found_patterns}")
+                print("❌ Content may need manual review")
+            else:
+                print("✅ No AI meta-commentary patterns detected")
+            
+            f.write(content)
         
         print(f"\n🎉 Complete Chapter Workflow Finished!")
         print(f"📋 Outline: outlines/chapter_{chapter_number}.txt")
@@ -544,10 +620,48 @@ if __name__ == "__main__":
                 chapters_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "chapters")
                 output_file = os.path.join(chapters_dir, f"chapter_{chapter_number}.md")
                 
-                # Save the result to the file
+                # Save the result to the file with validation
                 os.makedirs(chapters_dir, exist_ok=True)
                 with open(output_file, 'w', encoding='utf-8') as f:
-                    f.write(str(result))
+                    # Extract the actual content from the CrewAI result
+                    if hasattr(result, 'raw'):
+                        content = result.raw
+                        print(f"📝 Saving result.raw content ({len(content)} characters)")
+                    elif hasattr(result, 'output'):
+                        content = result.output
+                        print(f"📝 Saving result.output content ({len(content)} characters)")
+                    else:
+                        content = str(result)
+                        print(f"📝 Saving str(result) content ({len(content)} characters)")
+                        print(f"⚠️  Result type: {type(result)}")
+                    
+                    # Validate content before saving
+                    word_count = len(content.split())
+                    if word_count < 1800:
+                        print(f"⚠️  WARNING: Chapter is only {word_count} words (minimum 2000 recommended)")
+                    elif word_count > 4200:
+                        print(f"⚠️  WARNING: Chapter is {word_count} words (maximum 4000 recommended)")
+                    else:
+                        print(f"✅ Chapter word count: {word_count} words (within target range)")
+                    
+                    # Check for AI patterns that shouldn't be there
+                    ai_patterns = [
+                        "The completed Chapter",
+                        "This chapter",
+                        "In this chapter",
+                        "The following chapter",
+                        "Chapter Summary:",
+                        "**Chapter"
+                    ]
+                    
+                    found_patterns = [pattern for pattern in ai_patterns if pattern.lower() in content.lower()]
+                    if found_patterns:
+                        print(f"⚠️  WARNING: Found potential AI patterns: {found_patterns}")
+                        print("❌ Content may need manual review")
+                    else:
+                        print("✅ No AI meta-commentary patterns detected")
+                    
+                    f.write(content)
                 
                 print(f"\n=== Chapter {chapter_number} Generation Complete ===")
                 print(f"📖 Output saved to: {output_file}")

@@ -32,6 +32,7 @@ class Mysticscribe():
                 # drop_params=True,           # tell LiteLLM to strip anything not explicitly allowed
                 # additional_drop_params=["stop", "temperature", "top_p"]
             # ),
+            llm=LLM(model="gpt-4.1"),
             tools=[
                 KnowledgeLookupTool(), 
                 ChapterAnalysisTool(), 
@@ -59,7 +60,7 @@ class Mysticscribe():
     def editor(self) -> Agent:
         return Agent(
             config=self.agents_config['editor'], # type: ignore[index]
-            llm=LLM(model="gpt-4o", temperature=0.8),  # Higher creativity for natural style variation
+            llm=LLM(model="gpt-4.1"),  # Higher creativity for natural style variation
             tools=[
                 PreviousChapterReaderTool(),  # For comprehensive previous chapter content and continuity checking
                 PreviousChapterEndingTool(),  # For checking how previous chapter ended
