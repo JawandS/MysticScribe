@@ -24,7 +24,7 @@ Dusk settled, and the village square came alive with the flickering orange glow 
 
 The cheerful hum of the square faltered. Laughter died in throats as a figure emerged from the twilight, his presence bringing a heavy blanket of silence.
 
-Lieutenant Rygar Stormwake moved with the careful deliberation demanded of those in the Ranger Corps. His gaze, a restless, stormy grey, swept over the gathered villagers. 
+Corporal Rygar Stormwake moved with the careful deliberation demanded of those in the Ranger Corps. His gaze, a restless, stormy grey, swept over the gathered villagers. 
 
 Rygar stepped close to Elder Karra, voice low beneath the crackle of the bonfire. "When was the last time the detection formation was renewed?" She didn’t meet his gaze. Her reply came soft, hollow. "Overseer Rane’s jade shipment, it’s still delayed." His jaw tensed. "Third month running?"
 
