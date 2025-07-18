@@ -45,7 +45,7 @@ def display_chapter1_style_elements():
     
     print("\n🌊 METAPHOR PATTERNS:")
     print('  • "mist coiled like a sleeping dragon in the valley"')
-    print('  • "Lt. Rygar Storm-Eye moved like a man carved from the wind itself"')
+    print('  • "Corporal Rygar Stormwake moved like a man carved from the wind itself"')
     
     print("\n💬 DIALOGUE STYLES:")
     print('  • Natural, character-specific: "Dreaming won\'t fill the quota, boy"')

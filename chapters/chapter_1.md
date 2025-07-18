@@ -88,6 +88,6 @@ Rygar didn't press.
 
 Instead, he leaned back against the roots of a tree, breathing through his teeth. For a long moment, the only sound was the wind returning, rustling the canopy above them like a forgotten lullaby.
 
-"We need to keep moving. Windmoore’s the closest city. If we push hard, we might reach the outer ridges in a week."
+"We need to keep moving. Windmoore’s the closest city. If we push hard, we might reach the outer ridges in a few days."
 
 Cassian didn’t answer, but he nodded a single time. Mechanical. Hollow. All he could see was ash and flame.
