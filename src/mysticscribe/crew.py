@@ -27,11 +27,11 @@ class Mysticscribe():
     def architect(self) -> Agent:
         return Agent(
             config=self.agents_config['architect'], # type: ignore[index]
-            llm=LLM(
-                model="o3", 
-                drop_params=True,           # tell LiteLLM to strip anything not explicitly allowed
-                additional_drop_params=["stop", "temperature", "top_p"]
-            ),
+            # llm=LLM(
+                # model="o3", 
+                # drop_params=True,           # tell LiteLLM to strip anything not explicitly allowed
+                # additional_drop_params=["stop", "temperature", "top_p"]
+            # ),
             tools=[
                 KnowledgeLookupTool(), 
                 ChapterAnalysisTool(), 
@@ -46,7 +46,10 @@ class Mysticscribe():
         return Agent(
             config=self.agents_config['writer'], # type: ignore[index]
             llm=LLM(model="gpt-4o", temperature=0.8),  # High creativity for vivid scene writing
-            tools=[KnowledgeLookupTool()],
+            tools=[
+                KnowledgeLookupTool(), 
+                PreviousChapterReaderTool()
+            ],
             verbose=True
         )
 
@@ -76,8 +79,7 @@ class Mysticscribe():
     @task
     def editing_task(self) -> Task:
         return Task(
-            config=self.tasks_config['editing_task'], # type: ignore[index]
-            output_file='chapters/chapter_{chapter_number}.md'
+            config=self.tasks_config['editing_task'] # type: ignore[index]
         )
 
     @crew
