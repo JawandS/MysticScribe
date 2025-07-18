@@ -162,9 +162,32 @@ polishing_task:
     Previous Chapter Context (for style consistency):
     {previous_chapter_context}
     
-    PREPARATION STEP:
-    Use the Style Guide tool to review specific guidelines for areas you want to focus on (dialogue, action, description, etc.)
-    Use the Previous Chapter Reader tool to understand the established prose style and tone from earlier chapters.
+    MANDATORY PREPARATION STEPS:
+    1. Use the Style Analysis tool to get detailed analysis of writing patterns from previous chapters
+    2. Use the Previous Chapter Reader tool to read the content and context from earlier chapters
+    3. Use the Style Guide tool to review general guidelines for areas needing focus
+    4. Compare the current chapter's style against the analyzed patterns from previous chapters
+    
+    STYLE ANALYSIS FROM PREVIOUS CHAPTERS:
+    Before polishing, analyze previous chapters for:
+    - Specific sentence structure patterns and rhythms (e.g., mixing short impactful sentences with flowing longer ones)
+    - Distinctive metaphor and imagery styles (e.g., "Dawn... was a blade of cold air", "mist coiled like a sleeping dragon")
+    - Character voice patterns and dialogue authenticity
+    - Atmospheric description techniques and sensory detail usage
+    - Balance between intimate character moments and epic world-building
+    - Specific vocabulary choices and terminology usage
+    - Pacing techniques between action, dialogue, and description
+    - Emotional beat patterns and how feelings are conveyed
+    
+    STYLE MATCHING REQUIREMENTS:
+    - Mirror the established sentence rhythm patterns from previous chapters
+    - Use similar metaphorical language and imagery style
+    - Maintain the same level of atmospheric detail and sensory immersion
+    - Match the established balance between poetic and accessible language
+    - Keep character dialogue consistent with their established voices
+    - Preserve the established pacing patterns between action and contemplation
+    - Use similar paragraph structure and break patterns
+    - Maintain the established emotional authenticity style
     
     GENRE-SPECIFIC STYLE REQUIREMENTS:
     - Embrace the immersive, atmospheric quality of fantasy literature
@@ -176,47 +199,49 @@ polishing_task:
     
     AI PATTERN ELIMINATION:
     - Remove robotic or formulaic sentence structures (avoid repetitive patterns)
-    - Vary sentence length organically (mix terse dialogue with flowing descriptions)
+    - Vary sentence length organically to match the established style
     - Eliminate overused transitional phrases when they feel artificial ("meanwhile," "however," "nevertheless")
-    - Replace generic descriptive language with specific, evocative details
+    - Replace generic descriptive language with specific, evocative details that match previous chapters
     - Remove redundant explanations or over-clarification
     - Eliminate any overly polished or "perfect" phrasing that lacks human nuance
     
     HUMANIZATION TECHNIQUES:
     - Add subtle imperfections that make prose feel genuinely human-authored
-    - Create natural speech patterns with interruptions, hesitations, and realistic flow
-    - Use paragraph breaks that mirror natural thought patterns and breathing
-    - Make action sequences feel immediate and visceral, not clinically described
-    - Ensure character thoughts and internal monologue sound authentic to their personality
-    - Include small details and observations that feel organically human
-    - Create emotional beats that feel genuine rather than manufactured
+    - Create natural speech patterns with interruptions, hesitations, and realistic flow that match established character voices
+    - Use paragraph breaks that mirror natural thought patterns and match previous chapter pacing
+    - Make action sequences feel immediate and visceral, consistent with previous action scenes
+    - Ensure character thoughts and internal monologue sound authentic to their established personality
+    - Include small details and observations that feel organically human and fit the established style
+    - Create emotional beats that feel genuine and consistent with previous emotional authenticity
     
     FANTASY/XIANXIA STYLE ELEMENTS:
-    - Maintain the epic scope while keeping character moments intimate
-    - Use language that feels both timeless and accessible
-    - Create atmosphere through sensory details (sounds, smells, textures)
-    - Balance mystical elements with grounded human emotions
-    - Ensure world-building details feel naturally integrated, not forced
-    - Make cultivation/magic systems feel lived-in rather than explained
+    - Maintain the epic scope while keeping character moments intimate (matching previous chapters)
+    - Use language that feels both timeless and accessible (consistent with established tone)
+    - Create atmosphere through sensory details (sounds, smells, textures) in the same style as previous chapters
+    - Balance mystical elements with grounded human emotions (matching established approach)
+    - Ensure world-building details feel naturally integrated, not forced (consistent with previous integration style)
+    - Make cultivation/magic systems feel lived-in rather than explained (matching previous treatment)
     
-    STYLE CONSISTENCY:
-    - Maintain consistent prose style with previous chapters
-    - Ensure character voices remain consistent with established patterns
-    - Keep world-building terminology and descriptions aligned with previous usage
-    - Match the overall tone and atmosphere established in earlier chapters
+    STYLE CONSISTENCY VERIFICATION:
+    - Double-check that the polished chapter could seamlessly follow the previous chapter stylistically
+    - Ensure no jarring differences in voice, tone, or writing technique
+    - Verify that a reader wouldn't notice any shift in author "voice" between chapters
+    - Confirm that descriptive techniques, dialogue patterns, and pacing match established style
     
-    CRITICAL: The goal is not to rewrite but to humanize and stylize. Preserve all story content, 
-    plot points, character development, and world-building while transforming the prose style to feel 
-    like it was crafted by a skilled fantasy author with years of experience writing in this genre.
+    CRITICAL: The goal is not to rewrite but to humanize and stylize while maintaining perfect consistency 
+    with the established prose style from previous chapters. Preserve all story content, plot points, 
+    character development, and world-building while transforming the prose style to feel like it was 
+    crafted by the same skilled fantasy author who wrote the previous chapters.
     
-    Make the text feel so naturally human and genre-appropriate that readers become completely 
-    immersed in the story without any awareness of artificial generation.
+    Make the text feel so naturally human and stylistically consistent that readers experience seamless 
+    continuation of the same authorial voice throughout the entire story.
   expected_output: >
     A completely humanized and stylistically polished chapter of 2000-4000 words that reads with the 
     natural flow, authenticity, and atmospheric quality of professional fantasy literature. The text 
-    should feel genuinely crafted by a skilled human fantasy author with no traces of AI generation 
-    patterns. The prose should be immersive, emotionally engaging, and stylistically consistent with 
-    high-quality fantasy/xianxia fiction and previous chapters. All story elements, character development, 
-    and plot advancement should be preserved while the prose style feels completely natural, human, and 
-    genre-appropriate. Return only the final polished chapter with no commentary.
+    should feel genuinely crafted by the same skilled human fantasy author who wrote previous chapters, 
+    with no traces of AI generation patterns and perfect stylistic consistency. The prose should be 
+    immersive, emotionally engaging, and indistinguishable in style from previous chapters. All story 
+    elements, character development, and plot advancement should be preserved while the prose style 
+    feels completely natural, human, and seamlessly consistent with the established authorial voice. 
+    Return only the final polished chapter with no commentary.
   agent: polisher

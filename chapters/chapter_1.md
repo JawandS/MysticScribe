@@ -4,17 +4,17 @@ Dawn at the base of the soaring mountains was a blade of cold air.
 
 It sliced through the pre-dawn gloom of the logging camp, raising gooseflesh on Cassian’s arms as he paused, axe held aloft. Below, mist coiled like a sleeping dragon in the valley, but up here, the wind was king. He waited, a ritual as ingrained as breathing, for its command. One gust, a searching whisper. A second, a playful shove. The third, a steady, powerful push.
 
-He inhaled the sharp scent of pine resin and swung. The axe bit deep into wind-oak, the *thump-shiver* of the impact a familiar beat against the silence. It was hard, honest work, but his mind was rarely on the wood. Setting the axe down, he felt the muscles in his shoulders pulse with a familiar ache as he pulled a worn ledger from his pouch. Beside the charcoal smudges marking the log count for the Overseer's tax, his fingers moved with a life of their own. A few swift, furtive strokes, and the curved sail of a sky-ship bloomed on the page, a phantom chasing storms only he could see.
+He inhaled the sharp scent of pine resin and swung. The axe bit deep into wind-oak, the *thump-shiver* of the impact a familiar beat against the silence. It was hard, honest work, but his mind was rarely on the wood. Setting the axe down, he felt the muscles in his shoulders pulse with a familiar ache as he pulled a worn ledger from his pouch. Beside the charcoal smudges marking the log count for the imminent tax, his fingers moved with a life of their own. A few swift, furtive strokes, and the curved sail of a sky-ship bloomed on the page, a phantom chasing storms only he could see.
 
 A heavy hand clapped his shoulder. "Dreaming won't fill the quota, boy," Jorek, the camp’s oldest woodcutter, grunted. "Overseer Rane's men don't count sketches."
 
-Cassian forced a grin, tucking the ledger away. The name Rane left a sour taste in his mouth, the ghost of a man known only by the ever-increasing demands that trickled down from the capital. Beyond them, a solitary Ranger watch-tower stood sentinel against the horizon, its silhouette a stark promise of safety. As he watched, the jade light in its lantern pulsed, a flicker of blue-grey that made his skin prickle. A sudden, icy current of air snaked around his neck, a touch of winter in the growing warmth of morning. The world seemed to hold its breath.
+Cassian forced a grin, tucking the ledger away. The name Rane left a sour taste in his mouth, the ghost of a man known only by his ever-increasing demands. Beyond them, a blur of people indicated a Ranger squad on patrol, their presence a stark promise of safety. A sudden, icy current of air snaked around his neck, a touch of winter in the growing warmth of morning. The world seemed to hold its breath.
 
-He shook off the unease, the shard of it lingering like a splinter under his skin, and returned to his task. The rhythm of the axe was a prayer, but today, the wind felt different. It carried a warning.
+He shook off the unease, though it clung like a splinter beneath the skin. Dawn's wind was usually a gentle caress, soft and familiar. Today, it pressed sharper. It carried warning in its touch.
 
 \* \* \*
 
-Dusk settled, and the village square came alive with the flickering orange glow of swaying lanterns. The air, thick with the smell of roasting meat and woodsmoke, vibrated with the shrieks of children chasing paper breeze-kites, their laughter carried on the stray currents.
+Dusk settled, and the village square came alive with the flickering orange glow of swaying lanterns. The air, thick with the smell of roasting meat and woodsmoke, vibrated with the shrieks of children chasing paper breeze-kites.
 
 "You'll bring the entire forest to the table if you don't wash," his mother scolded, her voice stern but her touch gentle as she ruffled his hair, her calloused fingers picking out flecks of sap with familiar patience.
 
