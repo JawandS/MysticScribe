@@ -270,6 +270,11 @@ def run():
         chapters_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "chapters")
         output_file = os.path.join(chapters_dir, f"chapter_{chapter_number}.md")
         
+        # Save the result to the file
+        os.makedirs(chapters_dir, exist_ok=True)
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write(str(result))
+        
         print(f"\n=== Chapter {chapter_number} Generation Complete ===")
         print(f"📖 Output saved to: {output_file}")
         print(f"💡 Tip: Use 'python main.py workflow' for interactive outline approval")
@@ -330,6 +335,11 @@ def run_full_workflow(chapter_number: str = None):
         # Get the chapters directory path
         chapters_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "chapters")
         output_file = os.path.join(chapters_dir, f"chapter_{chapter_number}.md")
+        
+        # Save the result to the file
+        os.makedirs(chapters_dir, exist_ok=True)
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write(str(result))
         
         print(f"\n🎉 Complete Chapter Workflow Finished!")
         print(f"📋 Outline: outlines/chapter_{chapter_number}.txt")
@@ -478,6 +488,11 @@ if __name__ == "__main__":
                 
                 chapters_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "chapters")
                 output_file = os.path.join(chapters_dir, f"chapter_{chapter_number}.md")
+                
+                # Save the result to the file
+                os.makedirs(chapters_dir, exist_ok=True)
+                with open(output_file, 'w', encoding='utf-8') as f:
+                    f.write(str(result))
                 
                 print(f"\n=== Chapter {chapter_number} Generation Complete ===")
                 print(f"📖 Output saved to: {output_file}")
