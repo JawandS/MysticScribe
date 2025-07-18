@@ -1,318 +1,182 @@
 outline_task:
   description: >
-    You are the architect agent responsible for creating detailed chapter outlines. Follow this workflow:
-    
-    MANDATORY GUARDRAILS - YOU MUST VERIFY ALL OF THESE:
-    ✅ CONTENT VALIDATION CHECKLIST:
-    - Outline must be for the correct chapter number: {chapter_number}
-    - Outline must contain 3-5 distinct scenes with clear transitions
-    - Each scene must have specific character actions, not vague summaries
-    - Outline must reference specific events from previous chapters (if not Chapter 1)
-    - Word count estimates must total between 2000-4000 words
-    - No scene should exceed 1200 words or be under 300 words
-    - Outline must end with a hook or tension for the next chapter
-    
-    ❌ FAILURE CONDITIONS - DO NOT PROCEED IF:
-    - You cannot access previous chapter content (when chapter > 1)
-    - Outline lacks specific character emotions and motivations
-    - Scenes feel disconnected or episodic rather than flowing
-    - No clear story progression or character development
-    - Outline contradicts established story elements or character traits
-    - Output is generic or could apply to any fantasy story
-    
-    1. CONTEXT CHECK: First, analyze all available story context for chapter {chapter_number}:
-       - Use the Knowledge Lookup tool to review relevant story elements
-       - Use the Chapter Analysis tool to check for any existing draft material
-       - CRITICAL: Use the Previous Chapter Reader tool to read and analyze all previously written chapters, with special focus on how the previous chapter ended
-       - Consider the overall story progression and how this chapter fits
-    
-    2. OUTLINE HANDLING: Use the Outline Management tool to:
-       - Check if an existing outline exists for this chapter
-       - If existing outline found and action is 'expand': Load and enhance it with more detail and structure
-       - If no existing outline or action is 'create_new': Generate a completely new outline
-    
-    Available Context:
-    {knowledge_context}
-    
-    Previous Chapter Context (CRITICAL for continuity):
-    {previous_chapter_context}
-    
-    Existing Draft Material (if any):
-    {existing_draft}
-    
-    Existing Outline (if expanding):
-    {existing_outline}
-    
-    Action to take: {outline_action}
-    
-    Create a detailed outline for chapter {chapter_number} that includes:
-    - Opening scene that DIRECTLY continues from where the previous chapter ended (emotional state, location, immediate situation)
-    - Seamless transition that addresses any cliffhangers or unresolved tensions from the previous chapter
-    - Key plot points and story progression for this specific chapter that build naturally on previous events
-    - Character development moments that acknowledge and build upon their state at the end of the previous chapter
-    - World-building elements that maintain consistency with established details
-    - Dialogue opportunities that reference recent events and maintain character relationship continuity
-    - Action sequences or dramatic moments that feel like natural progression
-    - Chapter climax that creates new tension while resolving elements from the previous chapter
-    - Setup for the next chapter that maintains story momentum
-    
-    If expanding an existing outline, enhance it with:
-    - Stronger continuity connections to the previous chapter's ending
-    - More detailed scene descriptions that acknowledge character states and situations
-    - Deeper character motivations that build on recent developments
-    - Specific dialogue topics that reference recent events and emotional beats
-    - Enhanced pacing notes that create smooth transition from previous chapter
-    - Better integration with story knowledge base and previous chapter events
-    - Clearer connections to character development and plot threads from previous chapters
-    
-    CONTINUITY REQUIREMENTS:
-    - Chapter must begin exactly where the previous chapter ended (same emotional tone, immediate situation)
-    - Address any cliffhangers or unresolved tensions immediately or acknowledge why they're being delayed
-    - Reference the character's emotional/physical state from the previous chapter's conclusion
-    - Maintain location continuity or provide clear, logical scene transitions
-    - Build upon relationship dynamics and tensions established in previous chapters
-    
-    Target the outline to guide writing a chapter of 2000-4000 words that meaningfully advances the story while maintaining perfect continuity.
-    
-    QUALITY ASSURANCE CHECKLIST - VERIFY BEFORE FINALIZING:
-    □ Outline contains exactly 3-5 scenes with clear scene breaks
-    □ Each scene has specific character objectives and obstacles
-    □ Opening scene directly continues from previous chapter's ending
-    □ Character emotional states are consistent with previous chapter
-    □ Dialogue opportunities are specific, not generic ("they discuss X")
-    □ Action sequences have clear stakes and consequences
-    □ World-building elements are specific to this story's universe
-    □ Chapter ending creates anticipation for next chapter
-    □ Total estimated word count falls within 2000-4000 range
+    Create a detailed chapter outline that seamlessly continues from previous chapters.
+
+    📋 YOUR MISSION:
+    Generate a comprehensive outline for Chapter {chapter_number} that serves as a roadmap for 2000-4000 words of engaging prose.
+
+    🔍 REQUIRED PREPARATION (Use your tools):
+    1. Use Knowledge Lookup tool → Review story elements and world-building
+    2. Use Chapter Analysis tool → Check for existing draft material  
+    3. Use Previous Chapter Reader tool → Analyze how previous chapter ended (CRITICAL for continuity)
+    4. Use Outline Management tool → Check/load existing outline if action is 'expand'
+
+    📝 CONTENT REQUIREMENTS:
+    Your outline must include:
+    • 3-5 distinct scenes (300-1200 words each)
+    • Opening that DIRECTLY continues from previous chapter's ending
+    • Specific character objectives and obstacles for each scene
+    • Clear emotional progression and character development
+    • Dialogue opportunities that reference recent events
+    • Chapter climax with stakes and consequences
+    • Ending hook that creates anticipation for next chapter
+
+    ✅ VALIDATION CHECKLIST (Verify before submitting):
+    □ Outline is for Chapter {chapter_number}
+    □ 3-5 scenes with clear transitions
+    □ Opening continues from previous chapter's exact ending point
+    □ Character emotions consistent with previous chapter
+    □ Specific actions (not vague summaries like "they travel")
+    □ References specific previous events/character development
+    □ Total word count estimates: 2000-4000 words
+    □ Chapter ending creates natural transition to next chapter
     □ No contradictions with established story canon
-    
-    IMPORTANT: You must return a complete, detailed chapter outline as your final answer. Do not just provide analysis or comments.
+    □ Story-specific details (not generic fantasy elements)
+
+    🚫 STOP IF:
+    - Cannot access previous chapter content (when chapter > 1)
+    - Scenes feel episodic rather than flowing together
+    - Missing specific character motivations
+    - Outline could apply to any generic fantasy story
+
+    Available Context:
+    - Knowledge Base: {knowledge_context}
+    - Previous Chapters: {previous_chapter_context}
+    - Existing Draft: {existing_draft}
+    - Existing Outline: {existing_outline}
+    - Action: {outline_action}
   expected_output: >
-    A comprehensive outline for chapter {chapter_number} with:
-    - Scene-by-scene breakdown (3-5 scenes typically)
-    - Character motivations and development arcs for this chapter
-    - Key dialogue topics and emotional beats
-    - World-building details to weave naturally into the narrative
-    - Pacing notes and estimated word count per section
-    - Clear connection points to previous and next chapters
-    - Specific story elements from the knowledge base to incorporate
-    - References to events, character development, and plot threads from previous chapters
+    A comprehensive chapter outline with:
+    • Scene-by-scene breakdown (3-5 scenes, 300-1200 words each)
+    • Character motivations and specific objectives for each scene
+    • Key dialogue topics and emotional beats
+    • World-building details specific to this story
+    • Pacing notes and word count estimates
+    • Clear continuity connections to previous and next chapters
+    • References to established story elements and character development
     
-    The outline should be structured, detailed, and ready for the writer agent to use as a comprehensive guide.
-    If this was an expansion of an existing outline, it should show clear improvements and additional depth.
+    The outline should be detailed, structured, and ready for the writer to follow as a comprehensive guide.
   agent: architect
   async: false
 
 writing_task:
   description: >
-    Using the detailed chapter outline provided by the architect (either from the outline workflow or existing), 
-    write a complete chapter in engaging prose that maintains perfect continuity with previous chapters.
-    
-    MANDATORY GUARDRAILS - YOU MUST VERIFY ALL OF THESE:
-    ✅ CONTENT VALIDATION CHECKLIST:
-    - Chapter must be between 2000-4000 words (count words before finalizing)
-    - Opening sentence must directly continue from previous chapter's final moment
-    - All character names, locations, and terms must match established canon
-    - Dialogue must sound authentic to each character's established voice
-    - No contradictions with previous chapter events or character development
-    - Chapter must advance the plot meaningfully, not just fill space
-    - Ending must create natural transition point for next chapter
-    
-    ❌ FAILURE CONDITIONS - DO NOT PROCEED IF:
-    - You cannot access the approved outline or previous chapter content
-    - Chapter feels disconnected from previous events
-    - Characters act inconsistently with their established personalities
-    - World-building contradicts established story elements
-    - Chapter is too short (<1800 words) or too long (>4200 words)
-    - Opening feels like a fresh start rather than continuation
-    - Dialogue feels generic or interchangeable between characters
-    
-    Available Context:
-    {knowledge_context}
-    
-    Previous Chapter Context (CRITICAL for continuity):
-    {previous_chapter_context}
-    
-    Chapter Outline to Follow:
-    {approved_outline}
-    
-    CONTINUITY REQUIREMENTS:
-    Before writing, you MUST use the Previous Chapter Reader tool to understand exactly how the previous chapter ended.
-    Your opening must seamlessly continue from that exact point - same emotional state, immediate situation, and location.
-    
-    Focus on:
-    - Opening that flows directly from the previous chapter's ending (same tone, immediate continuation of situation)
-    - Bringing characters to life with authentic dialogue that references recent events and maintains relationship dynamics
-    - Creating immersive descriptions that maintain consistency with established settings and world-building
-    - Maintaining consistent voice and style throughout while building on previous character development
-    - Following the outline structure while ensuring smooth transitions from the previous chapter
-    - Building tension and emotional engagement that acknowledges character states from previous events
-    - Ensuring narrative flow that feels like one continuous story, not separate episodes
-    - Incorporating world-building elements naturally while maintaining established consistency
-    - Advancing character arcs that build logically on recent developments and interactions
-    - Creating compelling scenes that reference and build upon previous chapter events
-    - Resolving or acknowledging any cliffhangers or tensions from the previous chapter
-    
-    The chapter should feel like a natural, immediate continuation of the story and maintain perfect consistency
-    with the established world, characters, relationships, and recent events from previous chapters.
-    
-    CRITICAL: Do not start fresh or reset the situation. Continue exactly where the story left off.
-    
-    OUTPUT REQUIREMENTS:
-    - Return ONLY the chapter prose - no commentary, titles, or descriptions
-    - Your response should start with the first sentence of the chapter
-    - Do NOT include meta-commentary about the chapter or writing process
-    
-    FINAL VALIDATION CHECKLIST - VERIFY BEFORE SUBMITTING:
-    □ Chapter word count is between 2000-4000 words
+    Transform the approved chapter outline into engaging prose that continues seamlessly from previous chapters.
+
+    ✍️ YOUR MISSION:
+    Write Chapter {chapter_number} as 2000-4000 words of publication-ready prose that feels like the natural continuation of an ongoing story.
+
+    🔍 REQUIRED PREPARATION (Use your tools):
+    1. Use Previous Chapter Reader tool → Understand exactly how previous chapter ended
+    2. Review approved outline → Follow structure while maintaining flow
+    3. Verify character states, location, and emotional tone from previous chapter
+
+    📝 WRITING REQUIREMENTS:
+    • Start EXACTLY where previous chapter ended (same emotional state, immediate situation)
+    • Follow approved outline structure while allowing natural character development
+    • Use authentic dialogue that reflects each character's unique voice
+    • Include vivid sensory details and show-don't-tell techniques
+    • Build tension naturally while advancing the plot meaningfully
+    • End with natural transition point for next chapter
+
+    ✅ VALIDATION CHECKLIST (Verify before submitting):
+    □ Word count: 2000-4000 words
     □ Opening seamlessly continues from previous chapter
-    □ All character dialogue feels authentic and distinct
+    □ Character dialogue feels authentic and distinct
+    □ All names/locations match established canon
     □ No anachronisms or modern language in fantasy setting
-    □ Action scenes are clear and easy to follow
+    □ Action scenes are clear and engaging
     □ Emotional beats feel genuine and earned
-    □ Chapter ending provides natural stopping point
-    □ No plot holes or logical inconsistencies
     □ Maintains consistent point of view throughout
-    □ Uses vivid sensory details and show-don't-tell techniques
+    □ Uses vivid sensory details
+    □ Chapter ending provides satisfying pause
+
+    🚫 STOP IF:
+    - Cannot access approved outline or previous chapter content
+    - Opening feels like fresh start rather than continuation
+    - Characters act inconsistently with established personalities
+    - Word count outside 1800-4200 range
+    - Dialogue feels generic or interchangeable
+
+    🎯 OUTPUT FORMAT:
+    Return ONLY the chapter prose - no titles, commentary, or meta-text. Start immediately with the first sentence.
+
+    Available Context:
+    - Knowledge Base: {knowledge_context}
+    - Previous Chapters: {previous_chapter_context}
+    - Approved Outline: {approved_outline}
   expected_output: >
-    ONLY the complete chapter text of approximately 2000-4000 words. Your response must contain nothing 
-    but the actual chapter prose written in engaging, immersive style. Do not include titles, descriptions, 
-    commentary, or any meta-text. The output should start immediately with the opening sentence of the 
-    chapter and end with the final sentence. The chapter should be publication-ready with natural character 
-    interactions, vivid descriptions, compelling narrative arc, and should move the story forward meaningfully.
+    ONLY the complete chapter prose (2000-4000 words). No titles, descriptions, commentary, or meta-text. 
+    Start immediately with the opening sentence and end with the final sentence. The chapter should be 
+    publication-ready with natural character interactions, vivid descriptions, compelling narrative arc, 
+    and seamless continuation from previous chapters.
   agent: writer
 
 editing_task:
   description: >
-    You're the master editor and prose stylist responsible for transforming a drafted chapter into publication-ready, 
-    natural human-feeling prose while ensuring perfect continuity with previous chapters. You must combine both 
-    content editing and stylistic polishing in a single comprehensive pass.
+    Polish the chapter draft into publication-ready prose with natural human style while maintaining perfect continuity.
 
-    MANDATORY GUARDRAILS - YOU MUST VERIFY ALL OF THESE:
-    ✅ CONTENT VALIDATION CHECKLIST:
-    - Edited chapter must remain between 2000-4000 words
-    - Opening must still seamlessly connect to previous chapter
-    - All edits must preserve original plot points and character development
-    - Dialogue must remain authentic to each character's voice
-    - No AI-generated phrases or patterns should remain
-    - Style must be consistent with previous chapters
-    - Chapter must feel like same author wrote entire series
-    
-    ❌ FAILURE CONDITIONS - DO NOT PROCEED IF:
-    - Cannot access previous chapters for style analysis
-    - Original chapter has major plot inconsistencies that can't be fixed with editing
-    - Character voices are inconsistent and unfixable
-    - Chapter contradicts established story canon
-    - Word count falls outside acceptable range after editing
-    - Style feels jarring compared to previous chapters
-    - Chapter contains inappropriate content for the target audience
+    ✏️ YOUR MISSION:
+    Transform Chapter {chapter_number} into professional-quality prose (2000-4000 words) that reads like it was written by the same skilled author throughout the series.
 
-    This is Chapter {chapter_number}, with a target length of 2000-4000 words. Your edits should elevate the writing 
-    while preserving the author's original voice and ensuring seamless stylistic consistency with previous chapters.
+    🔍 REQUIRED PREPARATION (Use your tools):
+    1. Use Previous Chapter Reader tool → Verify continuity and analyze established writing style
+    2. Use Style Analysis tool → Get detailed analysis of writing patterns from previous chapters
+    3. Use Style Guide tool → Review guidelines for consistent tone and voice
 
-    Previous Chapter Context (for continuity and style consistency):
-    {previous_chapter_context}
+    📝 EDITING FOCUS:
+    CONTENT REFINEMENT:
+    • Enhance prose clarity, rhythm, and emotional resonance
+    • Strengthen scene transitions, especially opening from previous chapter  
+    • Make dialogue authentic and character-specific
+    • Cut verbose sections, expand thin areas as needed
+    • Ensure satisfying emotional/plot beat at chapter end
 
-    MANDATORY PREPARATION STEPS:
-    1. Use the Previous Chapter Reader tool to verify continuity and analyze established writing style
-    2. Use the Style Analysis tool to get detailed analysis of writing patterns from previous chapters
-    3. Use the Style Guide tool to review general guidelines for areas needing focus
+    STYLE CONSISTENCY:
+    • Match sentence rhythm patterns from previous chapters
+    • Use similar metaphorical language and imagery style
+    • Maintain established atmospheric detail level
+    • Keep character dialogue voices consistent
+    • Preserve established pacing between action/contemplation
 
-    CONTINUITY VERIFICATION:
-    Verify that the chapter maintains perfect continuity with previous chapters, especially:
-    - Opening connects seamlessly to how the previous chapter ended
-    - Character emotional states and relationships are consistent
-    - Location and setting details remain consistent
-    - Recent events are properly referenced or acknowledged
-    - No contradictions with established plot points or character development
+    AI PATTERN ELIMINATION:
+    • Remove robotic or formulaic sentence structures
+    • Eliminate dashes (-) and AI hallmark phrases
+    • Vary sentence length organically
+    • Replace generic descriptions with specific, evocative details
+    • Create natural speech patterns with realistic interruptions
 
-    CONTENT EDITING FOCUS:
-    - Enhance prose for clarity, rhythm, and emotional resonance while maintaining continuity
-    - Make dialogue feel authentic, character-specific, and consistent with recent interactions
-    - Avoid making sentence starts too formulaic or repetitive
-    - Weave world-building naturally into scenes without contradicting established elements
-    - Strengthen scene transitions, especially the opening transition from the previous chapter
-    - Identify and fix tonal inconsistencies or continuity breaks
-    - Cut overly verbose sections and expand thin areas where needed
-    - Ensure the chapter hits a satisfying emotional or plot beat at the end
-
-    STYLE ANALYSIS AND MATCHING:
-    Before editing, analyze previous chapters for:
-    - Specific sentence structure patterns and rhythms
-    - Distinctive metaphor and imagery styles
-    - Character voice patterns and dialogue authenticity
-    - Atmospheric description techniques and sensory detail usage
-    - Balance between intimate character moments and epic world-building
-    - Pacing techniques between action, dialogue, and description
-
-    STYLE CONSISTENCY REQUIREMENTS:
-    - Mirror the established sentence rhythm patterns from previous chapters
-    - Use similar metaphorical language and imagery style
-    - Maintain the same level of atmospheric detail and sensory immersion
-    - Match the established balance between poetic and accessible language
-    - Keep character dialogue consistent with their established voices
-    - Preserve the established pacing patterns between action and contemplation
-    - Maintain the established emotional authenticity style
-
-    AI PATTERN ELIMINATION AND HUMANIZATION:
-    - Remove robotic or formulaic sentence structures
-    - Remove the use of "-" (dashes) or other common AI hallmarks
-    - Vary sentence length organically to match the established style
-    - Eliminate overused transitional phrases when they feel artificial
-    - Replace generic descriptive language with specific, evocative details
-    - Add subtle imperfections that make prose feel genuinely human-authored
-    - Create natural speech patterns with interruptions and realistic flow
-    - Make action sequences feel immediate and visceral
-    - Ensure character thoughts sound authentic to their established personality
-
-    FANTASY/XIANXIA STYLE ELEMENTS:
-    - Maintain the epic scope while keeping character moments intimate
-    - Use language that feels both timeless and accessible
-    - Create atmosphere through sensory details (sounds, smells, textures)
-    - Balance mystical elements with grounded human emotions
-    - Ensure world-building details feel naturally integrated, not forced
-    - Make cultivation/magic systems feel lived-in rather than explained
-
-    FINAL VERIFICATION:
-    - Double-check that the edited chapter could seamlessly follow the previous chapter
-    - Ensure no jarring differences in voice, tone, or writing technique
-    - Verify that a reader wouldn't notice any shift in author "voice" between chapters
-    - Confirm that descriptive techniques, dialogue patterns, and pacing match established style
-
-    The goal is to create prose that feels like it was crafted by the same skilled fantasy author who wrote 
-    the previous chapters, with no traces of AI generation and perfect continuity. Preserve all story content 
-    while transforming the prose to feel completely natural and human.
-
-    CRITICAL OUTPUT REQUIREMENTS:
-    - Return ONLY the complete chapter text - no commentary, analysis, or descriptions
-    - Do NOT include phrases like "The completed Chapter X" or any meta-commentary
-    - Do NOT provide summaries or explanations about the chapter
-    - Your entire response must be the actual chapter prose starting with the opening scene
-    - The output should be ready to save directly to a .md file as the chapter content
-    
-    FINAL QUALITY ASSURANCE CHECKLIST - VERIFY BEFORE SUBMITTING:
-    □ Chapter is exactly between 2000-4000 words
+    ✅ VALIDATION CHECKLIST (Verify before submitting):
+    □ Word count: 2000-4000 words exactly
     □ Opening flows seamlessly from previous chapter
-    □ All character voices are consistent and authentic
+    □ All character voices consistent and authentic
     □ No AI patterns or formulaic language remains
     □ Style matches previous chapters perfectly
-    □ No dashes (-) or AI hallmark phrases present
-    □ Dialogue feels natural with realistic interruptions/flow
-    □ Action sequences are visceral and immediate
-    □ Emotional beats feel genuine and earned
-    □ World-building is naturally integrated
+    □ Dialogue feels natural with realistic flow
+    □ Action sequences visceral and immediate
+    □ Emotional beats genuine and earned
+    □ World-building naturally integrated
     □ Chapter ending creates anticipation
     □ No grammatical errors or typos
-    □ Maintains consistent point of view
-    □ Sensory details are vivid and specific
-    □ Pacing varies naturally between action and contemplation
+    □ Consistent point of view maintained
+    □ Sensory details vivid and specific
+
+    🚫 STOP IF:
+    - Cannot access previous chapters for style analysis
+    - Original has unfixable plot inconsistencies
+    - Character voices inconsistent and unfixable
+    - Word count falls outside acceptable range after editing
+    - Style feels jarring compared to previous chapters
+
+    🎯 OUTPUT FORMAT:
+    Return ONLY the complete chapter prose - no titles, commentary, analysis, or meta-text. Must be ready to save directly as chapter content.
+
+    Available Context:
+    - Previous Chapters: {previous_chapter_context}
   expected_output: >
-    ONLY the complete, publication-ready chapter text between 2000-4000 words. Your response must contain 
-    NOTHING but the actual chapter prose - no titles, no descriptions, no commentary, no analysis, no 
-    meta-text. The output should start immediately with the first sentence of the chapter and end with 
-    the last sentence. The chapter should read like it came from an experienced human fantasy author with 
-    perfect continuity from previous chapters, strong narrative flow, emotionally grounded character moments, 
-    immersive world details, and natural human prose with no AI patterns. The text must be ready to save 
-    directly as chapter content without any editing or removal of non-chapter text.
+    ONLY the complete, polished chapter prose (2000-4000 words). No titles, descriptions, commentary, 
+    analysis, or meta-text. The chapter should read like it was written by an experienced human fantasy 
+    author with perfect continuity from previous chapters, natural human prose with no AI patterns, 
+    and consistent authorial voice throughout the series. Ready to save directly as chapter content.
   agent: editor
 
