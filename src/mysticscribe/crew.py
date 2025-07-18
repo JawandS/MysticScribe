@@ -12,7 +12,7 @@ from .tools import KnowledgeLookupTool, ChapterAnalysisTool, OutlineManagementTo
 
 @CrewBase
 class Mysticscribe():
-    """Mysticscribe crew - A three-agent system for chapter writing"""
+    """Mysticscribe crew - A four-agent system for chapter writing"""
 
     agents: List[BaseAgent]
     tasks: List[Task]
@@ -60,6 +60,14 @@ class Mysticscribe():
             verbose=True
         )
 
+    @agent
+    def polisher(self) -> Agent:
+        return Agent(
+            config=self.agents_config['polisher'], # type: ignore[index]
+            llm=LLM(model="gpt-4o", temperature=0.7),  # Balanced creativity for natural humanization
+            verbose=True
+        )
+
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:
     # https://docs.crewai.com/concepts/tasks#overview-of-a-task
@@ -80,6 +88,12 @@ class Mysticscribe():
     def editing_task(self) -> Task:
         return Task(
             config=self.tasks_config['editing_task'] # type: ignore[index]
+        )
+
+    @task
+    def polishing_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['polishing_task'] # type: ignore[index]
         )
 
     @crew
