@@ -72,7 +72,11 @@ writing_task:
     3. Verify character states, location, and emotional tone from previous chapter
 
     📝 WRITING REQUIREMENTS:
-    • Start EXACTLY where previous chapter ended (same emotional state, immediate situation)
+    • Start with "Chapter {chapter_number}: [Descriptive Title]" format
+    • Use "/* /* /*" to delimit between major sections within the chapter
+    • Include main characters' inner dialogue and thoughts for emotional depth
+    • Maintain readable pacing - avoid excessively dense prose that overwhelms readers
+    • Continue EXACTLY where previous chapter ended (same emotional state, immediate situation)
     • Follow approved outline structure while allowing natural character development
     • Use authentic dialogue that reflects each character's unique voice
     • Include vivid sensory details and show-don't-tell techniques
@@ -99,17 +103,19 @@ writing_task:
     - Dialogue feels generic or interchangeable
 
     🎯 OUTPUT FORMAT:
-    Return ONLY the chapter prose - no titles, commentary, or meta-text. Start immediately with the first sentence.
+    Return the complete chapter starting with "Chapter {chapter_number}: [Title]" followed by the prose content. 
+    Use "/* /* /*" to separate major sections. Include character inner thoughts and maintain readable pacing.
 
     Available Context:
     - Knowledge Base: {knowledge_context}
     - Previous Chapters: {previous_chapter_context}
     - Approved Outline: {approved_outline}
   expected_output: >
-    ONLY the complete chapter prose (2000-4000 words). No titles, descriptions, commentary, or meta-text. 
-    Start immediately with the opening sentence and end with the final sentence. The chapter should be 
-    publication-ready with natural character interactions, vivid descriptions, compelling narrative arc, 
-    and seamless continuation from previous chapters.
+    Complete chapter prose (2000-4000 words) starting with "Chapter {chapter_number}: [Title]" followed by 
+    the chapter content. Use "/* /* /*" to delimit between major sections. Include main characters' inner 
+    dialogue and thoughts to provide emotional depth. Maintain readable pacing - avoid excessively dense 
+    writing that overwhelms readers. The chapter should be publication-ready with natural character 
+    interactions, vivid descriptions, compelling narrative arc, and seamless continuation from previous chapters.
   agent: writer
 
 editing_task:
@@ -126,6 +132,10 @@ editing_task:
 
     📝 EDITING FOCUS:
     CONTENT REFINEMENT:
+    • Ensure proper chapter format: "Chapter {chapter_number}: [Title]"
+    • Verify "/* /* /*" delimiters separate major sections appropriately
+    • Include and enhance main characters' inner dialogue for emotional depth
+    • Maintain readable pacing - break up overly dense passages with dialogue or action
     • Enhance prose clarity, rhythm, and emotional resonance
     • Strengthen scene transitions, especially opening from previous chapter  
     • Make dialogue authentic and character-specific
@@ -147,6 +157,10 @@ editing_task:
     • Create natural speech patterns with realistic interruptions
 
     ✅ VALIDATION CHECKLIST (Verify before submitting):
+    □ Starts with "Chapter {chapter_number}: [Title]" format
+    □ Uses "/* /* /*" to delimit major sections
+    □ Includes main characters' inner thoughts and dialogue
+    □ Maintains readable pacing without overly dense passages
     □ Word count: 2000-4000 words exactly
     □ Opening flows seamlessly from previous chapter
     □ All character voices consistent and authentic
@@ -169,14 +183,17 @@ editing_task:
     - Style feels jarring compared to previous chapters
 
     🎯 OUTPUT FORMAT:
-    Return ONLY the complete chapter prose - no titles, commentary, analysis, or meta-text. Must be ready to save directly as chapter content.
+    Return the complete chapter starting with "Chapter {chapter_number}: [Title]" format. Use "/* /* /*" 
+    to separate major sections. Must include character inner thoughts and maintain readable pacing throughout.
 
     Available Context:
     - Previous Chapters: {previous_chapter_context}
   expected_output: >
-    ONLY the complete, polished chapter prose (2000-4000 words). No titles, descriptions, commentary, 
-    analysis, or meta-text. The chapter should read like it was written by an experienced human fantasy 
-    author with perfect continuity from previous chapters, natural human prose with no AI patterns, 
-    and consistent authorial voice throughout the series. Ready to save directly as chapter content.
+    Complete, polished chapter starting with "Chapter {chapter_number}: [Title]" format. Use "/* /* /*" 
+    to delimit major sections. Include main characters' inner dialogue and thoughts for emotional depth. 
+    Maintain readable pacing without excessively dense writing. The chapter should read like it was written 
+    by an experienced human fantasy author with perfect continuity from previous chapters, natural human 
+    prose with no AI patterns, and consistent authorial voice throughout the series. Ready to save directly 
+    as chapter content (2000-4000 words).
   agent: editor
 
