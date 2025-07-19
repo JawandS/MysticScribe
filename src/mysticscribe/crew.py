@@ -87,12 +87,16 @@ class Mysticscribe():
     def writing_task(self) -> Task:
         return Task(
             config=self.tasks_config['writing_task'], # type: ignore[index]
+            context=[self.outline_task()],  # Use output from outline_task
+            agent=self.writer()
         )
 
     @task
     def editing_task(self) -> Task:
         return Task(
-            config=self.tasks_config['editing_task'] # type: ignore[index]
+            config=self.tasks_config['editing_task'], # type: ignore[index]
+            context=[self.writing_task()],  # Use output from writing_task  
+            agent=self.editor()
         )
 
 
