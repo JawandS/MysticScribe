@@ -5,11 +5,17 @@ MysticScribe is a sophisticated AI-powered system that automates the process of 
 ## 🚀 Quick Start
 
 ```bash
+# Activate virtual environment (recommended)
+source .venv/bin/activate
+
 # Install dependencies
 pip install -e .
 
-# Generate a chapter (interactive workflow)
-python mysticscribe.py [chapter_number]
+# Generate a chapter (interactive workflow - RECOMMENDED)
+./mysticscribe.py [chapter_number]
+
+# Or use the module interface
+python -m mysticscribe workflow [chapter_number]
 ```
 
 The system will automatically detect the next chapter number if one isn't provided, based on existing outlines in the `outlines/` directory.
@@ -22,20 +28,26 @@ MysticScribe employs a three-agent workflow to create high-quality narrative con
 2. **Writer Agent** - Transforms approved outlines into engaging prose (2000-4000 words)
 3. **Editor Agent** - Polishes the draft to publication quality with consistent style and flow
 
-The system guides you through an interactive workflow with approval gates:
-- Review and approve outlines before writing begins
-- Make edits to outlines before final chapter generation
-- Final chapters are saved as Markdown files in the `chapters/` directory
+### Workflow Types
+
+- **Complete Workflow** (`workflow`) - 🌟 RECOMMENDED: Interactive process with outline approval gates
+- **Architect Workflow** (`architect`) - Outline creation only with human review
+- **Legacy Workflow** (`run`) - All agents run sequentially without approval gates
 
 ## 🗂️ Project Structure
 
 ```
 MysticScribe/
-├── mysticscribe.py              # Entry point script with simplified interface
+├── mysticscribe.py              # Simple entry point script
 ├── pyproject.toml               # Project dependencies and configuration
 ├── README.md                    # Documentation (this file)
+├── uv.lock                      # Dependency lock file
+├── art/                         # Cover art and synopsis
+│   ├── cover.png
+│   └── synopsis.md
 ├── chapters/                    # Generated chapter output files
-│   └── chapter_1.md             # Example generated chapter
+│   ├── chapter_1.md
+│   └── chapter_2.md
 ├── knowledge/                   # Knowledge base for story elements
 │   ├── chapters.txt             # Chapter structure and progression
 │   ├── core_story_elements.txt  # Main story elements
@@ -48,6 +60,210 @@ MysticScribe/
 │   ├── regions.txt              # World geography and locations
 │   └── society.txt              # Social structures and cultures
 ├── outlines/                    # Stored chapter outlines
+│   ├── chapter_1.txt
+│   └── chapter_2.txt
+├── src/mysticscribe/           # Main source code (REFACTORED)
+│   ├── __init__.py             # Package initialization
+│   ├── main.py                 # Legacy main script
+│   ├── main_refactored.py      # New modular main script
+│   ├── crew.py                 # CrewAI agent definitions
+│   ├── core/                   # Core functionality modules
+│   │   ├── __init__.py
+│   │   ├── chapter_manager.py  # Chapter file management
+│   │   ├── knowledge_manager.py # Knowledge base management
+│   │   └── validation.py       # Content validation
+│   ├── workflows/              # Workflow implementations
+│   │   ├── __init__.py
+│   │   ├── base_workflow.py    # Base workflow class
+│   │   ├── architect_workflow.py # Outline creation workflow
+│   │   ├── complete_workflow.py  # Full chapter workflow
+│   │   └── legacy_workflow.py    # Legacy workflow
+│   ├── tools/                  # AI agent tools
+│   │   ├── __init__.py
+│   │   ├── custom_tool.py      # Knowledge and chapter tools
+│   │   ├── previous_chapter_reader.py # Chapter continuity
+│   │   ├── style_analysis.py   # Style analysis tools
+│   │   └── style_guide.py      # Style consistency
+│   ├── utils/                  # Utility modules
+│   │   ├── __init__.py
+│   │   ├── logging_config.py   # Logging configuration
+│   │   ├── file_utils.py       # File operation utilities
+│   │   └── text_utils.py       # Text processing utilities
+│   └── config/                 # Configuration files
+│       ├── agents.yaml         # Agent configurations
+│       └── tasks.yaml          # Task configurations
+├── styles/                     # Writing style guides
+│   ├── casual.txt
+│   ├── formal.txt
+│   └── traditional.txt
+└── tests/                      # Test suite
+    ├── setup_check.py
+    ├── test_architect_workflow.py
+    ├── test_continuity_tools.py
+    ├── test_crew.py
+    ├── test_polisher_style.py
+    └── test_style_guide.py
+```
+
+### Simple Usage
+
+```bash
+# Complete workflow (recommended)
+./mysticscribe.py                    # Auto-detect next chapter
+./mysticscribe.py 5                  # Generate Chapter 5
+
+# Module interface
+python -m mysticscribe workflow      # Interactive workflow
+python -m mysticscribe architect     # Outline creation only
+python -m mysticscribe run          # Legacy mode (no approval gates)
+python -m mysticscribe status       # Show project status
+```
+
+### Advanced Usage
+
+```bash
+# Training and testing
+python -m mysticscribe train --iterations 10 --filename training.pkl
+python -m mysticscribe test --iterations 5 --eval-llm gpt-4o
+python -m mysticscribe replay --task-id abc123
+
+# Verbose logging
+python -m mysticscribe workflow --verbose
+```
+
+### Python API
+
+```python
+from mysticscribe import MysticScribeRunner, ChapterManager
+from mysticscribe.workflows import CompleteWorkflow
+from pathlib import Path
+
+# Initialize
+project_root = Path(".")
+runner = MysticScribeRunner(project_root)
+
+# Run workflows programmatically
+result = runner.run_complete_workflow(chapter_number=3)
+
+# Access individual components
+chapter_manager = ChapterManager(project_root)
+next_chapter = chapter_manager.get_next_chapter_number()
+chapter_info = chapter_manager.get_chapter_info(1)
+```
+
+## 🧩 Architecture Overview
+
+### Core Modules
+
+- **`core/chapter_manager.py`** - Handles chapter numbering, file operations, and metadata
+- **`core/knowledge_manager.py`** - Manages the knowledge base and provides structured access
+- **`core/validation.py`** - Validates generated content for quality and consistency
+
+### Workflow System
+
+- **`workflows/base_workflow.py`** - Abstract base class for all workflows
+- **`workflows/architect_workflow.py`** - Interactive outline creation with approval gates
+- **`workflows/complete_workflow.py`** - Full end-to-end chapter generation
+- **`workflows/legacy_workflow.py`** - Simple linear workflow for backwards compatibility
+
+### Utility System
+
+- **`utils/logging_config.py`** - Centralized logging configuration
+- **`utils/file_utils.py`** - Safe file operations and utilities
+- **`utils/text_utils.py`** - Text processing and analysis functions
+
+## 🔄 Interactive Workflow Process
+
+### Phase 1: Architect (Outline Creation)
+
+1. **Context Loading** - System loads knowledge base and previous chapters
+2. **Outline Management** - Check for existing outlines, create or expand as needed
+3. **Human Review** - Interactive approval process with editing capability
+
+### Phase 2: Writer & Editor (Chapter Generation)
+
+4. **Chapter Writing** - Transform approved outline into engaging prose
+5. **Content Editing** - Polish for quality, style, and consistency
+6. **Validation** - Automated quality checks and reporting
+
+## � Content Validation
+
+The system includes comprehensive content validation:
+
+- **Word Count Validation** - Ensures chapters meet target length (2000-4000 words)
+- **AI Pattern Detection** - Identifies and flags common AI-generated text patterns
+- **Structure Analysis** - Validates paragraph structure, dialogue presence, and formatting
+- **Quality Metrics** - Analyzes sentence variety, repetition, and readability
+
+## 🧪 Testing
+
+### Quick Validation Test
+```bash
+# Run the refactoring validation test
+source .venv/bin/activate
+python tests/test_refactoring.py
+```
+
+### Full Test Suite (when pytest is installed)
+```bash
+# Install test dependencies
+pip install -e .[dev]
+
+# Run all tests
+python -m pytest tests/
+
+# Run specific test modules
+python -m pytest tests/test_chapter_manager.py
+python -m pytest tests/test_knowledge_manager.py
+python -m pytest tests/test_validation.py
+
+# Check system setup
+python tests/setup_check.py
+```
+
+## 🔧 Development Environment
+
+### Prerequisites
+
+- Python 3.10+ (< 3.14)
+- Virtual environment (recommended)
+
+### Setup
+
+```bash
+# Clone repository
+git clone <repository-url>
+cd MysticScribe
+
+# Create virtual environment
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+# or
+.venv\Scripts\activate     # Windows
+
+# Install dependencies
+pip install -e .
+
+# Verify installation
+python -m mysticscribe status
+```
+
+### Knowledge Base Setup
+
+Populate the `knowledge/` directory with your story elements:
+
+1. **Required Files:**
+   - `core_story_elements.txt` - Main characters, themes, tone
+   - `plot.txt` - Story structure and major plot points
+   - `chapters.txt` - Chapter progression and summaries
+
+2. **World-Building Files:**
+   - `cultivation_system.txt` - Magic/power systems
+   - `regions.txt` - Geographic locations
+   - `society.txt` - Social structures and cultures
+   - `government.txt`, `economic.txt`, `military.txt` - Institutional details
+
+## 🐛 Troubleshooting
 │   └── chapter_1.txt            # Example chapter outline
 ├── src/                         # Source code
 │   └── mysticscribe/            # Main package

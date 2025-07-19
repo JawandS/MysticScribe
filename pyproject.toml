@@ -1,19 +1,25 @@
 [project]
 name = "mysticscribe"
-version = "0.1.0"
-description = "MysticScribe using crewAI"
+version = "1.0.0"
+description = "MysticScribe - AI-Powered Chapter Writing System using CrewAI"
 authors = [{ name = "Jawand Singh", email = "JawandBusiness@gmail.com" }]
 requires-python = ">=3.10,<3.14"
 dependencies = [
     "crewai[tools]>=0.141.0,<1.0.0"
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
 [project.scripts]
-mysticscribe = "mysticscribe.main:run"
-run_crew = "mysticscribe.main:run"
-train = "mysticscribe.main:train"
-replay = "mysticscribe.main:replay"
-test = "mysticscribe.main:test"
+mysticscribe = "mysticscribe.main_refactored:main"
+mysticscribe-legacy = "mysticscribe.main:run"
 
 [build-system]
 requires = ["hatchling"]
@@ -21,3 +27,13 @@ build-backend = "hatchling.build"
 
 [tool.crewai]
 type = "crew"
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
