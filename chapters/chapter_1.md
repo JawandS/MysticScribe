@@ -1,4 +1,4 @@
-### Chapter 1: Whisper of the Blue Gale
+### Chapter 1: Another Dawn
 
 Dawn at the base of the soaring mountains was a blade of cold air.
 
