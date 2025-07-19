@@ -5,3 +5,12 @@ __pycache__/
 *.pyc
 .vscode/
 uv.lock
+
+# Test artifacts and cache
+tests/__pycache__/
+tests/.pytest_cache/
+tests/test_output/
+tests/temp_*
+.pytest_cache/
+.coverage
+htmlcov/
