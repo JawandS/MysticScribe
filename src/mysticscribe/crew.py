@@ -87,7 +87,7 @@ class Mysticscribe():
     def writing_task(self) -> Task:
         return Task(
             config=self.tasks_config['writing_task'], # type: ignore[index]
-            context=[self.outline_task()],  # Use output from outline_task
+            # Remove context dependency when running independently
             agent=self.writer()
         )
 
@@ -95,7 +95,7 @@ class Mysticscribe():
     def editing_task(self) -> Task:
         return Task(
             config=self.tasks_config['editing_task'], # type: ignore[index]
-            context=[self.writing_task()],  # Use output from writing_task  
+            # Remove context dependency when running independently  
             agent=self.editor()
         )
 
@@ -114,6 +114,26 @@ class Mysticscribe():
             verbose=True,
             # process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
         )
+
+    def create_writing_task_with_context(self, writing_context=None) -> Task:
+        """Create a writing task with optional context from previous task"""
+        task = Task(
+            config=self.tasks_config['writing_task'], # type: ignore[index]
+            agent=self.writer()
+        )
+        if writing_context:
+            task.context = [writing_context]
+        return task
+
+    def create_editing_task_with_context(self, editing_context=None) -> Task:
+        """Create an editing task with optional context from previous task"""
+        task = Task(
+            config=self.tasks_config['editing_task'], # type: ignore[index]
+            agent=self.editor()
+        )
+        if editing_context:
+            task.context = [editing_context]
+        return task
 
     def load_knowledge_context(self) -> str:
         """Load all knowledge files to provide context to agents"""

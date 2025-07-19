@@ -79,10 +79,13 @@ def load_knowledge_context(project_root: Path) -> str:
     return "\n\n".join(context_parts) if context_parts else ""
 
 
-def get_existing_outline(chapter_number: int, project_root: Path) -> tuple[str, str]:
+def get_user_outline_decision(chapter_number: int, project_root: Path) -> tuple[str, str, bool]:
     """
-    Check for existing outline and return outline content and action.
-    Returns (outline_content, action) where action is 'use_existing' or 'create_new'
+    Check for existing outline and get user's decision on whether to use it or create new.
+    Returns (outline_content, action, skip_architect) where:
+    - outline_content: existing outline content (if any)
+    - action: 'use_existing' or 'create_new'
+    - skip_architect: True if architect should be skipped, False otherwise
     """
     outlines_dir = project_root / "outlines"
     outline_file = outlines_dir / f"chapter_{chapter_number}.txt"
@@ -91,13 +94,57 @@ def get_existing_outline(chapter_number: int, project_root: Path) -> tuple[str, 
         try:
             content = outline_file.read_text(encoding='utf-8')
             if content.strip():
-                print(f"📋 Found existing outline for Chapter {chapter_number}")
-                return content, 'use_existing'
+                print(f"\n📋 Found existing outline for Chapter {chapter_number}")
+                print("=" * 60)
+                # Show preview of outline (first 300 characters)
+                preview = content[:300]
+                if len(content) > 300:
+                    preview += "..."
+                print(f"Preview:\n{preview}\n")
+                print("=" * 60)
+                
+                while True:
+                    choice = input("Do you want to:\n[1] Use existing outline (skip to writing)\n[2] Generate new outline\nEnter choice (1 or 2): ").strip()
+                    if choice == "1":
+                        print("✅ Using existing outline - skipping to writer")
+                        return content, 'use_existing', True
+                    elif choice == "2":
+                        print("📝 Will generate new outline")
+                        return '', 'create_new', False
+                    else:
+                        print("❌ Please enter 1 or 2")
         except Exception as e:
             print(f"⚠️  Warning: Could not read outline file: {e}")
     
     print(f"📝 No existing outline found for Chapter {chapter_number}")
-    return '', 'create_new'
+    return '', 'create_new', False
+
+
+def get_user_approval_for_outline(chapter_number: int, project_root: Path) -> bool:
+    """
+    Wait for user to review and approve the generated outline.
+    Returns True if approved, False if user wants to regenerate.
+    """
+    outlines_dir = project_root / "outlines"
+    outline_file = outlines_dir / f"chapter_{chapter_number}.txt"
+    
+    print(f"\n⏸️  OUTLINE GENERATED - APPROVAL GATE")
+    print("=" * 60)
+    print(f"📋 Chapter {chapter_number} outline has been generated and saved to:")
+    print(f"   {outline_file}")
+    print("\nPlease review the outline and make any edits if needed.")
+    print("=" * 60)
+    
+    while True:
+        choice = input("Outline ready? Choose:\n[1] Approve outline and continue to writing\n[2] Regenerate outline\nEnter choice (1 or 2): ").strip()
+        if choice == "1":
+            print("✅ Outline approved - continuing to writer")
+            return True
+        elif choice == "2":
+            print("🔄 Will regenerate outline")
+            return False
+        else:
+            print("❌ Please enter 1 or 2")
 
 
 def get_previous_chapter_context(chapter_number: int, project_root: Path) -> str:
@@ -153,7 +200,7 @@ def validate_chapter_content(content: str, chapter_number: int) -> None:
 
 
 def run_workflow(chapter_number: int, project_root: Path) -> None:
-    """Run the unified MysticScribe workflow."""
+    """Run the unified MysticScribe workflow with approval gates."""
     print(f"\n🚀 MysticScribe Workflow - Chapter {chapter_number}")
     print("=" * 60)
     
@@ -168,32 +215,115 @@ def run_workflow(chapter_number: int, project_root: Path) -> None:
         
         print(f"📚 Loading story context...")
         
-        # Check for existing outline
-        existing_outline, outline_action = get_existing_outline(chapter_number, project_root)
+        # Check for existing outline and get user decision
+        existing_outline, outline_action, skip_architect = get_user_outline_decision(chapter_number, project_root)
         
-        # Prepare initial inputs
-        inputs = {
-            'chapter_number': str(chapter_number),
-            'current_year': str(datetime.now().year),
-            'knowledge_context': load_knowledge_context(project_root),
-            'previous_chapter_context': get_previous_chapter_context(chapter_number, project_root),
-            'existing_draft': '',  # No existing draft for simplified workflow
-            'existing_outline': existing_outline,
-            'outline_action': outline_action,
-            'approved_outline': existing_outline  # Use existing outline as approved outline initially
-        }
+        # If using existing outline, skip directly to writer
+        if skip_architect:
+            print(f"🤖 Initializing AI agents...")
+            crew_instance = Mysticscribe()
+            
+            # Prepare inputs for writer (skipping architect)
+            inputs = {
+                'chapter_number': str(chapter_number),
+                'current_year': str(datetime.now().year),
+                'knowledge_context': load_knowledge_context(project_root),
+                'previous_chapter_context': get_previous_chapter_context(chapter_number, project_root),
+                'existing_draft': '',
+                'existing_outline': existing_outline,
+                'outline_action': 'use_existing',
+                'approved_outline': existing_outline
+            }
+            
+            print(f"✍️  Skipping to writer - using existing outline...")
+            
+            # Create a workflow with only writer and editor
+            from crewai import Crew, Process
+            writing_task = crew_instance.create_writing_task_with_context()
+            editing_task = crew_instance.create_editing_task_with_context()
+            
+            limited_crew = Crew(
+                agents=[crew_instance.writer(), crew_instance.editor()],
+                tasks=[writing_task, editing_task],
+                process=Process.sequential,
+                verbose=True
+            )
+            
+            result = limited_crew.kickoff(inputs=inputs)
+        else:
+            # Full workflow with outline generation and approval
+            outline_approved = False
+            while not outline_approved:
+                print(f"🤖 Initializing AI agents...")
+                crew_instance = Mysticscribe()
+                
+                # Prepare initial inputs
+                inputs = {
+                    'chapter_number': str(chapter_number),
+                    'current_year': str(datetime.now().year),
+                    'knowledge_context': load_knowledge_context(project_root),
+                    'previous_chapter_context': get_previous_chapter_context(chapter_number, project_root),
+                    'existing_draft': '',
+                    'existing_outline': existing_outline,
+                    'outline_action': outline_action,
+                    'approved_outline': ''  # Will be set after approval
+                }
+                
+                print(f"📋 Generating outline for Chapter {chapter_number}...")
+                
+                # Run only the outline task
+                from crewai import Crew, Process
+                outline_crew = Crew(
+                    agents=[crew_instance.architect()],
+                    tasks=[crew_instance.outline_task()],
+                    process=Process.sequential,
+                    verbose=True
+                )
+                
+                outline_result = outline_crew.kickoff(inputs=inputs)
+                
+                # Extract and save the outline
+                if hasattr(outline_result, 'raw'):
+                    outline_content = outline_result.raw
+                elif hasattr(outline_result, 'output'):
+                    outline_content = outline_result.output
+                else:
+                    outline_content = str(outline_result)
+                
+                # Save outline to file
+                outlines_dir = project_root / "outlines"
+                outlines_dir.mkdir(exist_ok=True)
+                outline_file = outlines_dir / f"chapter_{chapter_number}.txt"
+                outline_file.write_text(outline_content, encoding='utf-8')
+                
+                # Get user approval
+                outline_approved = get_user_approval_for_outline(chapter_number, project_root)
+                
+                if not outline_approved:
+                    existing_outline = ''  # Clear existing outline for regeneration
+                    outline_action = 'create_new'
+            
+            # Now run writer and editor with approved outline
+            print(f"✍️  Continuing with writer and editor...")
+            
+            # Update inputs with approved outline
+            inputs['approved_outline'] = outline_content
+            inputs['existing_outline'] = outline_content
+            
+            # Create crew for writing and editing
+            writing_task = crew_instance.create_writing_task_with_context()
+            editing_task = crew_instance.create_editing_task_with_context()
+            
+            writing_crew = Crew(
+                agents=[crew_instance.writer(), crew_instance.editor()],
+                tasks=[writing_task, editing_task],
+                process=Process.sequential,
+                verbose=True
+            )
+            
+            result = writing_crew.kickoff(inputs=inputs)
         
-        print(f"🤖 Initializing AI agents...")
-        
-        # Initialize the crew
-        crew_instance = Mysticscribe()
-        
-        print(f"✨ Generating Chapter {chapter_number}...")
-        print(f"   This may take several minutes...")
-        
-        result = crew_instance.crew().kickoff(inputs=inputs)
-        
-        # Save the result
+        # Save the final result
         chapters_dir = project_root / "chapters"
         chapters_dir.mkdir(exist_ok=True)
         output_file = chapters_dir / f"chapter_{chapter_number}.md"
@@ -220,6 +350,9 @@ def run_workflow(chapter_number: int, project_root: Path) -> None:
         print(f"❌ Error: Could not import MysticScribe modules: {e}")
         print("Make sure dependencies are installed:")
         print("  pip install -r requirements.txt")
+        sys.exit(1)
+    except KeyboardInterrupt:
+        print("\n⏹️  Workflow interrupted by user")
         sys.exit(1)
     except Exception as e:
         print(f"❌ Error during workflow execution: {e}")
