@@ -1,125 +1,130 @@
 Chapter 2: The Journey to Windmoore
 
-/* /* /*
+Dawn crawled across the sky, dragging a pale cold morning in its wake.
 
-Dawn crept hesitantly across the blackened skeletons of the forest, dragging a bleak day behind it, the kind where hope faltered in the chill between breaths. Cassian woke all at once. There was no drifting out of sleep for him anymore—one moment he was lost in burning buildings and silent screams, the next he felt the ache in his bones, the roughness of cold earth against his face.
+Cassian jerked awake, breath catching. His muscles protested as he sat up, every joint stiff. Memory quickly followed: flames, ash, and screams. 
 
-He sat up, wiped at his muddy eyes. The remnants of the fire had faded to a stain of ash, only the persistent memory of heat lingering in his hands. Rygar was already stirring, clumsy and careful both, his movements stiff as he checked the bandages on his side. The wound wept, dark and ugly, a thing born of monsters and left to fester by men who couldn't heal it.
+Rygar sat nearby, failing to enter a meditative state, the wound in his side pulsing in an ominous black. "We need to move," said Rygar, voice raw from a day spent in ash. It wasn't a suggestion. 
 
-Cassian’s thoughts fractured like a field of glass. He didn’t look directly at Rygar—guilt turned him away, as if it was he who should apologize for the wound, or for surviving at all.
+Cassian nodded. He understood. Movement was more than survival, it was hope.
 
-“We need to move,” Rygar said, voice scraping as if smoothed by years of gravel and loss. It wasn’t a suggestion. Cassian nodded, feeling foolish for hesitating, foolish for everything.
+They gathered their things in silence. Even the trees seemed to lean away from the direction of the former village.
 
-They gathered their things in silence. No one spoke of what was left behind. Even the burned-out trees seemed to lean away from memory.
+\* \* \*
 
-Cassian couldn’t tell if the forest itself mourned or merely recoiled from what had happened. Each footstep was a trespass.
+Rygar moved with grim purpose, one hand clamped over his side. Each step was deliberate, his boots dragging through fresh growth. His face stayed tight and unreadable, but the tremble in his arm told the truth.
 
-He caught a breath—felt the weight of ash in his lungs, as if he could never quite draw a clean lungful again. His mind itched with everything left unsaid.
+Cassian followed close behind, eyes scanning the ruined woods, ears tuned to the hush between wind gusts. The forest offered nothing, no birds, no beasts, no threats. Just the sound of their own breath and the brittle crunch of their steps.
 
-/* /* /*
+Time slipped past without words. Occasionally, Rygar paused, leaning on a charred trunk, his breath sharp and uneven. Cassian offered a hand without speaking. Sometimes Rygar took it. Other times he waved it off with a glare, his pride hanging by a thread.
 
-They pushed on, shadows trailing them like persistent regrets. Early morning light fell soft and weak, as if the sun, too, grieved for the dead.
+They came to a stream no wider than a boot. The water was clear but shallow, barely moving, reflecting the scorched canopy above. Cassian crouched at the edge, cupped his hands, and splashed his face. The chill steadied him, clearing the fog in his head.
 
-Rygar moved with stubborn determination, leaning into the pain at his side, his face a stone mask. Cassian trailed after, ears straining for any sound the emptiness wasn’t hiding.
+He felt Rygar's gaze before he looked up.
 
-Hours bled by. Sometimes Rygar stopped, bracing himself against a tree, breath coming quick and sharp. Cassian offered a hand wordlessly; sometimes Rygar took it, sometimes he just waved it away, his pride as battered as his body.
+"Why didn't the detection formation warn us?" Cassian asked. His voice cracked, low and dry.
 
-When they found a stream—too shallow for fish, barely more than a mirror for the ruined canopy—Cassian crouched by the water, cupped trembling palms, splashed his face.
+Rygar hesitated, eyes distant. "We didn't have the jade to power it."
 
-The cold stung him awake, briefly. He felt Rygar’s gaze.
+Cassian stared at him. "What?"
 
-“Why didn’t the wards hold?” Cassian asked. His voice surprised him—small and dry, like something scraped from the bottom of a well.
+Rygar didn't meet his eyes. "Couldn't afford it."
 
-Rygar hesitated. “We didn’t get the Jade to power the detection formation.” His gaze fixed somewhere distant, haunted by old failures. “Couldn’t afford it.”
+The words sat heavy in the air. Cassian felt heat bloom in his chest. "Whose fault was that?"
 
-Cassian tasted anger, quick and bitter. “Who’s fault—”
+"It doesn't matter," Rygar said, voice rough. "They're gone. You can honor them by surviving."
 
-“Overseer Rane.” Rygar cut him off, name falling heavy as a stone into the stream. “Don’t go asking more. Rane’s the kind who never forgets a name—or a grudge.”
+Cassian rose slowly. His hands curled into fists. "That's not enough. Was it your fault? Did you fail us?"
 
-Cassian’s jaw clenched. Rane. The name sat in his head like a splinter. For a moment, images flashed—charred beams, his sister’s laughter snuffed out in smoke, the sudden, brutal silence.
+Rygar's head shot up, eyes dark and fists clenched . "It was Overseer Rane," Rygar snapped, jaw tight. "Always has been. He withheld the jade. Left us defenseless."
 
-He wanted to storm Windmoore’s gates, shout guilt and blame until someone answered for what had happened. But he wasn’t that boy. Not anymore.
+He stepped forward, jaw tight. "What are you going to do? Challenge him? He's two realms higher - his glance alone would be the end of you."
 
-He glanced at Rygar, saw not just the pain of the wound but the fatigue etched deep by years of command and compromise. Cassian’s anger cooled into the first hint of resolve. If he had no home, perhaps he could make something else of his grief.
+Cassian's anger faltered. Shame crept in, slow and cold. He looked away, throat tight.
 
-They rested by the stream. Rygar drank, coughed, pressed a trembling hand to his ribs. Cassian watched him, afraid to say what he was thinking. What if Rygar’s wound was more than the village healer could manage? What if they were already too late?
+"I'm sorry," he said.
 
-He closed his eyes, trying to summon memories of comfort. His mother’s voice, the warmth of the fire pit—gone. He opened them to cold water and a friend who might not see another dawn.
+Rygar turned, pressing his hand harder to the wound at his side. His voice was quieter now.
 
-“We should keep moving,” he said. His voice was steady, if only because he willed it so.
+"We can't stop moving, the demons might not have been purged yet."
 
-Rygar managed half a smirk. “You’ll make a soldier yet.”
+\* \* \*
 
-/* /* /*
+The sun retreated, hiding behind the thick veil of night. Camp was a rough patch of earth with a simple fire to heat a recently caught rabbit.
 
-The sun retreated, hiding behind a haze of smoke and distant threat. Branches overhead rattled in a fretful wind, their dead leaves whispering secrets Cassian couldn’t quite catch.
+Cassian unwrapped Rygar's bandages. The wound was angry: flesh swollen, shot through with black, spiderwebbing veins that pulsed with every heartbeat. The sight froze him.
 
-Camp was a rough patch of earth beneath the splintered remnants of what might once have been a proud oak. Rygar laid wards with trembling fingers, etched the perimeter with faded talismans. He muttered under his breath—prayers or curses, Cassian couldn't tell.
+He tried to clean it, hands careful but clumsy. Rygar gritted his teeth, letting out sharp breaths. The silence grew heavy and awkward.
 
-Cassian unwrapped the bandages. The wound was angry: flesh swollen, shot through with black, spiderwebbing veins that pulsed with every heartbeat. The sight froze him.
+"Did you leave anyone behind?" Rygar asked. His voice had lost its edge, quieter now, almost gentle.
 
-He tried to clean it, hands careful but clumsy. Rygar gritted his teeth, let out sharp breaths. The silence grew heavy and awkward.
+Cassian shook his head, eyes stinging. "They were all there. When the fire came… all of them."
 
-“Did you leave anyone behind?” Rygar asked, voice softer than before, almost gentle.
+Rygar gave a slow nod, eyes closing for a moment. "Everyone carries a loss that won't let them rest," he said, his voice rough with old weight. "That's why I became a Ranger. Why I joined the Academy."
 
-Cassian shook his head, throat tight. “They were all there. When the fire... all of them.”
+Cassian looked up, surprised. Rygar almost never spoke about his past. The mention of the Kingdom's Military Academy hung in the air, a ripple in the silence neither of them had expected.
 
-Rygar nodded, eyes closing for a moment. “Everyone has a loss that won’t let them be,” he said, voice roughened by old scars. “When I was your age, I wanted to fly sky-ships. Dreams never survived long out where I grew.”
+"It taught you how to fight?" Cassian asked, tentative.
 
-Cassian blinked, caught off guard by the turn in conversation. Rygar rarely spoke of the past. The mention of the Academy—Royal Wind, the name burning dimly in the back of Cassian’s memory—opened a fissure in the silence.
+"It taught me discipline," Rygar said, drawing the word out as if he could taste the memories it contained. "Showed me how to push past what I thought I could endure. And when you go further than you thought possible... you find out who you really are."
 
-“It taught you how to fight?” Cassian asked, tentative.
+Cassian wondered what he would find, if pushed. Fear twisted in his chest. Not just of dying, or failing Rygar, but of surviving, of what kind of person would be left if everything else was burned away.
 
-“It taught me discipline,” Rygar said, drawing the word out as if it weighed more than a blade. “Showed me how to push past what I thought I could endure. And when you go further than you thought possible... you find out who you really are.”
-
-Cassian wondered what he would find, if pushed. Fear twisted in his chest. Not just of dying, or failing Rygar, but of surviving—of what kind of person would be left if everything else was burned away.
-
-Rygar caught his look. “Strength isn’t just muscle and steel. It’s surviving when you want to break. It’s finding a reason to get up every time the world knocks you down.”
+Rygar caught his look. "Strength isn't just Qi and Mystic Arts. It's surviving when you want to break. It's finding a reason to get up every time the world knocks you down."
 
 Cassian nodded, not sure if he understood, but wanting to believe.
 
-/* /* /*
+\* \* \*
 
-Somewhere in the darkness, a branch snapped—a predator, or the forest reminding them that not every survivor in the ashes was human.
+Somewhere in the darkness, a branch snapped, a predator, or the forest reminding them that not everything in the forest was as easy to kill as a rabbit.
 
-Rygar’s hand closed around Cassian’s shoulder, fierce for a man so weakened. “Quiet,” he hissed.
+Rygar's hand closed around Cassian's shoulder, fierce for a man so weakened. "Quiet," he hissed.
 
-Cassian’s heart pounded, blood hot in his ears. He fumbled for the little dagger they’d salvaged, its edge dull but real in his sweaty grip.
+Cassian's heart pounded, blood hot in his ears. He fumbled with a sharp stick he had scavenged on their journey.
 
-They waited. The night pressed close, silent for a heartbeat, then two. In the hollow between breaths, Cassian caught movement—a glint, red as a coal, blinking from deep between the trunks.
+They waited. The night pressed close, silent for a heartbeat, then two. In the hollow between breaths, Cassian caught movement, a glint, red as a coal, blinking from deep between the trunks.
 
-Was it an animal? He wanted to believe, but he’d seen beasts twisted by demonic energies. Hunger and torment made them clever, made their patience terrifying.
+He wanted to believe it was just an animal, but the images of demonic beasts were burned too deep. Rygar's fingers twitched, trying to summon what little Qi remained in his scorched spirit veins.
 
-Rygar’s fingers twitched, reaching for the formation stones at his belt—too slow, Cassian knew, if something charged.
+Then the eye blinked and vanished. The forest seemed to exhale, a gentle breeze filling the silence. Rygar's voice came low and steady, cutting through the quiet.
 
-Then the eye blinked and vanished. The forest exhaled, all at once, filling the hollow with the sound of wind, so much like the night before—so much like the world was holding them in suspense.
+"We need to talk."
 
-Rygar whispered, “No more nights in the open.”
+Cassian turned toward him, wary. "About what?"
 
-Cassian found his voice. “We’ll make Windmoore. We have to.”
+"You're fifteen, maybe sixteen," Rygar said, not unkindly. "And you haven't started cultivating."
 
-Rygar nodded, pain written in every creased line of his face. “If not—”
+Cassian looked away, heat rising to his face. "No. I haven't."
 
-“Don’t,” Cassian said, sharper than he meant. “I won’t let that happen.”
+Rygar gave a slow nod, expecting the answer. "It's not your fault. I know how isolated your village was. How hard you all worked, just to meet the next quota."
 
-Rygar smiled, a glint of pride or hope—Cassian couldn’t tell which—briefly washing over the lines of worry.
+He shifted, his hand tightening on the bandage at his side. "But if you're going to make it to Windmoore, and if you want to stand a chance once you get there, you'll need more than desire. Being a Base Mortal isn't enough."
 
-They broke camp, packs thrown hastily over shoulders, and began the slow, cautious climb through tangled roots and the burnt detritus of lost lives.
+Cassian swallowed. "The elders mentioned Qi once or twice. Said the first step was sensing it, but we never had time to sit and meditate. There was always another tree to fall, another cart to load."
 
-The world narrowed to footsteps, to the crunch of soil underfoot and the steady pulse of resolve in Cassian’s chest. Each breath was a reminder: he was alive; Rygar was alive. It was enough, for now.
+Rygar's expression softened. "You'll have time now. You need to make time."
 
-Through a narrow gap between blasted trunks, Cassian caught it: a flicker, distant and golden, threading through the haze. Windmoore—its lights survived the night.
+He closed his eyes for a moment, letting his breath settle. "When I entered Qi Awakening, it was like something inside me finally opened. I could feel the world breathing with me. Every inhale pulled more than air, it pulled the energy of reality itself: Qi."
 
-He drew breath, feeling his grief solidify into something sharper. If Rane was there, if questions had answers—then tomorrow would come, shaped by whatever Cassian did tonight.
+Cassian leaned forward, captivated. "I heard a few in the village managed it, but they never spoke of it openly. Most didn't want to be seen neglecting their duties."
 
-“If I stop now, I’m as dead as the rest,” he thought, letting determination settle like armor around his fear. “I’ll find out what it means to keep going.”
+"That's not uncommon," Rygar said. "But once you can feel Qi, truly feel it, your journey begins. Then you start refining the body. You cleanse it, temper it, train it to hold power. That's how you prepare to become a Mystic."
 
-They crested the ridge as the first glow of Windmoore’s lanterns pierced the gloom. Cassian squared his shoulders, the weight of memory and purpose heavy, but his steps no longer hollow.
+"And after that?" Cassian asked, his voice quieter now. "No one back home ever made it that far."
 
-“I’m coming,” he whispered to the night—to Windmoore, to his dead, to whatever came next.
+Rygar let out a tired breath, somewhere between a chuckle and a sigh. "One step at a time, lad. Finish Body Cleansing and Body Refinement, then we'll talk."
 
-Behind him, Rygar straightened, following into an uncertain dawn.
+He leaned back, eyes flickering toward the stars above the trees. "Rest. If we make good time tomorrow, Windmoore's within reach."
 
-The journey truly began.
+Cassian wrapped his blanket tighter around his shoulders and lay down beside the fading fire. For the first time in days, the ache in his chest loosened. He imagined Qi in the air around him, waiting. The thought was strange, wondrous. For the first time since the flames, something like hope found its way in.
 
-Word count: ~2510
+Sleep took him gently.
+
+Rygar stayed awake.
+
+He pressed his palm to the wound at his side, where blood, tinged black, had slowly begun to seep from the wrap. The fire had dwindled to faint embers, and the forest had gone still again.
+
+Just before he closed his eyes, he caught a flicker in the trees. A glint of red, too intense to be anything natural.
+Rygar said nothing.
+
+He simply watched, and waited.
