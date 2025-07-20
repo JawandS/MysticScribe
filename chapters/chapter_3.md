@@ -1,6 +1,6 @@
 Chapter 3: Arriving at Windmoore
 
-/* /* /*
+\* \* \*
 
 A flicker in the trees—a glint of red, sharp and hungry as a knife point—rooted Rygar in place at the dying campfire. He squinted into the darkness. The blackness seemed to breathe around him, swallowing the weak glow of embers, swallowing his pain, swallowing even the hope that daybreak might bring sanctuary.
 
@@ -32,7 +32,7 @@ Rygar nodded, as if that were enough. He pressed something cool and heavy into C
 
 All protests died under Rygar’s stare. Cassian nodded, swallowing hard against the grief and old, ugly anger that threatened to break loose.
 
-/* /* /*
+\* \* \*
 
 Steel flashed. Rygar surged forward, meeting the hounds in the muck and needles beyond the fire’s last glow. Cassian saw only a blur—Rygar’s sword arm a streak of silver, the air shuddering as fur and fang collided with will and iron. The beasts snarled, circling, teeth bared against flashing steel. Rygar grunted, pain guttural in his throat, but held them.
 
@@ -60,7 +60,7 @@ He kept moving, the edge of exhaustion only a half-step behind.
 
 A fleeting glance at his reflection in a pool—moon-pale, rimmed with exhaustion. In his hair, a single filament glinted silver: a mark, perhaps, or a warning. He blinked, and the image was gone.
 
-/* /* /*
+\* \* \*
 
 As the world shifted from black to damp grey, the trees thinned and the ground sloped down toward a ribbon of road. Cassian clattered out of the brush, gasping, legs trembling. In the orange haze of sunrise, Windmoore’s walls rose before him—massive, stubborn things etched with old ward-glyphs and streaks of charcoal where some previous fire had licked too close.
 
@@ -76,7 +76,7 @@ Cassian tried to take another step, but the world laughed, spinning away beneath
 
 Just before Cassian passed out, he thought—not for the first time—of Rygar’s words: Survive. That’s my last order.
 
-/* /* /*
+\* \* \*
 
 Wakefulness came piece by piece, measured out in light and quiet sounds. The air tasted of herbs—sharp, just shy of bitter. Linen sheets scratched against his forearms, far cleaner than anything he’d touched in weeks.
 
@@ -116,6 +116,6 @@ Somewhere beyond the walls, rumors whispered through the city—of Rangers lost,
 
 His journey had only just begun.
 
-/* /* /*
+\* \* \*
 
 Word count: 2,334 words

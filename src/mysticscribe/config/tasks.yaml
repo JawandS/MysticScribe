@@ -73,7 +73,7 @@ writing_task:
 
     📝 WRITING REQUIREMENTS:
     • Start with "Chapter {chapter_number}: [Descriptive Title]" format
-    • Use "/* /* /*" to delimit between major sections within the chapter
+    • Use "\* \* \*" to delimit between major sections within the chapter
     • Include main characters' inner dialogue and thoughts for emotional depth
     • Maintain readable pacing - avoid excessively dense prose that overwhelms readers
     • Continue EXACTLY where previous chapter ended (same emotional state, immediate situation)
@@ -104,7 +104,7 @@ writing_task:
 
     🎯 OUTPUT FORMAT:
     Return the complete chapter starting with "Chapter {chapter_number}: [Title]" followed by the prose content. 
-    Use "/* /* /*" to separate major sections. Include character inner thoughts and maintain readable pacing.
+    Use "\* \* \*" to separate major sections. Include character inner thoughts and maintain readable pacing.
 
     Available Context:
     - Knowledge Base: {knowledge_context}
@@ -112,7 +112,7 @@ writing_task:
     - Approved Outline: {approved_outline}
   expected_output: >
     Complete chapter prose (2000-4000 words) starting with "Chapter {chapter_number}: [Title]" followed by 
-    the chapter content. Use "/* /* /*" to delimit between major sections. Include main characters' inner 
+    the chapter content. Use "\* \* \*" to delimit between major sections. Include main characters' inner 
     dialogue and thoughts to provide emotional depth. Maintain readable pacing - avoid excessively dense 
     writing that overwhelms readers. The chapter should be publication-ready with natural character 
     interactions, vivid descriptions, compelling narrative arc, and seamless continuation from previous chapters.
@@ -133,7 +133,7 @@ editing_task:
     📝 EDITING FOCUS:
     CONTENT REFINEMENT:
     • Ensure proper chapter format: "Chapter {chapter_number}: [Title]"
-    • Verify "/* /* /*" delimiters separate major sections appropriately
+    • Verify "\* \* \*" delimiters separate major sections appropriately
     • Include and enhance main characters' inner dialogue for emotional depth
     • Maintain readable pacing - break up overly dense passages with dialogue or action
     • Enhance prose clarity, rhythm, and emotional resonance
@@ -158,7 +158,7 @@ editing_task:
 
     ✅ VALIDATION CHECKLIST (Verify before submitting):
     □ Starts with "Chapter {chapter_number}: [Title]" format
-    □ Uses "/* /* /*" to delimit major sections
+    □ Uses "\* \* \*" to delimit major sections
     □ Includes main characters' inner thoughts and dialogue
     □ Maintains readable pacing without overly dense passages
     □ Word count: 2000-4000 words exactly
@@ -183,13 +183,13 @@ editing_task:
     - Style feels jarring compared to previous chapters
 
     🎯 OUTPUT FORMAT:
-    Return the complete chapter starting with "Chapter {chapter_number}: [Title]" format. Use "/* /* /*" 
+    Return the complete chapter starting with "Chapter {chapter_number}: [Title]" format. Use "\* \* \*" 
     to separate major sections. Must include character inner thoughts and maintain readable pacing throughout.
 
     Available Context:
     - Previous Chapters: {previous_chapter_context}
   expected_output: >
-    Complete, polished chapter starting with "Chapter {chapter_number}: [Title]" format. Use "/* /* /*" 
+    Complete, polished chapter starting with "Chapter {chapter_number}: [Title]" format. Use "\* \* \*" 
     to delimit major sections. Include main characters' inner dialogue and thoughts for emotional depth. 
     Maintain readable pacing without excessively dense writing. The chapter should read like it was written 
     by an experienced human fantasy author with perfect continuity from previous chapters, natural human 

@@ -43,7 +43,7 @@ SENTENCE STRUCTURE:
 • Avoid repetitive patterns (don't start multiple sentences the same way)
 • Use active voice for action scenes, passive voice sparingly for atmosphere
 • Break up long paragraphs naturally based on thought shifts or scene changes
-• Add delimiters (/* /* /*) between major sections for clarity
+• Add delimiters (\* \* \*) between major sections for clarity
 
 SCENIC WRITING BALANCE:
 • Limit pure description to 2-3 sentences before adding character reaction
