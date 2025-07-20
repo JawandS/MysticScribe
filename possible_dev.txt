@@ -1,0 +1,4 @@
+- Reset tools used in the system
+- Add a word counter tool
+- Add better outline draft system
+- Train system on outline -> chapter 
