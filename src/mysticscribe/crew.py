@@ -27,12 +27,12 @@ class Mysticscribe():
     def architect(self) -> Agent:
         return Agent(
             config=self.agents_config['architect'], # type: ignore[index]
-            # llm=LLM(
-                # model="o3", 
-                # drop_params=True,           # tell LiteLLM to strip anything not explicitly allowed
-                # additional_drop_params=["stop", "temperature", "top_p"]
-            # ),
-            llm=LLM(model="gpt-4.1"),
+            # Ensure compatibility with newer APIs by dropping unsupported params
+            llm=LLM(
+                model="gpt-5",
+                drop_params=True,
+                additional_drop_params=["stop", "stop_sequences", "temperature", "top_p"]
+            ),
             tools=[
                 KnowledgeLookupTool(), 
                 ChapterAnalysisTool(), 
@@ -47,7 +47,12 @@ class Mysticscribe():
     def writer(self) -> Agent:
         return Agent(
             config=self.agents_config['writer'], # type: ignore[index]
-            llm=LLM(model="gpt-4o", temperature=0.8),  # High creativity for vivid scene writing
+            # High creativity for vivid scene writing; drop unsupported params for safety
+            llm=LLM(
+                model="gpt-5",
+                drop_params=True,
+                additional_drop_params=["stop", "stop_sequences", "temperature", "top_p"]
+            ),
             tools=[
                 KnowledgeLookupTool(), 
                 PreviousChapterReaderTool(),
@@ -60,7 +65,12 @@ class Mysticscribe():
     def editor(self) -> Agent:
         return Agent(
             config=self.agents_config['editor'], # type: ignore[index]
-            llm=LLM(model="gpt-4.1"),  # Higher creativity for natural style variation
+            # Use gpt-5 for compatibility; drop unsupported params
+            llm=LLM(
+                model="gpt-5",
+                drop_params=True,
+                additional_drop_params=["stop", "stop_sequences", "temperature", "top_p"]
+            ),
             tools=[
                 PreviousChapterReaderTool(),  # For comprehensive previous chapter content and continuity checking
                 PreviousChapterEndingTool(),  # For checking how previous chapter ended
